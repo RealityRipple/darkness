@@ -1,0 +1,218 @@
+html
+{
+ background: #000000;
+ color: #FFFFFF;
+ font: message-box;
+}
+body
+{
+ padding: 0 2em;
+ margin: 0;
+ min-width: 45em;
+ margin: auto;
+}
+div.ancillary
+{
+ margin: 0.5em 0;
+ -moz-user-select: none;
+}
+div.section
+{
+ padding: 2em;
+ margin: 1em 0em;
+ border: 1px solid #D0D0D0;
+ border-bottom-color: #606060;
+ border-right-color: #606060;
+ border-radius: 10px;
+ background: #202020;
+}
+div.opsRow
+{
+ padding: 0.5em;
+ margin-right: 0.5em;
+ margin-top: 0.5em;
+ border: 1px solid #D0D0D0;
+ border-bottom-color: #606060;
+ border-right-color: #606060;
+ border-radius: 10px;
+ background: #000000;
+ display: inline-block;
+}
+div.opsRowLabel
+{
+ display: block;
+ margin-bottom: 0.2em;
+ font-weight: bold;
+}
+.opsRowLabel label
+{
+ margin-left: 1em;
+ font-weight: normal;
+}
+div.non-verbose pre.entries
+{
+ overflow-x: hidden;
+ text-overflow: ellipsis;
+}
+h1
+{
+ padding: 0;
+ margin: 0;
+}
+h2
+{
+ background: #303030;
+ padding-left: .1em;
+}
+.accuracyWarning
+{
+ color: #FFE0E0;
+}
+.badInputWarning
+{
+ color: #FFFFE0;
+}
+.treeline
+{
+ color: #C0C0C0;
+}
+.mrValue
+{
+ font-weight: bold;
+ color: #E0C0C0;
+}
+.mrPerc
+{
+}
+.mrSep
+{
+}
+.mrName
+{
+ color: #E0E0FF;
+}
+.mrNote
+{
+ color: #E0FFE0;
+}
+.hasKids
+{
+ cursor: pointer;
+}
+.hasKids:hover
+{
+ text-decoration: underline;
+}
+.noselect
+{
+ -moz-user-select: none;  /* no need to include this when cutting+pasting */
+}
+.option
+{
+ font-size: 80%;
+ -moz-user-select: none;  /* no need to include this when cutting+pasting */
+}
+.legend
+{
+ font-size: 80%;
+ -moz-user-select: none;  /* no need to include this when cutting+pasting */
+}
+.debug
+{
+ font-size: 80%;
+}
+.hidden
+{
+ display: none;
+}
+.invalid
+{
+ color: #FFFFFF;
+ background-color: #FF0000;
+}
+/* Desktop-specific parts go here. */
+.hasKids:hover
+{
+ text-decoration: underline;
+}
+
+button
+{
+ -moz-appearance: none;
+ margin: 1px;
+ margin-top: 0px;
+ min-width: 60px;
+ min-height: 25px;
+ color: #FFFFFF;
+ background-color: #000000;
+ border: 2px solid;
+ -moz-border-top-colors: #000000 #D0D0D0;
+ -moz-border-left-colors: #000000 #D0D0D0;
+ -moz-border-bottom-colors: #000000 #606060;
+ -moz-border-right-colors: #000000 #606060;
+}
+button:hover
+{
+ color: #D0D0D0;
+ background-color: #303030;
+}
+button:focus
+{
+ color: #C0C0C0;
+ -moz-border-top-colors: #303030 #D0D0D0;
+ -moz-border-left-colors: #303030 #D0D0D0;
+ -moz-border-bottom-colors: #303030 #606060;
+ -moz-border-right-colors: #303030 #606060;
+}
+button[default="true"]
+{
+ -moz-border-top-colors: #404040 #D0D0D0;
+ -moz-border-right-colors: #404040 #606060;
+ -moz-border-bottom-colors: #404040 #606060;
+ -moz-border-left-colors: #404040 #D0D0D0;
+}
+button:hover:focus
+{
+ color: #D0D0D0;
+ background-color: #303030;
+ -moz-border-top-colors: #303030 #D0D0D0;
+ -moz-border-left-colors: #303030 #D0D0D0;
+ -moz-border-bottom-colors: #303030 #606060;
+ -moz-border-right-colors: #303030 #606060;
+}
+button:hover:active, button[open="true"], button[checked="true"]
+{
+ color: #FFFFFF;
+ background-color: #404040;
+ -moz-border-top-colors: #000000 #606060;
+ -moz-border-left-colors: #000000 #606060;
+ -moz-border-bottom-colors: #000000 #D0D0D0;
+ -moz-border-right-colors: #000000 #D0D0D0;
+}
+button[default="true"]:hover:active
+{
+ color: #FFFFFF;
+ background-color: #404040;
+ -moz-border-top-colors: #404040 #606060;
+ -moz-border-left-colors: #404040 #606060;
+ -moz-border-bottom-colors: #404040 #D0D0D0;
+ -moz-border-right-colors: #404040 #D0D0D0;
+}
+button:hover:active:focus, button[checked="true"]:focus, button[open="true"]:focus
+{
+ color: #FFFFFF;
+ background-color: #404040;
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-left-colors: #303030 #606060;
+ -moz-border-bottom-colors: #303030 #D0D0D0;
+ -moz-border-right-colors: #303030 #D0D0D0;
+}
+button[disabled="true"]
+{
+ color: #606060 !important;
+ background-color: #202020 !important;
+ -moz-border-top-colors: #202020 #505050 !important;
+ -moz-border-left-colors: #202020 #505050 !important;
+ -moz-border-bottom-colors: #101010 #303030 !important;
+ -moz-border-right-colors: #101010 #303030 !important;
+}

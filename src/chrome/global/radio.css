@@ -1,0 +1,60 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+radio
+{
+ -moz-appearance: none;
+ -moz-box-align: center;
+ margin: 2px 4px;
+ padding-top: 1px;
+ padding-bottom: 1px;
+ -moz-padding-start: 4px;
+ -moz-padding-end: 2px;
+}
+.radio-label-box
+{
+ -moz-margin-start: 0px;
+ border: 0px;
+ padding: 0px;
+ color: #FFFFFF;
+}
+radio:not([disabled="true"]):hover > .radio-label-box, radio:not([disabled="true"]):focus > .radio-label-box
+{
+ color: #C0C0C0 !important;
+}
+radio:not([disabled="true"]):hover:focus > .radio-label-box
+{
+ color: #A0A0A0 !important;
+}
+.radio-icon
+{
+ -moz-margin-end: 2px;
+}
+.radio-label
+{
+ margin: 0 !important;
+}
+radio[focused="true"] > .radio-label-box
+{
+ color: #C0C0C0 !important;
+}
+radio[disabled="true"] > .radio-label-box
+{
+ color: #909090 !important;
+}
+.radio-check-box2
+{
+ width: 13px;
+ height: 13px;
+ list-style-image: url("chrome://global/skin/radio/unchecked.png");
+}
+.radio-check[disabled="true"]
+{
+ list-style-image: url("chrome://global/skin/radio/disabledunchecked.png") !important;
+}
+.radio-check[selected="true"]
+{
+ list-style-image: url("chrome://global/skin/radio/checked.png");
+}
+.radio-check[selected="true"][disabled="true"]
+{
+ list-style-image: url("chrome://global/skin/radio/disabledchecked.png") !important;
+}

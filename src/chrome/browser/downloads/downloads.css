@@ -1,0 +1,400 @@
+#downloadsPanel > .panel-arrowcontainer > .panel-arrowcontent
+{
+ padding: 0;
+}
+#downloadsListBox
+{
+ background-color: transparent;
+ padding: 4px;
+ color: inherit;
+}
+#downloadsPanel:not([hasdownloads]) > #downloadsListBox
+{
+ display: none;
+}
+#downloadsHistory
+{
+ background: transparent;
+ color: #FFFFFF;
+ cursor: pointer;
+}
+#downloadsHistory > .button-box
+{
+ border: none;
+ margin: 1em;
+}
+#downloadsSummary, richlistitem[type="download"]
+{
+ height: 7em;
+ -moz-padding-end: 0;
+ color: inherit;
+}
+#downloadsSummary
+{
+ padding: 8px 38px 8px 12px;
+ cursor: pointer;
+ -moz-user-focus: normal;
+}
+#downloadsPanel[keyfocus] > #downloadsFooter > #downloadsSummary:focus
+{
+ outline: 1px #00FF00 dotted;
+ outline-offset: -5px;
+}
+#downloadsSummary > .downloadTypeIcon
+{
+ list-style-image: url("chrome://browser/skin/downloads/download-summary.png");
+}
+#downloadsSummaryDescription
+{
+ color: #E0E0E0;
+}
+richlistitem[type="download"]
+{
+ margin: 0;
+ border: 2px solid;
+ border-top-color: #606060;
+ border-right-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-left-color: #606060;
+ background: #000000;
+ padding-top: 6px;
+ padding-bottom: 6px;
+ -moz-padding-start: 7px;
+ -moz-padding-end: 7px;
+}
+#downloadsPanel[keyfocus] > #downloadsListBox:focus > richlistitem[type="download"][selected]
+{
+ outline: 1px #FF00FF dotted;
+ outline-offset: -1px;
+}
+.downloadTypeIcon
+{
+ -moz-margin-end: 8px;
+ height: 32px;
+ width: 32px;
+}
+.blockedIcon
+{
+ list-style-image: url("chrome://global/skin/icons/Error.png");
+}
+
+/* We hold .downloadTarget, .downloadProgress and .downloadDetails inside of
+   a vbox with class .downloadContainer. We set the font-size of the entire
+   container to 90% because:
+
+   1) This is the size that we want .downloadDetails to be
+   2) The container's width is set by localizers by &downloadDetails.width;,
+      which is a ch unit. Since this is the value that should control the
+      panel width, we apply it to the outer container to constrain
+      .downloadTarget and .downloadProgress.
+
+   Finally, since we want .downloadTarget's font-size to be at 100% of the
+   font-size of .downloadContainer's parent, we use calc to go from the
+   smaller font-size back to the original font-size.
+ */
+#downloadsSummaryDetails, .downloadContainer
+{
+ font-size: 90%;
+}
+#downloadsSummaryDescription, .downloadTarget
+{
+ margin-bottom: 6px;
+ cursor: inherit;
+}
+.downloadTarget
+{
+ font-size: calc(100%/0.9);
+}
+#downloadsSummaryDetails, .downloadDetails
+{
+ opacity: 0.6;
+ cursor: inherit;
+}
+.downloadButton
+{
+ -moz-appearance: none;
+ min-width: 0;
+ min-height: 0;
+ margin: 3px;
+ border: none;
+ background: transparent;
+ padding: 5px;
+ list-style-image: url("chrome://browser/skin/downloads/buttons.png");
+}
+.downloadButton > .button-box
+{
+ border: 1px solid transparent;
+ padding: 0;
+}
+#downloadsPanel[keyfocus] .downloadButton:focus > .button-box
+{
+ border: 1px dotted #00FFFF;
+}
+#downloadsPanel:not([keyfocus]) > #downloadsListBox > richlistitem[type="download"][state="1"][exists]:hover
+{
+ background-color: #404040;
+ border-top-color: #D0D0D0;
+ border-right-color: #606060;
+ border-bottom-color: #606060;
+ color: #FFFFFF;
+ border-left-color: #D0D0D0;
+ cursor: pointer;
+}
+.downloadButton.downloadCancel
+{
+ -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+richlistitem[type="download"]:hover > stack > .downloadButton.downloadCancel
+{
+ -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+richlistitem[type="download"]:hover > stack > .downloadButton.downloadCancel:hover
+{
+ -moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+richlistitem[type="download"]:hover > stack > .downloadButton.downloadCancel:active
+{
+ -moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+.downloadButton.downloadShow
+{
+ -moz-image-region: rect(16px, 16px, 32px, 0px);
+}
+richlistitem[type="download"]:hover > stack > .downloadButton.downloadShow
+{
+ -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+richlistitem[type="download"]:hover > stack > .downloadButton.downloadShow:hover
+{
+ -moz-image-region: rect(16px, 48px, 32px, 32px);
+}
+richlistitem[type="download"]:hover > stack > .downloadButton.downloadShow:active
+{
+ -moz-image-region: rect(16px, 64px, 32px, 48px);
+}
+.downloadButton.downloadRetry
+{
+ -moz-image-region: rect(32px, 16px, 48px, 0px);
+}
+richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry
+{
+ -moz-image-region: rect(32px, 32px, 48px, 16px);
+}
+richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry:hover
+{
+ -moz-image-region: rect(32px, 48px, 48px, 32px);
+}
+richlistitem[type="download"]:hover > stack > .downloadButton.downloadRetry:active
+{
+ -moz-image-region: rect(32px, 64px, 48px, 48px);
+}
+#downloads-indicator-anchor
+{
+ position: relative;
+}
+
+#downloads-indicator:not([attention="true"]) #downloads-indicator-icon
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"), 0, 192, 32, 160) center no-repeat;
+ min-width: 32px;
+ min-height: 32px;
+}
+#downloads-indicator:hover:not([attention="true"]) #downloads-indicator-icon
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"), 32, 192, 64, 160) center no-repeat;
+}
+#downloads-indicator:hover:active:not([attention="true"]) #downloads-indicator-icon
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"), 64, 192, 96, 160) center no-repeat;
+}
+#downloads-indicator[disabled="true"]:not([attention="true"]) #downloads-indicator-icon
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"), 96, 192, 128, 160) center no-repeat;
+}
+
+toolbar[iconsize="small"] #downloads-indicator:not([attention="true"]) #downloads-indicator-icon
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 96, 16, 80) center no-repeat;
+ min-width: 16px;
+ min-height: 16px;
+}
+toolbar[iconsize="small"] #downloads-indicator:hover:not([attention="true"]) #downloads-indicator-icon
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 16, 96, 32, 80) center no-repeat;
+}
+toolbar[iconsize="small"] #downloads-indicator:hover:active:not([attention="true"]) #downloads-indicator-icon
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 32, 96, 48, 80) center no-repeat;
+}
+toolbar[iconsize="small"] #downloads-indicator[disabled="true"]:not([attention="true"]) #downloads-indicator-icon
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 48, 96, 64, 80) center no-repeat;
+}
+
+#downloads-indicator[attention="true"] > #downloads-indicator-anchor > #downloads-indicator-icon
+{
+ background-image: url("chrome://browser/skin/downloads/download-glow.png");
+ width: 32px;
+ height: 32px;
+}
+toolbar[iconsize="small"] #downloads-indicator[attention="true"] > #downloads-indicator-anchor > #downloads-indicator-icon
+{
+ background-image: url("chrome://browser/skin/downloads/download-glow-small.png");
+ width: 16px;
+ height: 16px;
+}
+
+/* In the next few rules, we use :not([counter]) as a shortcut that is
+   equivalent to -moz-any([progress], [paused]). */
+
+#downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter
+{
+ background: -moz-image-rect(url("chrome://browser/skin/downloads/download-norm.png"), 0, 32, 32, 0) center no-repeat;
+ background-size: 12px;
+}
+toolbar[iconsize="small"] #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter
+{
+ background: -moz-image-rect(url("chrome://browser/skin/downloads/download-norm-small.png"), 0, 16, 16, 0) center no-repeat;
+ background-size: 10px;
+}
+#downloads-indicator:not([counter])[attention] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter
+{
+ background-image: url("chrome://browser/skin/downloads/download-glow.png");
+}
+toolbar[iconsize="small"] #downloads-indicator:not([counter])[attention] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter
+{
+ background-image: url("chrome://browser/skin/downloads/download-glow-small.png");
+}
+
+/*** Download notifications ***/
+
+#downloads-indicator-notification {
+  opacity: 0;
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes downloadsIndicatorNotificationStartRight {
+  from { opacity: 0; transform: translate(-128px, 128px) scale(8); }
+  20%  { opacity: .85; animation-timing-function: ease-out; }
+  to   { opacity: 0; transform: translate(0) scale(1); }
+}
+
+@keyframes downloadsIndicatorNotificationStartLeft {
+  from { opacity: 0; transform: translate(128px, 128px) scale(8); }
+  20%  { opacity: .85; animation-timing-function: ease-out; }
+  to   { opacity: 0; transform: translate(0) scale(1); }
+}
+
+#downloads-indicator[notification="start"] > #downloads-indicator-anchor > #downloads-indicator-notification {
+  background-image: url("chrome://browser/skin/downloads/download-notification-start.png");
+  animation-name: downloadsIndicatorNotificationStartRight;
+  animation-duration: 1s;
+}
+
+#downloads-indicator[notification="start"]:-moz-locale-dir(rtl) > #downloads-indicator-anchor > #downloads-indicator-notification {
+  animation-name: downloadsIndicatorNotificationStartLeft;
+}
+
+@keyframes downloadsIndicatorNotificationFinish {
+  from { opacity: 0; transform: scale(1); }
+  20%  { opacity: .65; animation-timing-function: ease-in; }
+  to   { opacity: 0; transform: scale(8); }
+}
+
+#downloads-indicator[notification="finish"] > #downloads-indicator-anchor > #downloads-indicator-notification
+{
+ background-image: url("chrome://browser/skin/downloads/download-notification-finish.png");
+ animation-name: downloadsIndicatorNotificationFinish;
+ animation-duration: 1s;
+}
+
+/*** Progress bar and text ***/
+
+#downloads-indicator-counter
+{
+ height: 9px;
+ margin: -3px 0px 0px 0px;
+ color: #FFFFFF;
+ text-shadow: #808080 0 1px;
+ font-size: 9px;
+ line-height: 9px;
+ text-align: center;
+}
+
+#downloads-indicator-progress
+{
+ width: 16px;
+ height: 5px;
+ min-width: 0;
+ min-height: 0;
+ margin-top: 1px;
+ background-color: #000000;
+}
+
+#downloads-indicator-progress > .progress-bar
+{
+ -moz-appearance: none;
+ min-width: 0;
+ min-height: 0;
+ background-color: #000000;
+ border: 1px solid #A0A0A0;
+}
+#downloads-indicator-progress > .progress-remainder
+{
+ -moz-appearance: none;
+ min-width: 0;
+ min-height: 0;
+ background-color: #808080;
+}
+
+#downloads-indicator[paused] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-progress > .progress-bar
+{
+ background-color: #FF8000;
+}
+
+#downloads-indicator[paused] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-progress > .progress-remainder
+{
+ background-color: #FFFF00;
+}
+toolbar[mode="full"] > #downloads-indicator > .toolbarbutton-text
+{
+ margin: 0;
+ text-align: center;
+}
+#downloads-indicator-counter
+{
+ margin-bottom: -1px;
+}
+
+
+/* Downloads Context Menu */
+menuitem.downloadPauseMenuItem
+{
+ background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 32, 16, 16) left center no-repeat;
+}
+menuitem.downloadResumeMenuItem
+{
+ background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 16, 16, 0) left center no-repeat;
+}
+menuitem.downloadCancelMenuItem
+{
+ background: -moz-image-rect(url("chrome://browser/skin/downloads/buttons.png"), 0, 16, 16, 0) left center no-repeat;
+}
+menuitem.downloadRemoveFromHistoryMenuItem, menuitem[command="downloadsCmd_clearList"]
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat;
+}
+menuitem.downloadShowMenuItem
+{
+ background: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 32, 32, 48, 16) left center no-repeat;
+}
+menuitem[command="downloadsCmd_openReferrer"]
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16) left center no-repeat;
+}
+menuitem[command="downloadsCmd_copyLocation"]
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192) left center no-repeat;
+}

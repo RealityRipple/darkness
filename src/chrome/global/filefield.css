@@ -1,0 +1,36 @@
+filefield
+{
+ margin: 2px 4px;
+ -moz-appearance: none;
+ border: 2px solid;
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+ background: #000000;
+ color: #FFFFFF;
+}
+.fileFieldContentBox
+{
+ background-color: #000000;
+}
+.fileFieldIcon[disabled="true"]
+{
+ opacity: 0.4;
+}
+.fileFieldIcon
+{
+ width: 16px;
+ height: 16px;
+ margin-top: 1px;
+ margin-bottom: 1px;
+ -moz-margin-start: 1px;
+ -moz-margin-end: 4px;
+}
+.fileFieldLabel
+{
+ -moz-appearance: none;
+ background-color: transparent;
+ border: none;
+ margin: 0px;
+}

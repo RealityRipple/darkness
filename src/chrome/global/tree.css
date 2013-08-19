@@ -1,0 +1,250 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+tree
+{
+ margin: 0px 4px;
+ border: 2px solid;
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+ background-color: #000000;
+ color: #FFFFFF;
+ -moz-appearance: none;
+}
+.focusring > .tree-rows > .tree-bodybox
+{
+ border: 1px solid transparent;
+}
+.focusring:focus > .tree-rows > .tree-bodybox
+{
+ border: 1px solid #000000;
+}
+treechildren::-moz-tree-row
+{
+ border: 1px solid transparent;
+ min-height: 18px;
+ height: 1.3em;
+ color: #FFFFFF !important;
+}
+treechildren::-moz-tree-cell-text
+{
+ color: #FFFFFF !important;
+}
+treechildren::-moz-tree-row(selected)
+{
+ background-color: #202020;
+ border: 1px solid;
+ border-top-color: #D0D0D0;
+ border-right-color: #606060;
+ border-bottom-color: #606060;
+ border-left-color: #D0D0D0;
+ color: #C0C0C0 !important;
+}
+treechildren::-moz-tree-row(selected, focus)
+{
+ background-color: #404040;
+ border: 1px solid;
+ border-top-color: #606060;
+ border-right-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-left-color: #606060;
+ color: #D0D0D0 !important;
+}
+treechildren::-moz-tree-cell
+{
+  padding: 0px 2px 0px 2px;
+}
+treechildren::-moz-tree-cell-text
+{
+ color: inherit;
+}
+treechildren::-moz-tree-line
+{
+ border: 1px dotted #DDDDDD;
+}
+treechildren::-moz-tree-line(selected, focus)
+{
+ border: 1px dotted #EEEEEE;
+}
+treechildren::-moz-tree-separator
+{
+ border-top: 1px solid #D0D0D0;
+ border-bottom: 1px solid #808080;
+}
+
+treechildren::-moz-tree-cell-text(primary, dropOn)
+{
+ background-color: #FFFFFF;
+ color: #000000;
+}
+treechildren::-moz-tree-drop-feedback
+{
+  background-color:#FFFFFF;
+  width: 50px;
+  height: 2px;
+  margin-left: 5px;
+}
+treechildren::-moz-tree-progressmeter
+{
+  margin: 2px 4px;
+  border: 2px solid;
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+  background-color: #000000;
+  color: #999999;
+}
+treechildren::-moz-tree-cell-text(progressmeter)
+{
+ margin: 2px 4px;
+}
+treecol, treecolpicker
+{
+ -moz-appearance: none;
+ -moz-box-align: center;
+ -moz-box-pack: center;
+ border: 2px solid;
+ -moz-border-top-colors: #808080 #D0D0D0;
+ -moz-border-right-colors: #303030 #606060;
+ -moz-border-bottom-colors: #303030 #606060;
+ -moz-border-left-colors: #808080 #D0D0D0;
+ background-color: #000000;
+ color: #FFFFFF;
+ padding: 0px 4px;
+}
+.treecol-image
+{
+ padding: 0px 1px;
+}
+.treecol-text
+{
+ margin: 0px !important;
+}
+treecol[hideheader="true"]
+{
+ -moz-appearance: none;
+ border: none;
+ padding: 0;
+}
+treecol:hover:active, treecolpicker:hover:active
+{
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+}
+.treecol-image:hover:active
+{
+ padding: 1px 1px 0px 2px;
+}
+treecol[dragging="true"]
+{
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+  background-color: #606060 !important;
+}
+treecol[insertafter="true"]
+{
+ -moz-border-right-colors: #D0D0D0 #D0D0D0;
+}
+treecol[insertbefore="true"]
+{
+ -moz-border-left-colors: #606060 #606060;
+}
+treechildren::-moz-tree-column(insertbefore)
+{
+ border-left: 1px solid #303030;
+}
+treechildren::-moz-tree-column(insertafter)
+{
+ border-right: 1px solid #808080;
+}
+.treecol-sortdirection
+{
+ list-style-image: none;
+}
+treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="ascending"]
+{
+ list-style-image: url("chrome://global/skin/tree/sort-asc.png");
+}
+treecol:not([hideheader="true"]) > .treecol-sortdirection[sortDirection="descending"]
+{
+ list-style-image: url("chrome://global/skin/tree/sort-dsc.png");
+}
+.tree-columnpicker-icon
+{
+ list-style-image: url("chrome://global/skin/tree/columnpicker.gif");
+}
+treechildren::-moz-tree-twisty
+{
+ padding-right: 4px;
+ padding-top: 1px;
+ width: 9px;
+ list-style-image: url("chrome://global/skin/tree/twisty-clsd.png");
+}
+treechildren::-moz-tree-twisty(open)
+{
+ width: 9px;
+ list-style-image: url("chrome://global/skin/tree/twisty-open.png");
+}
+treechildren::-moz-tree-indentation
+{
+ width: 18px;
+}
+treechildren.gridlines::-moz-tree-cell
+{
+ border-right: 1px solid transparent !important;
+ border-bottom: 1px solid transparent !important;
+}
+treechildren.gridlines::-moz-tree-row
+{
+ border: none;
+}
+treechildren::-moz-tree-image(Name)
+{
+ padding-right: 2px;
+}
+treechildren::-moz-tree-image(Name)
+{
+ margin: 0px 2px;
+ list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
+ -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+treechildren::-moz-tree-image(Name, container)
+{
+ -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+treechildren::-moz-tree-image(Name, open)
+{
+ -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+treechildren::-moz-tree-image(Name, separator)
+{
+ list-style-image: none;
+ width: 0px !important;
+ height: 0px !important;
+ margin: 0px 0px;
+}
+treechildren::-moz-tree-cell-text(Name, separator)
+{
+ color: #FFFFFF;
+ margin: 0px 5px 0px 5px;
+}
+treechildren::-moz-tree-cell-text(Name, separator, selected, focus)
+{
+ color: #C0C0C0;
+}
+.tree-input
+{
+ border-top: 0px;
+ border-bottom: 0px;
+ border-left: 1px solid;
+ border-right: 1px solid;
+ -moz-border-left-colors: #606060;
+ -moz-border-right-colors: #D0D0D0;
+ margin: 0 0 0 -4px;
+ padding: 2px 1px 1px 1px;
+}

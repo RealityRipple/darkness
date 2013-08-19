@@ -1,0 +1,144 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+listbox
+{
+ -moz-appearance: none;
+ margin: 2px 4px;
+ border: 1px solid;
+ -moz-border-top-colors: #606060;
+ -moz-border-right-colors: #A0A0A0;
+ -moz-border-bottom-colors: #A0A0A0;
+ -moz-border-left-colors: #606060;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+listbox[disabled="true"]
+{
+ color: #909090;
+}
+listitem
+{
+ border: 1px solid transparent;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+listbox:focus > listitem[selected="true"][current="true"]
+{
+ border-top-color: #606060;
+ border-right-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-left-color: #606060;
+ background-color: #505050;
+}
+listbox:focus > listitem[current="true"]
+{
+ border-top-color: #606060;
+ border-right-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-left-color: #606060;
+ background-color: #404040;
+}
+listitem[selected="true"]
+{
+ border-top-color: #606060;
+ border-right-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-left-color: #606060;
+ background-color: #404040;
+}
+listbox:focus > listitem[selected="true"]
+{
+ border-top-color: #606060;
+ border-right-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-left-color: #606060;
+ background-color: #505050;
+}
+listheader
+{ 
+ -moz-appearance: none;
+ -moz-box-align: center;
+ border: 1px solid;
+ -moz-border-top-colors: #A0A0A0;
+ -moz-border-right-colors: #606060;
+ -moz-border-bottom-colors: #606060;
+ -moz-border-left-colors: #A0A0A0;
+ background-color: #000000;
+ color: #FFFFFF;
+ padding: 0 4px;
+}
+listheader[sortable="true"]:hover:active
+{
+ -moz-border-top-colors: #C0C0C0;
+ -moz-border-right-colors: #808080;
+ -moz-border-bottom-colors: #808080;
+ -moz-border-left-colors: #C0C0C0;
+}
+.listheader-icon
+{
+ -moz-margin-end: 2px;
+}
+.listheader-label
+{
+ margin: 0px !important;
+}
+.listheader-sortdirection
+{
+ list-style-image: none;
+}
+.listheader-sortdirection[sortDirection="ascending"]
+{
+ list-style-image: url("chrome://global/skin/tree/sort-asc.gif");
+}
+.listheader-sortdirection[sortDirection="ascending"]:-moz-system-metric(windows-classic)
+{
+ list-style-image: url("chrome://global/skin/tree/sort-asc-classic.png");
+}
+.listheader-sortdirection[sortDirection="descending"]
+{
+ list-style-image: url("chrome://global/skin/tree/sort-dsc.png");
+}
+.listheader-sortdirection[sortDirection="descending"]:-moz-system-metric(windows-classic)
+{
+ list-style-image: url("chrome://global/skin/tree/sort-dsc-classic.png");
+}
+.listcell-label
+{
+ margin: 0px !important;
+ padding-top: 0px;
+ padding-bottom: 1px;
+ -moz-padding-start: 4px;
+ -moz-padding-end: 0px;
+ white-space: nowrap;
+}
+.listcell-icon
+{
+ -moz-margin-end: 2px;
+}
+.listcell-label[disabled="true"]
+{
+ color: #909090;
+}
+.listcell-check
+{
+ -moz-appearance: none;
+ -moz-box-align: center;
+ margin: 0px 2px;
+ border: 0px;
+ min-width: 13px;
+ min-height: 13px;
+ background: #000000 no-repeat 50% 50%;
+ background-image: url("chrome://global/skin/checkbox/unchecked.png");
+}
+.listcell-check[checked="true"]
+{
+ background-image: url("chrome://global/skin/checkbox/checked.png");
+}
+.listcell-check[disabled="true"]
+{
+ border-color: #909090;
+ background-image: url("chrome://global/skin/checkbox/disabledunchecked.png");
+}
+.listcell-check[disabled="true"][checked="true"]
+{
+ background-image: url("chrome://global/skin/checkbox/disabledchecked.png");
+}

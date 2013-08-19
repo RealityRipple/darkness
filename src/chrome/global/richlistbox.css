@@ -1,0 +1,31 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+richlistbox
+{
+ -moz-appearance: none;
+ margin: 2px 4px;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+richlistbox[disabled="true"]
+{
+ color: #999999;
+}
+richlistitem[selected="true"]
+{
+ background-color: #404040;
+ color: #A0A0A0;
+}
+richlistbox:focus > richlistitem[selected="true"]
+{
+ background-color: #404040;
+ color: #C0C0C0;
+}
+richlistbox[seltype="multiple"]:focus > richlistitem[current="true"]
+{
+ outline: 1px dotted #A0A0A0;
+ outline-offset: -1px;
+}
+richlistbox[seltype="multiple"]:focus > richlistitem[current="true"][selected="true"]
+{
+ outline: 1px dotted #C0C0C0;
+}

@@ -1,0 +1,101 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+.alertBox
+{
+ border-right: 2px solid #A0A0A0;
+ border-bottom: 2px solid #A0A0A0;
+ border-top: 2px solid #A0A0A0;
+ border-left: 2px solid #A0A0A0;
+ background-color: #000000;
+}
+.alertImageBox
+{
+ padding: 8px 0;
+ width: 64px;
+ background: #000000;
+ -moz-border-end: 1px solid rgba(0,0,0,.1);
+}
+.alertTextBox
+{
+ color: white;
+ padding: 8px;
+ -moz-padding-start: 16px;
+ width: 255px;
+}
+.alertTextBox, .alertCloseBox
+{
+ background: #101010;
+}
+.alertTitle
+{
+ font-weight: bold;
+ font-size: 110%;
+}
+#alertImage
+{
+ max-width: 48px;
+ max-height: 48px;
+ list-style-image: url(chrome://global/skin/alerts/notification-48.png);
+}
+#alertNotification[clickable="true"]
+{
+ cursor: pointer;
+}
+label
+{
+ cursor: inherit;
+}
+.alertText[clickable="true"]
+{
+ color: #FFFFFF;
+ text-decoration: none;
+}
+.alertText[clickable="true"]:hover
+{
+ color: #FFFFFF;
+ text-decoration: underline;
+}
+.alertText[clickable="true"]:hover:active
+{
+ color: #FFFFFF;
+ text-decoration: underline;
+}
+@keyframes alert-animation
+{
+ from
+ {
+  opacity: 0;
+ }
+ 6.25%
+ {
+  opacity: 1;
+ }
+ 93.75%
+ {
+  opacity: 1;
+ }
+ to
+ {
+  opacity: 0;
+ }
+}
+.alertCloseButton
+{
+ list-style-image: url("chrome://global/skin/icons/close.png");
+ -moz-appearance: none;
+ -moz-image-region: rect(0, 16px, 16px, 0);
+ padding: 4px 2px;
+ border: none !important;
+}
+.alertCloseButton > .toolbarbutton-text
+{
+ display: none;
+}
+.alertCloseButton:hover
+{
+ -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+.alertCloseButton:hover:active
+{
+ -moz-image-region: rect(0, 48px, 16px, 32px);
+}

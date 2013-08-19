@@ -1,0 +1,78 @@
+body
+{
+ background-color: #000000;
+ color: #FFFFFF;
+ font: message-box;
+}
+div#outside
+{
+ text-align: justify;
+ width: 90%;
+ margin-left: 5%;
+ margin-right: 5%;
+}
+#plugs
+{
+ text-align: center;
+ font-size: xx-large;
+ font-weight: bold;
+}
+#noplugs
+{
+ font-size: x-large;
+ font-weight: bold;
+}
+div#findpluginupdates
+{
+ margin-top: 2em;
+}
+.plugname
+{
+ margin-top: 2em;
+ margin-bottom: 1em;
+ font-size: large;
+ text-align: start;
+ font-weight: bold;
+}
+dl
+{
+ margin: 0px 0px 3px 0px;
+}
+table
+{
+ background-color: #202020;
+ color: #FFFFFF;
+ font: message-box;
+ text-align: start;
+ width: 100%;
+ border: 1px solid #C0C0C0;
+ border-spacing: 0px;
+}
+th, td
+{
+ border: none;
+ padding: 3px;
+}
+th
+{
+ text-align: center;
+ background-color: #404040;
+ color: #FFFFFF;
+}
+th + th, td + td
+{
+ -moz-border-start: 1px solid #606060;
+}
+td
+{
+ text-align: start;
+ border-top: 1px solid #606060;
+}
+th.type, th.suff
+{
+ width: 25%;
+}
+th.desc
+{
+ width: 50%;
+}

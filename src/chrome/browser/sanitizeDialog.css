@@ -1,0 +1,89 @@
+#sanitizeDurationChoice
+{
+ -moz-margin-end: 0;
+}
+#sanitizeDurationLabel
+{
+ -moz-margin-start: 3px;
+}
+#sanitizeDurationSuffixLabel[value=""]
+{
+ display: none;
+}
+#placesTreechildren::-moz-tree-row(selected), #placesTreechildren::-moz-tree-row(grippyRow)
+{
+ background: #404040;
+}
+#placesTreechildren::-moz-tree-cell-text(selected)
+{
+ color: #E0E0E0;
+}
+#sanitizeEverythingWarningBox
+{
+ background-color: #000000;
+ border: 1px solid #909090;
+ border-radius: 5px;
+ padding: 16px;
+}
+#sanitizeEverythingWarningIcon
+{
+ list-style-image: url("chrome://global/skin/icons/warning-large.png");
+ padding: 0;
+ margin: 0;
+}
+#sanitizeEverythingWarningDescBox
+{
+ padding: 0 16px;
+ margin: 0;
+}
+#detailsExpanderWrapper
+{
+ padding: 0;
+ margin: 6px 0;
+}
+.expander-up, .expander-down
+{
+ min-width: 0;
+ margin: 0;
+}
+.expander-up > .button-box, .expander-down > .button-box
+{
+ padding: 0;
+}
+.expander-up
+{
+ background-image: url("chrome://global/skin/arrow/arrow-up.gif");
+}
+.expander-up:hover
+{
+ background-image: url("chrome://global/skin/arrow/arrow-up-hov.gif");
+}
+.expander-up[disabled="true"]
+{
+ background-image: url("chrome://global/skin/arrow/arrow-up-dis.gif");
+}
+.expander-down
+{
+ background-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+}
+.expander-down:hover
+{
+ background-image: url("chrome://global/skin/arrow/arrow-dn-hov.gif");
+}
+.expander-down[disabled="true"]
+{
+ background-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
+}
+#itemList
+{
+ -moz-margin-start: 0;
+ -moz-margin-end: 0;
+}
+.prefWindow-dlgbuttons
+{
+ -moz-margin-end: 0;
+}
+.dialog-button[dlgtype="cancel"]
+{
+ -moz-margin-end: 0;
+}

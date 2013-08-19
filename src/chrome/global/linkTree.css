@@ -1,0 +1,18 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+treeitem[selected="true"] > treerow
+{
+ background: transparent !important;
+ border: none !important;
+ color: #FFFFFF !important;
+}
+treecell:hover
+{
+ text-decoration: underline !important;
+ color: #FFFFFF !important;
+ cursor: pointer;
+}
+treecell:hover:active
+{
+ text-decoration: underline !important;
+ color: #FFFFFF !important;
+}

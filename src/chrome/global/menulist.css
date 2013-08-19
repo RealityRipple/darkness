@@ -1,0 +1,172 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+menulist
+{
+ margin: 2px 4px;
+ border: 2px solid;
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+.menulist-label-box
+{
+ -moz-box-align: center;
+ -moz-box-pack: center;
+ margin: 1px;
+ border: 1px solid transparent;
+ background-color: transparent;
+ color: inherit;
+}
+.menulist-icon[src]
+{
+ margin: 0px 2px 0px 2px;
+}
+.menulist-label
+{
+ margin-top: 0 !important;
+ -moz-margin-end: 0 !important;
+ margin-bottom: 0 !important;
+ -moz-margin-start: 1px !important;
+}
+.menulist-description
+{
+ font-style: italic;
+ color: #909090;
+ -moz-margin-start: 1ex !important;
+}
+.menulist-dropmarker
+{
+ -moz-appearance: none;
+ min-width: 16px;
+ -moz-box-align: center;
+ -moz-box-pack: center;
+ list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+}
+/* .menulist-dropmarker, menulist[disabled="true"]:hover:active > .menulist-dropmarker
+{
+ -moz-border-top-colors: #808080 #D0D0D0;
+ -moz-border-right-colors: #303030 #606060;
+ -moz-border-bottom-colors: #303030 #606060;
+ -moz-border-left-colors: #808080 #D0D0D0;
+ padding: 1px;
+} */
+menulist[disabled="true"] > .menulist-dropmarker
+{
+ list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
+}
+menulist:focus:not([open="true"]):not(.menulist-compact) > .menulist-dropmarker
+{
+ background-color: #404040;
+}
+menulist:hover:active > .menulist-dropmarker
+{
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+ padding-top: 2px;
+ padding-bottom: 0px;
+ -moz-padding-start: 2px;
+ -moz-padding-end: 0px;
+}
+
+menulist:focus:not([open="true"]):not(.menulist-compact) > .menulist-label-box
+{
+ background-color: #404040;
+ color: #FFFFFF;  
+}
+menulist:-moz-focusring:not([open="true"]) > .menulist-label-box
+{
+ border: 1px solid transparent;
+}
+menulist[disabled="true"]
+{
+ background-color: #222222;
+ color: #C0C0C0;
+}
+.menulist-editable-box
+{
+ padding-top: 3px;
+ padding-bottom: 3px;
+ -moz-padding-start: 2px;
+ -moz-padding-end: 0px;
+}
+html|*.menulist-editable-input
+{
+ margin: 0px !important;
+ border: none !important;
+ padding: 0px !important;
+ background: inherit;
+ font: inherit;
+ color: #FFFFFF;
+}
+.menulist-compact
+{
+ -moz-box-align: center;
+ -moz-box-pack: center;
+ margin: 0;
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+.menulist-compact > .menulist-label-box > .menulist-label
+{
+ margin: 0 3px !important;
+ text-align: end;
+}  
+.menulist-compact > .menulist-label-box > .menulist-icon
+{
+ -moz-margin-start: 2px;
+}
+.menulist-compact[open="true"]
+{
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+.menulist-compact[disabled="true"]
+{
+ list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
+}
+.menulist-compact:-moz-focusring:not([open="true"]) > .menulist-label-box
+{
+ border: 0px;
+}
+menulist:-moz-focusring:not([open="true"]):not(.menulist-compact) > .menulist-label-box
+{
+ border: 1px solid transparent;
+}
+/* @media (-moz-windows-default-theme)
+{
+ .menulist-label-box
+ {
+  background-color: transparent !important;
+  color: inherit !important;
+ }
+ .menulist-label
+ {
+  margin-top: -1px !important;
+  margin-bottom: -1px !important;
+  -moz-margin-start: 0 !important;
+ }
+ menulist:not([editable="true"]) > .menulist-dropmarker
+ {
+  margin-top: -2px;
+  -moz-margin-start: 3px;
+  -moz-margin-end: -3px;
+ }
+ .menulist-icon
+ {
+  margin-top: -1px;
+  margin-bottom: -1px;
+ }
+} */

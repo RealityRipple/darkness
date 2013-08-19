@@ -1,0 +1,172 @@
+#BrowserPreferences radio[pane]
+{
+ list-style-image: url("chrome://browser/skin/preferences/Options.png"); 
+ padding: 5px 3px 1px;
+ border: 1px solid transparent;
+ margin-top: 2px;
+ margin-bottom: 2px;
+}
+#BrowserPreferences radio[pane]:hover
+{
+ border-top-color: #D0D0D0;
+ border-left-color: #D0D0D0;
+ border-bottom-color: #606060;
+ border-right-color: #606060;
+}
+#BrowserPreferences radio[pane]:hover:active, #BrowserPreferences radio[pane][selected]
+{
+ border-top-color: #606060;
+ border-left-color: #606060;
+ border-bottom-color: #D0D0D0;
+ border-right-color: #D0D0D0;
+}
+radio[pane=paneMain]
+{
+ -moz-image-region: rect(0, 32px,  32px, 0);
+}
+radio[pane=paneTabs]
+{
+ -moz-image-region: rect(0, 64px, 32px, 32px);
+}
+radio[pane=paneContent]
+{
+ -moz-image-region: rect(0, 96px,  32px, 64px);
+}
+radio[pane=paneApplications]
+{
+ -moz-image-region: rect(0, 128px,  32px, 96px);
+}
+radio[pane=panePrivacy]
+{
+ -moz-image-region: rect(0, 160px,  32px, 128px);
+}
+radio[pane=paneSecurity]
+{
+ -moz-image-region: rect(0, 192px,  32px, 160px);
+}
+radio[pane=paneAdvanced]
+{
+ -moz-image-region: rect(0, 224px, 32px, 192px);
+}
+radio[pane=paneSync]
+{
+ -moz-image-region: rect(0, 256px, 32px, 224px);
+}
+
+radio[pane=paneMain][selected]
+{
+ -moz-image-region: rect(32px, 32px, 64px, 0);
+}
+radio[pane=paneTabs][selected]
+{
+ -moz-image-region: rect(32px, 64px, 64px, 32px);
+}
+radio[pane=paneContent][selected]
+{
+ -moz-image-region: rect(32px, 96px, 64px, 64px);
+}
+radio[pane=paneApplications][selected]
+{
+ -moz-image-region: rect(32px, 128px, 64px, 96px);
+}
+radio[pane=panePrivacy][selected]
+{
+ -moz-image-region: rect(32px, 160px, 64px, 128px);
+}
+radio[pane=paneSecurity][selected]
+{
+ -moz-image-region: rect(32px, 192px, 64px, 160px);
+}
+radio[pane=paneAdvanced][selected]
+{
+ -moz-image-region: rect(32px, 224px, 64px, 192px);
+}
+radio[pane=paneSync][selected]
+{
+ -moz-image-region: rect(32px, 256px, 64px, 224px);
+}
+
+/* Applications Pane */
+#BrowserPreferences[animated="true"] #handlersView
+{
+ height: 25em;
+}
+#BrowserPreferences[animated="false"] #handlersView
+{
+ -moz-box-flex: 1;
+}
+
+/* Privacy Pane */
+.inline-link
+{
+ color: #FFFFFF;
+ text-decoration: none;
+}
+.inline-link:hover
+{
+ text-decoration: underline;
+}
+.windowDialog, .windowDialog prefpane
+{
+ padding: 0;
+}
+.contentPane
+{
+ margin: 9px 8px 5px;
+}
+.actionButtons
+{
+ margin: 0 3px 6px !important;
+}
+#cookiesChildren::-moz-tree-image(domainCol)
+{
+ width: 16px;
+ height: 16px;
+ margin: 0 2px;
+ list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png") !important;
+}
+#cookiesChildren::-moz-tree-image(domainCol, container)
+{
+ list-style-image: url("chrome://global/skin/icons/folder-item.png") !important;
+ -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+#cookiesChildren::-moz-tree-image(domainCol, container, open)
+{
+ -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+#cookieInfoBox
+{
+ border: 2px solid;
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-right-colors: #808080 #D0D0D0;
+ -moz-border-bottom-colors: #808080 #D0D0D0;
+ -moz-border-left-colors: #303030 #606060;
+ border-radius: 0;
+ margin: 4px;
+ padding: 0;
+}
+#advancedPrefs
+{
+ padding-bottom: 8px;
+}
+.bottomBox
+{
+ padding-bottom: 4px;
+}
+#syncDesc
+{
+ padding: 0 8em;
+}
+.syncGroupBox
+{
+ padding: 10px;
+}
+#accountCaptionImage
+{
+ list-style-image: url("chrome://mozapps/skin/profile/profileicon.png");
+}
+#syncAddDeviceLabel
+{
+ margin-top: 1em;
+ margin-bottom: 1em;
+}

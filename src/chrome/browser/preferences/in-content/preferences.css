@@ -1,0 +1,199 @@
+@import url("chrome://global/skin/inContentUI.css");
+@namespace html "http://www.w3.org/1999/xhtml";
+#preferences-home
+{
+ display: block;
+}
+#header
+{
+ margin-bottom: 18px;
+}
+.landingButton
+{
+ -moz-box-align: center;
+ -moz-box-orient: vertical;
+ box-shadow: none;
+}
+.landingButton:hover
+{
+ cursor: pointer;
+}
+.landingButton-label
+{
+ margin-top: 4px;
+}
+.landingButton-icon
+{
+ display: block;
+ width: 32px;
+ height: 32px;
+ background-image: url("chrome://browser/skin/preferences/Options.png");
+ background-repeat: no-repeat;
+}
+.preference-icon
+{
+ display: block;
+ width: 32px;
+ height: 32px;
+ background-image: url("chrome://browser/skin/preferences/Options.png");
+ background-repeat: no-repeat;
+ margin: 0 20px;
+}
+.preference-icon[type="general"], .landingButton-icon[type="general"]
+{
+ background-position: 0 0;
+}
+.preference-icon[type="tabs"], .landingButton-icon[type="tabs"]
+{
+ background-position: -32px 0;
+}
+.preference-icon[type="content"], .landingButton-icon[type="content"]
+{
+ background-position: -64px 0;
+}
+.preference-icon[type="applications"], .landingButton-icon[type="applications"]
+{
+ background-position: -96px 0;
+}
+.preference-icon[type="privacy"], .landingButton-icon[type="privacy"]
+{
+ background-position: -128px 0;
+}
+.preference-icon[type="security"], .landingButton-icon[type="security"]
+{
+ background-position: -160px 0;
+}
+.preference-icon[type="advanced"], .landingButton-icon[type="advanced"]
+{
+ background-position: -192px 0;
+}
+.preference-icon[type="sync"], .landingButton-icon[type="sync"]
+{
+ background-image: url("chrome://browser/skin/preferences/Options-sync.png");
+}
+caption
+{
+ font-size: 20px;
+}
+.heading
+{
+ height: 50px;
+ background-color: #202020;
+ border-radius: 5px 5px 0 0;
+ margin-bottom: 15px;
+ -moz-box-align: center;
+}
+prefpane > .content-box
+{
+ overflow: auto;
+}
+#applications-content
+{
+ padding: 15px;
+}
+#handlersView
+{
+ -moz-appearance: none;
+ border: 1px solid rgba(31,64,100,0.4);
+ overflow-y: auto;
+}
+description > html|a
+{
+ cursor: pointer;
+}
+.nav-button
+{
+ list-style-image: url(chrome://mozapps/skin/extensions/navigation.png);
+}
+#forward-btn
+{
+ -moz-border-start: none;
+}
+#back-btn:-moz-locale-dir(ltr), #forward-btn:-moz-locale-dir(rtl)
+{
+ -moz-image-region: rect(0, 18px, 18px, 0);
+ border-top-right-radius: 0;
+ border-bottom-right-radius: 0;
+}
+#back-btn:-moz-locale-dir(rtl), #forward-btn:-moz-locale-dir(ltr)
+{
+ -moz-image-region: rect(0, 36px, 18px, 18px);
+ border-top-left-radius: 0;
+ border-bottom-left-radius: 0;
+}
+.header-button[disabled="true"]
+{
+ opacity: 0.8;
+}
+.header-button
+{
+ -moz-appearance: none;
+ padding: 1px 3px;
+ color: #FFFFFF;
+ background: #000000;
+ border: 1px solid;
+ color: #FFFFFF;
+ background-color: #000000;
+ border: 2px solid;
+ -moz-border-top-colors: #000000 #D0D0D0;
+ -moz-border-left-colors: #000000 #D0D0D0;
+ -moz-border-bottom-colors: #000000 #606060;
+ -moz-border-right-colors: #000000 #606060;
+}
+.header-button[disabled="true"] > .toolbarbutton-icon
+{
+ opacity: 0.4;
+}
+.header-button:not([disabled="true"]):hover
+{
+ color: #D0D0D0;
+ background-color: #303030;
+}
+.header-button:not([disabled="true"]):focus
+{
+ color: #C0C0C0;
+ -moz-border-top-colors: #303030 #D0D0D0;
+ -moz-border-left-colors: #303030 #D0D0D0;
+ -moz-border-bottom-colors: #303030 #606060;
+ -moz-border-right-colors: #303030 #606060;
+}
+.header-button:not([disabled="true"]):hover:focus
+{
+ color: #D0D0D0;
+ background-color: #303030;
+ -moz-border-top-colors: #303030 #D0D0D0;
+ -moz-border-left-colors: #303030 #D0D0D0;
+ -moz-border-bottom-colors: #303030 #606060;
+ -moz-border-right-colors: #303030 #606060;
+}
+.header-button:not([disabled="true"]):active:hover, .header-button[open="true"]
+{
+ color: #FFFFFF;
+ background-color: #404040;
+ -moz-border-top-colors: #000000 #606060;
+ -moz-border-left-colors: #000000 #606060;
+ -moz-border-bottom-colors: #000000 #D0D0D0;
+ -moz-border-right-colors: #000000 #D0D0D0;
+}
+.header-button:hover:active:focus, .header-button[checked="true"]:focus, .header-button[open="true"]:focus
+{
+ color: #FFFFFF;
+ background-color: #404040;
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-left-colors: #303030 #606060;
+ -moz-border-bottom-colors: #303030 #D0D0D0;
+ -moz-border-right-colors: #303030 #D0D0D0;
+}
+.header-button[disabled="true"]
+{
+ color: #606060 !important;
+ background-color: #202020 !important;
+ -moz-border-top-colors: #202020 #505050 !important;
+ -moz-border-left-colors: #202020 #505050 !important;
+ -moz-border-bottom-colors: #101010 #303030 !important;
+ -moz-border-right-colors: #101010 #303030 !important;
+}
+.header-button > .toolbarbutton-text
+{
+ display: none;
+}

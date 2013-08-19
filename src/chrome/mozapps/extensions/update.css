@@ -1,0 +1,23 @@
+#alert
+{
+ list-style-image: url("chrome://mozapps/skin/update/update.png"); 
+}
+.throbber
+{
+ list-style-image: url("chrome://global/skin/icons/loading_16.png");
+ width: 16px;
+ height: 16px;
+ margin-top: 5px;
+ margin-bottom: 5px;
+ -moz-margin-start: 5px;
+ -moz-margin-end: 2px;
+}
+.alertBox
+{
+ background-color: #000000;
+ color: #FFFFFF;
+ border: 1px outset #606060;
+ margin-left: 3px;
+ margin-right: 3px;
+ padding: 5px;
+}

@@ -1,0 +1,58 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+dialog
+{ 
+ padding-top: 8px;
+ padding-bottom: 10px;
+ -moz-padding-start: 8px;
+ -moz-padding-end: 10px;
+}
+.dialog-button
+{
+ font: menu;
+ margin-top: 6px;
+}
+dialogheader
+{
+ margin: 0px 5px 5px 5px;
+ border: 2px solid;
+ -moz-border-top-colors: #606060;
+ -moz-border-right-colors: #D0D0D0;
+ -moz-border-bottom-colors: #D0D0D0;
+ -moz-border-left-colors: #606060;
+ padding: 5px 8px;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+.dialogheader-title
+{
+ margin: 0px !important;
+ font-size: larger;
+ font-weight: bold;
+}
+.header-large
+{
+ -moz-box-orient: vertical;
+ margin-top: -8px;
+ margin-bottom: 0;
+ -moz-margin-start: -8px;
+ -moz-margin-end: -10px;
+ border-left: none;
+ border-right: none;
+ border-top: none;
+ -moz-border-bottom-colors: #D0D0D0;
+ padding-top: 12px;
+ padding-bottom: 12px;
+ -moz-padding-start: 25px;
+ -moz-padding-end: 5px;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+.header-large > .dialogheader-title
+{
+ font: inherit;
+ font-weight: bold;
+}
+.header-large > .dialogheader-description
+{
+ -moz-margin-start: 12px !important;
+}

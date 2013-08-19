@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+ <Description about="urn:mozilla:install-manifest">
+  <em:name>In The Dark</em:name>
+  <em:id>{86FA6F53-95FE-7A69-D8C3-E1454281F8B6}</em:id>
+  <em:version>4.2</em:version>
+  <em:type>4</em:type>
+  <em:targetApplication>
+   <Description>
+    <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+    <em:minVersion>20.0</em:minVersion>
+    <em:maxVersion>26.0</em:maxVersion>
+   </Description>
+  </em:targetApplication>
+  <em:description>A dark, simple, grayscale theme for Firefox 20+.</em:description>
+  <em:homepageURL>http://realityripple.com/Software/Themes/In_The_Dark/Mozilla/</em:homepageURL>
+  <em:creator>RealityRipple</em:creator>
+  <em:internalName>InTheDark</em:internalName>
+ </Description>
+</RDF>

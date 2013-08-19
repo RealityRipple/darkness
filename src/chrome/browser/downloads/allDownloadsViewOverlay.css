@@ -1,0 +1,120 @@
+#downloadsRichListBox
+{
+ -moz-appearance: none;
+ margin: 0;
+}
+#downloadsRichListBox > richlistitem.download
+{
+ height: 6em;
+}
+.downloadTypeIcon
+{
+ -moz-margin-end: 8px;
+ -moz-margin-start: 8px;
+ height: 32px;
+ width: 32px;
+}
+.blockedIcon
+{
+ list-style-image: url("chrome://global/skin/icons/Error.png");
+}
+.downloadTarget
+{
+ margin-bottom: 3px;
+ cursor: inherit;
+}
+.downloadDetails
+{
+ opacity: 0.7;
+ font-size: 95%;
+ cursor: inherit;
+}
+.downloadButton
+{
+ -moz-appearance: none;
+ background: transparent !important;
+ min-width: 0;
+ min-height: 0;
+ margin: 3px;
+ border: none;
+ padding: 5px;
+ list-style-image: url("chrome://browser/skin/downloads/buttons.png");
+}
+.downloadButton.downloadCancel
+{
+ -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+richlistitem.download:hover > .downloadButton.downloadCancel
+{
+ -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+richlistitem.download:hover > .downloadButton.downloadCancel:hover
+{
+ -moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+richlistitem.download:hover > .downloadButton.downloadCancel:active
+{
+ -moz-image-region: rect(0px, 64px, 16px, 48px);
+}
+.downloadButton.downloadShow
+{
+ -moz-image-region: rect(16px, 16px, 32px, 0px);
+}
+richlistitem.download:hover > .downloadButton.downloadShow
+{
+ -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+richlistitem.download:hover > .downloadButton.downloadShow:hover
+{
+ -moz-image-region: rect(16px, 48px, 32px, 32px);
+}
+richlistitem.download:hover > .downloadButton.downloadShow:active
+{
+ -moz-image-region: rect(16px, 64px, 32px, 48px);
+}
+.downloadButton.downloadRetry
+{
+ -moz-image-region: rect(32px, 16px, 48px, 0px);
+}
+richlistitem.download:hover > .downloadButton.downloadRetry
+{
+ -moz-image-region: rect(32px, 32px, 48px, 16px);
+}
+richlistitem.download:hover > .downloadButton.downloadRetry:hover
+{
+ -moz-image-region: rect(32px, 48px, 48px, 32px);
+}
+richlistitem.download:hover > .downloadButton.downloadRetry:active
+{
+ -moz-image-region: rect(32px, 64px, 48px, 48px);
+}
+
+/* Downloads Context Menu */
+menuitem.downloadPauseMenuItem
+{
+ background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 32, 16, 16) left center no-repeat;
+}
+menuitem.downloadResumeMenuItem
+{
+ background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 16, 16, 0) left center no-repeat;
+}
+menuitem.downloadCancelMenuItem
+{
+ background: -moz-image-rect(url("chrome://browser/skin/downloads/buttons.png"), 0, 16, 16, 0) left center no-repeat;
+}
+menuitem.downloadRemoveFromHistoryMenuItem, menuitem[command="downloadsCmd_clearDownloads"]
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat;
+}
+menuitem.downloadShowMenuItem
+{
+ background: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 32, 32, 48, 16) left center no-repeat;
+}
+menuitem[command="downloadsCmd_openReferrer"]
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16) left center no-repeat;
+}
+menuitem[command="cmd_copy"]
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192) left center no-repeat;
+}

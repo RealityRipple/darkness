@@ -1,0 +1,28 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+groupbox
+{
+ -moz-appearance: none;
+ border: 1px solid #D0D0D0;
+ border-radius: 3px;
+ margin: 3px;
+ padding: 3px 3px 6px;
+}
+.groupbox-body
+{
+ padding: inherit;
+}
+caption
+{
+ margin: 0 6px;
+ background-color: #000000;
+}
+tabpanels caption
+{
+ -moz-appearance: none;
+ background-color: #000000;
+ color: white;
+}
+.caption-text
+{
+ margin: 0 2px !important;
+}

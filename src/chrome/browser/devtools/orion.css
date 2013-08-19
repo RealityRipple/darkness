@@ -1,0 +1,202 @@
+.viewContainer
+{
+ background: #101010;
+ font-family: monospace;
+ font-size: inherit;
+}
+.view
+{
+ color: #FFFFFF;
+ background: #000000;
+ padding-left: 4px;
+}
+.readonly > .view
+{
+ background: #000000;
+}
+.ruler
+{
+ background: #101010;
+ color: #E0E0E0;
+}
+.ruler.annotations
+{
+ width: 16px;
+ padding-left: 4px;
+}
+.ruler.lines
+{
+ border-right: 1px solid #606060;
+ min-width: 1.4em;
+ padding-left: 4px;
+ padding-right: 4px;
+ text-align: end;
+}
+.ruler.linesWithAnnotations
+{
+ min-width: 0;
+ padding-left: 0;
+}
+.ruler.overview
+{
+ border-left: 1px solid #606060;
+ width: 14px;
+ text-align: start;
+}
+
+.annotationHTML
+{
+ cursor: pointer;
+ width: 16px;
+ height: 16px;
+ display: inline-block;
+ vertical-align: middle;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+.annotation.task .annotationHTML
+{
+ background-image: url("chrome://browser/skin/devtools/orion-task.png");
+}
+.annotation.breakpoint .annotationHTML
+{
+ background-image: url("chrome://browser/skin/devtools/orion-breakpoint.png");
+}
+.annotation.debugLocation .annotationHTML
+{
+ background-image: url("chrome://browser/skin/devtools/orion-debug-location.png");
+}
+.annotation.breakpoint.debugLocation .annotationHTML, .annotation.task.debugLocation .annotationHTML
+{
+ background-position: center, center;
+ background-repeat: no-repeat, no-repeat;
+ background-size: 75%, 100%;
+}
+.annotation.breakpoint.debugLocation .annotationHTML
+{
+ background-image: url("chrome://browser/skin/devtools/orion-debug-location.png"),
+                   url("chrome://browser/skin/devtools/orion-breakpoint.png");
+}
+.annotation.task.debugLocation .annotationHTML
+{
+ background-image: url("chrome://browser/skin/devtools/orion-debug-location.png"),
+                   url("chrome://browser/skin/devtools/orion-task.png");
+}
+.annotationOverview
+{
+ cursor: pointer;
+ border-radius: 2px;
+ left: 2px;
+ width: 8px;
+}
+.annotationOverview.task
+{
+ background-color: #00D000;
+ border: 1px solid #00FF00;
+}
+.annotationOverview.breakpoint
+{
+ background-color: #0000D0;
+ border: 1px solid #0000FF;
+}
+.annotationOverview.debugLocation
+{
+ background-color: #D0D0D0;
+ border: 1px solid #00FF00;
+}
+.annotationOverview.currentBracket
+{
+ background-color: #E0E0E0;
+ border: 1px solid #FF0000;
+}
+.annotationOverview.matchingBracket
+{
+ background-color: #E0E0E0;
+ border: 1px solid #FF0000;
+}
+
+/* Styles for text range */
+.annotationRange
+{
+ background-repeat: repeat-x;
+ background-position: left bottom;
+}
+.annotationRange.task
+{
+ outline: 1px dashed #A0A0A0;
+}
+.annotationRange.matchingBracket
+{
+ outline: 1px solid #A0A0A0;
+}
+
+.token_singleline_comment, .token_multiline_comment, .token_doc_comment
+{
+ color: #E0E0E0;
+}
+.token_doc_html_markup
+{
+ color: #E000A0;
+}
+.token_doc_tag
+{
+ color: #E000E0;
+}
+.token_task_tag
+{
+ color: #FFFFFF;
+ background: #606000;
+}
+.token_string
+{
+ color: #80FF80;
+}
+.token_keyword
+{
+ color: #C0C0FF;
+}
+.token_space
+{
+ background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAIAAABv85FHAAAABnRSTlMA/wAAAACkwsAdAAAAIUlEQVR4nGP4z8CAC+GUIEXuABhgkTuABEiRw2cmae4EAH05X7xDolNRAAAAAElFTkSuQmCC");
+ background-repeat: no-repeat;
+ background-position: center center;
+}
+.token_tab
+{
+ background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAJCAIAAACJ2loDAAAABnRSTlMA/wD/AP83WBt9AAAAMklEQVR4nGP4TwRgoK6i52c3bz5w6zMSA6tJn28d2Lx589nnCAYu63AaSLxJRLoJPwAAeNk0aG4opfMAAAAASUVORK5CYII=");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+.line_caret, .annotationLine.currentLine
+{
+ background: #202020;
+}
+.readonly .line_caret, .readonly .annotationLine.currentLine
+{
+ background: #282828;
+}
+.entity-name-tag
+{
+ color: #C0C0FF;
+}
+.entity-other-attribute-name
+{
+ color: #C0FFC0;
+}
+.punctuation-definition-comment
+{
+ color: #E0E0E0;
+}
+.comment
+{
+ color: #80C0A0;
+}
+.string-quoted
+{
+ color: #80FF80;
+}
+.invalid
+{
+ color: #FFA0A0;
+ font-weight: bold;
+}

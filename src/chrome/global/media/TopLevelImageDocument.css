@@ -1,0 +1,24 @@
+@media not print
+{
+ /* N.B.: Remember to update ImageDocument.css in the tree or reftests may fail! */
+ body
+ {
+  color: #FFFFFF;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, #202020 0%, #000000 100%) fixed #000000;
+ }
+ img.decoded
+ {
+  background-color: #000000;
+  box-shadow: 2px 2px 4px #606060;
+  border-radius: 12px;
+  color: #FFFFFF;
+  transition: all 0.6s;
+ }
+ img.decoded:hover
+ {
+  background-color: #808080;
+  border-radius: 0px;
+  box-shadow: 4px 4px 2px #606060;
+ }
+}

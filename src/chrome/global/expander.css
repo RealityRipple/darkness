@@ -1,0 +1,11 @@
+.expanderButton
+{
+ cursor: pointer !important;
+}
+.settingsContainer
+{
+ padding-top: 3px;
+ padding-bottom: 5px;
+ -moz-padding-start: 20px;
+ -moz-padding-end: 5px;
+}

@@ -1,0 +1,5 @@
+@import url("floating-scrollbars.css");
+scrollbar thumb
+{
+ background-color: #303030 !important;
+}

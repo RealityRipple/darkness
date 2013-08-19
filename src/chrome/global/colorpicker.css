@@ -1,0 +1,70 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+colorpicker[type="button"]
+{
+ -moz-appearance: none;
+ width: 38px;
+ height: 24px;
+ border: 2px solid;
+ -moz-border-top-colors: #000000 #D0D0D0;
+ -moz-border-left-colors: #000000 #D0D0D0;
+ -moz-border-bottom-colors: #000000 #606060;
+ -moz-border-right-colors: #000000 #606060;
+ background-color: #000000;
+ padding: 3px;
+}
+.colorpicker-button-colorbox
+{
+ border: 1px solid #000000;
+}
+colorpicker[type="button"]:hover
+{
+ background-color: #303030;
+}
+colorpicker[type="button"]:focus
+{
+ -moz-border-top-colors: #303030 #D0D0D0;
+ -moz-border-left-colors: #303030 #D0D0D0;
+ -moz-border-bottom-colors: #303030 #606060;
+ -moz-border-right-colors: #303030 #606060;
+}
+colorpicker[type="button"]:focus, colorpicker[type="button"][open="true"]
+{
+ background-color: #404040;
+ -moz-border-top-colors: #000000 #606060;
+ -moz-border-left-colors: #000000 #606060;
+ -moz-border-bottom-colors: #000000 #D0D0D0;
+ -moz-border-right-colors: #000000 #D0D0D0;
+}
+.colorpickertile
+{
+ width: 20px;
+ height: 20px;
+ margin: 1px;
+ border: 1px solid;
+ border-top-color: #606060;
+ border-left-color: #606060;
+ border-bottom-color: #D0D0D0;
+ border-right-color: #D0D0D0;
+}
+.colorpickertile[selected="true"]
+{
+ border-top-color: #D0D0D0;
+ border-left-color: #D0D0D0;
+ border-bottom-color: #606060;
+ border-right-color: #606060;
+}
+.colorpickertile[hover="true"]
+{
+ border-top-color: #D0D0D0;
+ border-left-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-right-color: #D0D0D0;
+}
+.cp-light[hover="true"]
+{
+ border: 1px solid;
+ border-top-color: #D0D0D0;
+ border-left-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-right-color: #D0D0D0;
+}

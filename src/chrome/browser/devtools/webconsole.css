@@ -1,0 +1,258 @@
+.webconsole-timestamp
+{
+ color: #A0A0A0;
+ margin-top: 0;
+ margin-bottom: 0;
+ font-family: Consolas, Lucida Console, monospace;
+}
+.hud-msg-node
+{
+ list-style-image: url(chrome://browser/skin/devtools/webconsole.png);
+ -moz-image-region: rect(0, 1px, 0, 0);
+}
+.webconsole-msg-icon
+{
+ margin: 3px 4px;
+ width: 8px;
+ height: 8px;
+}
+.hud-clickable
+{
+ cursor: pointer;
+ text-decoration: underline;
+}
+.webconsole-msg-body
+{
+ margin-top: 0;
+ margin-bottom: 3px;
+ -moz-margin-start: 3px;
+ -moz-margin-end: 6px;
+ white-space: pre-wrap;
+ font-family: Consolas, Lucida Console, monospace;
+}
+.webconsole-msg-body-piece
+{
+ margin: 0;
+}
+.webconsole-msg-url
+{
+ margin: 0 6px;
+}
+.webconsole-msg-repeat
+{
+ margin: 2px 0;
+ padding-left: 4px;
+ padding-right: 4px;
+ color: #FFFFFF;
+ background-color: #800000;
+ border-radius: 40px;
+ font: message-box;
+ font-size: 0.9em;
+ font-weight: 600;
+}
+
+.webconsole-msg-repeat[value="1"]
+{
+ display: none;
+}
+.webconsole-location
+{
+ margin-top: 0;
+ margin-bottom: 0;
+ -moz-margin-start: 0;
+ -moz-margin-end: 6px;
+ width: 10em;
+ text-align: end;
+}
+.hud-msg-node[selected="true"] > .webconsole-timestamp, .hud-msg-node[selected="true"] > .webconsole-location
+{
+ color: inherit;
+}
+.jsterm-input-node, .jsterm-complete-node
+{
+ font-family: Consolas, Lucida Console, monospace;
+}
+.hud-output-node
+{
+ -moz-appearance: none;
+ border-bottom: 1px solid #808080;
+ margin: 0;
+}
+.hud-filtered-by-type, .hud-filtered-by-string
+{
+ display: none;
+}
+.hidden-message
+{
+ display: block;
+ visibility: hidden;
+ height: 0;
+ overflow: hidden;
+}
+.webconsole-filter-button[checked]
+{
+ color: white !important;
+}
+.webconsole-filter-button > .toolbarbutton-menubutton-button:before
+{
+ content: "";
+ display: inline-block;
+ height: 8px;
+ width: 8px;
+ border-radius: 50%;
+ margin-left: 5px;
+ border-width: 1px;
+ border-style: solid;
+}
+.webconsole-filter-button[category="net"] > .toolbarbutton-menubutton-button:before
+{
+ background-image: linear-gradient(#444444, #000000);
+ border-color: #808080;
+}
+.webconsole-msg-network > .webconsole-msg-icon-container
+{
+ -moz-border-start: solid #404040 6px;
+}
+.webconsole-msg-network.webconsole-msg-error
+{
+ -moz-image-region: rect(0, 16px, 8px, 8px);
+}
+
+/* CSS styles */
+.webconsole-filter-button[category="css"] > .toolbarbutton-menubutton-button:before
+{
+ background: #00A0A0;
+ border-color: #808080;
+}
+.webconsole-msg-cssparser > .webconsole-msg-icon-container
+{
+ -moz-border-start: solid #00A0A0 6px;
+}
+.webconsole-msg-cssparser.webconsole-msg-error
+{
+ -moz-image-region: rect(8px, 16px, 16px, 8px);
+}
+.webconsole-msg-cssparser.webconsole-msg-warn
+{
+ -moz-image-region: rect(8px, 24px, 16px, 16px);
+}
+
+.webconsole-filter-button[category="js"] > .toolbarbutton-menubutton-button:before
+{
+ background: #808000;
+ border-color: #808080;
+}
+.webconsole-msg-exception > .webconsole-msg-icon-container
+{
+ -moz-border-start: solid #808000 6px;
+}
+.webconsole-msg-exception.webconsole-msg-error
+{
+ -moz-image-region: rect(16px, 16px, 24px, 8px);
+}
+.webconsole-msg-exception.webconsole-msg-warn
+{
+ -moz-image-region: rect(16px, 24px, 24px, 16px);
+}
+
+/* Web Developer styles */
+.webconsole-filter-button[category="logging"] > .toolbarbutton-menubutton-button:before
+{
+ background: #A0A0A0;
+ border-color: #808080;
+}
+.webconsole-msg-console > .webconsole-msg-icon-container
+{
+ -moz-border-start: solid #A0A0A0 6px;
+}
+.webconsole-msg-console.webconsole-msg-error, .webconsole-msg-output.webconsole-msg-error
+{
+ -moz-image-region: rect(24px, 16px, 32px, 8px);
+}
+.webconsole-msg-console.webconsole-msg-warn
+{
+ -moz-image-region: rect(24px, 24px, 32px, 16px);
+}
+.webconsole-msg-console.webconsole-msg-info
+{
+ -moz-image-region: rect(24px, 32px, 32px, 24px);
+}
+
+.webconsole-mixed-content
+{
+ color: #FF0000;
+}
+.webconsole-mixed-content-link
+{
+ color: #0000EE;
+ margin: 0;
+}
+
+/* Input and output styles */
+.webconsole-msg-input > .webconsole-msg-icon-container, .webconsole-msg-output > .webconsole-msg-icon-container
+{
+ border-left: solid #808080 6px;
+}
+.webconsole-msg-input
+{
+ -moz-image-region: rect(24px, 40px, 32px, 32px);
+}
+.webconsole-msg-output
+{
+ -moz-image-region: rect(24px, 48px, 32px, 40px);
+}
+
+/* JSTerm Styles */
+.jsterm-input-node, .jsterm-complete-node
+{
+ border: none;
+ padding: 0 0 0 16px;
+ -moz-appearance: none;
+}
+.jsterm-input-node
+{
+ background: url("chrome://browser/skin/devtools/commandline.png") 4px 3px no-repeat;
+}
+:-moz-any(.jsterm-input-node, .jsterm-complete-node) > .textbox-input-box > .textbox-textarea
+{
+ overflow-x: hidden;
+}
+.jsterm-complete-node > .textbox-input-box > .textbox-textarea
+{
+ color: #C0C0C0;
+}
+.hud-filter-box
+{
+ width: 200px;
+}
+.webconsole-msg-inspector iframe
+{
+ height: 7em;
+ margin-bottom: 15px;
+ -moz-margin-end: 15px;
+ border-radius: 4px;
+}
+#webconsole-sidebar > tabs
+{
+ height: 0;
+ border: none;
+}
+
+/* Security styles */
+.webconsole-msg-security > .webconsole-msg-icon-container
+{
+ -moz-border-start: solid red 6px;
+}
+.webconsole-filter-button[category="security"] > .toolbarbutton-menubutton-button:before
+{
+ background: #A00000;
+ border-color: #808080;
+}
+.webconsole-msg-security.webconsole-msg-error
+{
+ -moz-image-region: rect(32px, 16px, 40px, 8px);
+}
+.webconsole-msg-security.webconsole-msg-warn
+{
+ -moz-image-region: rect(32px, 24px, 40px, 16px);
+}

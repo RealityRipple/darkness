@@ -1,0 +1,91 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+splitter
+{
+ -moz-box-align: center;
+ -moz-box-pack: center;
+ cursor: ew-resize;
+ border-width: 0 1px;
+ border-style: solid;
+ -moz-border-left-colors: #D0D0D0;
+ -moz-border-right-colors: #606060;
+ min-width: 6px;
+ background-color: #000000;
+}
+splitter[state="collapsed"][collapse="before"], splitter[state="collapsed"][substate="before"], splitter[state="collapsed"][collapse="after"]:-moz-locale-dir(rtl), splitter[state="collapsed"][substate="after"]:-moz-locale-dir(rtl)
+{
+ cursor: e-resize;
+}
+splitter[state="collapsed"][collapse="after"], splitter[state="collapsed"][substate="after"], splitter[state="collapsed"][collapse="before"]:-moz-locale-dir(rtl), splitter[state="collapsed"][substate="before"]:-moz-locale-dir(rtl)
+{
+ cursor: w-resize;
+}
+splitter[orient="vertical"]
+{
+ cursor: ns-resize;
+ border-width: 1px 0;
+ -moz-border-top-colors: #D0D0D0;
+ -moz-border-bottom-colors: #606060;
+ min-height: 6px;
+}
+splitter[orient="vertical"][state="collapsed"][collapse="before"], splitter[orient="vertical"][state="collapsed"][substate="before"]
+{
+ cursor: s-resize;
+}
+splitter[orient="vertical"][state="collapsed"][collapse="after"], splitter[orient="vertical"][state="collapsed"][substate="after"]
+{
+ cursor: n-resize;
+}
+splitter[disabled="true"]
+{
+ cursor: default !important;
+}
+grippy
+{
+ cursor: pointer;
+ border: 0px;
+ min-width: 4px;
+ min-height: 115px;
+ background-color: transparent;
+ background-repeat: no-repeat;
+}
+grippy:hover
+{
+ background-color: #202020;
+}
+splitter[orient="vertical"] > grippy
+{
+ min-width: 115px;
+ min-height: 4px;
+}
+splitter[collapse="before"] > grippy
+{
+ background-image: url("chrome://global/skin/splitter/left.png");
+}
+splitter[collapse="before"][state="collapsed"] > grippy
+{
+ background-image: url("chrome://global/skin/splitter/right.png");
+}
+splitter[collapse="after"] > grippy
+{
+ background-image: url("chrome://global/skin/splitter/right.png");
+}
+splitter[collapse="after"][state="collapsed"] > grippy
+{
+ background-image: url("chrome://global/skin/splitter/left.png");
+}
+splitter[collapse="before"][orient="vertical"] > grippy
+{
+ background-image: url("chrome://global/skin/splitter/up.png");
+}
+splitter[collapse="before"][state="collapsed"][orient="vertical"] > grippy
+{
+ background-image: url("chrome://global/skin/splitter/down.png");
+}
+splitter[collapse="after"][orient="vertical"] > grippy
+{
+ background-image: url("chrome://global/skin/splitter/down.png");
+}
+splitter[collapse="after"][state="collapsed"][orient="vertical"] > grippy
+{
+ background-image: url("chrome://global/skin/splitter/up.png");
+}

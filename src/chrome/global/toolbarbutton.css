@@ -1,0 +1,137 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+toolbarbutton
+{
+ -moz-appearance: none;
+ -moz-box-align: center;
+ -moz-box-pack: center;
+ margin: 0px;
+ border: 0px;
+ padding: 0px 2px;
+ background-color: transparent;
+ color: #FFFFFF;
+}
+.toolbarbutton-text
+{
+ margin: 0px !important;
+ text-align: center;
+}
+toolbarbutton.tabbable
+{
+ -moz-user-focus: normal !important;
+}
+toolbarbutton:focus 
+{
+ -moz-appearance: none;
+}
+toolbarbutton[disabled="true"], toolbarbutton[disabled="true"]:hover, toolbarbutton[disabled="true"]:hover:active, toolbarbutton[disabled="true"][open="true"]
+{
+ color: #C0C0C0 !important;
+}
+toolbarbutton[checked="true"]
+{
+ color: #D0D0D0;
+}
+toolbarbutton[type="menu"]
+{
+ padding: 1px 2px;
+ border: 1px solid;
+ -moz-border-top-colors: transparent;
+ -moz-border-right-colors: transparent;
+ -moz-border-bottom-colors: transparent;
+ -moz-border-left-colors: transparent;
+}
+toolbarbutton[type="menu"][disabled="false"]:hover
+{
+ -moz-border-top-colors: #D0D0D0;
+ -moz-border-right-colors: #606060;
+ -moz-border-bottom-colors: #606060;
+ -moz-border-left-colors: #D0D0D0;
+}
+toolbarbutton[type="menu"][open]
+{
+ -moz-border-top-colors: #606060;
+ -moz-border-right-colors: #D0D0D0;
+ -moz-border-bottom-colors: #D0D0D0;
+ -moz-border-left-colors: #606060;
+ background-color: #404040;
+}
+toolbarbutton[type="radio"]
+{
+ padding: 1px 2px;
+ border: 1px solid;
+ -moz-border-top-colors: transparent;
+ -moz-border-right-colors: transparent;
+ -moz-border-bottom-colors: transparent;
+ -moz-border-left-colors: transparent;
+}
+toolbarbutton[type="radio"][disabled="false"]:hover
+{
+ -moz-border-top-colors: #D0D0D0;
+ -moz-border-right-colors: #606060;
+ -moz-border-bottom-colors: #606060;
+ -moz-border-left-colors: #D0D0D0;
+}
+toolbarbutton[type="radio"][checked="true"]
+{
+ -moz-border-top-colors: #606060;
+ -moz-border-right-colors: #D0D0D0;
+ -moz-border-bottom-colors: #D0D0D0;
+ -moz-border-left-colors: #606060;
+ background-color: #404040;
+}
+toolbarbutton[type="checkbox"]
+{
+ padding: 1px 2px;
+ border: 1px solid;
+ -moz-border-top-colors: transparent;
+ -moz-border-right-colors: transparent;
+ -moz-border-bottom-colors: transparent;
+ -moz-border-left-colors: transparent;
+}
+toolbarbutton[type="checkbox"][disabled="false"]:hover
+{
+ -moz-border-top-colors: #D0D0D0;
+ -moz-border-right-colors: #606060;
+ -moz-border-bottom-colors: #606060;
+ -moz-border-left-colors: #D0D0D0;
+}
+toolbarbutton[type="checkbox"][checked="true"]
+{
+ -moz-border-top-colors: #606060;
+ -moz-border-right-colors: #D0D0D0;
+ -moz-border-bottom-colors: #D0D0D0;
+ -moz-border-left-colors: #606060;
+ background-color: #404040;
+}
+toolbarbutton[type="menu-button"]
+{
+ -moz-box-align: stretch;
+ -moz-box-orient: horizontal !important;
+}
+toolbarbutton[type="menu-button"], toolbarbutton[type="menu-button"]:hover, toolbarbutton[type="menu-button"]:hover:active, toolbarbutton[type="menu-button"][open="true"], toolbarbutton[type="menu-button"][disabled="true"], toolbarbutton[type="menu-button"][disabled="true"]:hover, toolbarbutton[type="menu-button"][disabled="true"]:hover:active
+{
+ border-style: none;
+}
+.toolbarbutton-menubutton-button
+{
+ -moz-box-align: center;
+ -moz-box-pack: center;
+ -moz-box-orient: vertical;
+}
+.toolbarbutton-menubutton-dropmarker
+{
+ -moz-box-align: center;
+ padding: 0px;
+ list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+ -moz-image-region: auto;
+}
+.toolbarbutton-menubutton-dropmarker[disabled="true"]
+{
+ list-style-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif") !important;
+}
+
+/* DOM Inspector Find button color fix */
+toolbarbutton#btnFind
+{
+ list-style-image: url("chrome://global/skin/icons/btnFind.gif") !important;
+}

@@ -1,0 +1,107 @@
+#xpinstallheader
+{
+ margin-bottom: 2em;
+}
+#itemList
+{
+ -moz-appearance: none;
+ background-color: #000000;
+ color: #FFFFFF;
+ border: 0px;
+ margin: 10px 4px 10px 4px;
+ background-color: #000000;
+ color: #FFFFFF;
+ min-height: 75px;
+ border-bottom: 1px solid #808080;
+}
+#itemWarningIntro
+{
+ -moz-margin-start: 8px;
+}
+#dialogContentBox
+{
+ padding: 5px;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+installitem
+{
+ padding-top: 5px;
+ padding-bottom: 5px;
+ -moz-padding-start: 5px;
+ -moz-padding-end: 0px;
+ border: 2px solid;
+ -moz-border-top-colors: #D0D0D0 #808080;
+ -moz-border-right-colors: #202020 #606060;
+ -moz-border-bottom-colors: #202020 #606060;
+ -moz-border-left-colors: #D0D0D0 #808080;
+ margin-bottom: 5px;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+.alert-icon
+{
+ list-style-image: url("chrome://global/skin/icons/warning-large.png");
+ width: 48px;
+ height: 48px;
+ -moz-margin-end: 20px;
+}
+.warning
+{
+ font-weight: bold;
+ font-size: 1.25em;
+ margin-bottom: 1em;
+}
+.xpinstallIconContainer
+{
+ width: 32px;
+ height: 32px;
+ -moz-margin-end: 5px;
+}
+.xpinstallItemName
+{
+ font-weight: bold;
+}
+.xpinstallItemSigned
+{
+ font-style: italic;
+ font-size: 0.9em;
+}
+.xpinstallItemURL
+{
+ -moz-appearance: none;
+ padding: 0;
+ background-color: #202020;
+ color: #FFFFFF;
+ margin-top: 1px;
+ margin-bottom: 1px;
+ -moz-margin-start: 6px;
+ -moz-margin-end: 5px;
+ border: 1px solid;
+ border-top-color: #606060;
+ border-left-color: #606060;
+ border-bottom-color: #A0A0A0;
+ border-right-color: #A0A0A0;
+}
+.xpinstallItemIcon
+{
+ max-width: 32px;
+ max-height: 32px;
+ list-style-image: url("chrome://mozapps/skin/extensions/extensionGeneric.png");
+}
+installitem[type="theme"] .xpinstallItemIcon
+{
+ list-style-image: url("chrome://mozapps/skin/extensions/themeGeneric.png");
+}
+installitem[type="locale"] .xpinstallItemIcon
+{
+ list-style-image: url("chrome://mozapps/skin/extensions/localeGeneric.png");
+}
+installitem[type="plugin"] .xpinstallItemIcon
+{
+ list-style-image: url("chrome://mozapps/skin/plugins/pluginGeneric.png");
+}
+installitem[type="dictionary"] .xpinstallItemIcon
+{
+ list-style-image: url("chrome://mozapps/skin/extensions/dictionaryGeneric.png");
+}

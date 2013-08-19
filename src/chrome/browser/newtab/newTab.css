@@ -1,0 +1,191 @@
+:root
+{
+ -moz-appearance: none;
+ font-size: 75%;
+ background-color: transparent;
+}
+#newtab-scrollbox[page-disabled="true"]
+{
+ background: #000000;
+}
+#newtab-scrollbox:not([page-disabled="true"])
+{
+ background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(chrome://browser/skin/newtab/static.gif) fixed #000000;
+}
+#newtab-undo-container
+{
+ padding: 4px 3px;
+ border: 1px solid;
+ border-color: #606060;
+ border-bottom-color: #A0A0A0;
+ border-right-color: #A0A0A0;
+ background-color: #202020;
+ color: #FFFFFF;
+}
+#newtab-undo-label
+{
+ margin-top: 0;
+ margin-bottom: 0;
+}
+.newtab-undo-button
+{
+ -moz-appearance: none;
+ color: #FFFFFF;
+ cursor: pointer;
+ padding: 0;
+ margin: 0 4px;
+ border: 0;
+ background: transparent;
+ text-decoration: none;
+ min-width: 0;
+}
+.newtab-undo-button:hover, .newtab-undo-button:focus
+{
+ text-decoration: underline;
+}
+.newtab-undo-button:hover:focus
+{
+ text-decoration: underline;
+ color: #C0C0C0;
+}
+.newtab-undo-button > .button-box
+{
+ padding: 0;
+}
+#newtab-undo-close-button
+{
+ -moz-appearance: none;
+ padding: 0;
+ border: none;
+ list-style-image: url("chrome://global/skin/icons/close.png");
+ -moz-image-region: rect(0, 16px, 16px, 0);
+ -moz-user-focus: normal;
+}
+#newtab-undo-close-button:hover
+{
+ -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+#newtab-undo-close-button:hover:active
+{
+ -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+#newtab-undo-close-button > .toolbarbutton-text
+{
+ display: none;
+}
+#newtab-toggle
+{
+ width: 16px;
+ height: 16px;
+ padding: 0;
+ border: none;
+ background: -216px 0 transparent url(chrome://browser/skin/newtab/controls.png);
+ opacity: 0.2;
+ transition: opacity 0.4s;
+}
+#newtab-toggle:hover
+{
+ opacity: 1;
+}
+#newtab-toggle[page-disabled="true"]
+{
+ background-position: -232px 0;
+}
+.newtab-row
+{
+ margin-bottom: 20px;
+}
+.newtab-row:last-child
+{
+ margin-bottom: 0;
+}
+.newtab-cell
+{
+ -moz-margin-end: 20px;
+ background-color: #303030;
+ border: 1px solid #A0A0A0;
+ border-bottom-color: #606060;
+ border-right-color: #606060;
+ transition: box-shadow 0.1s ease-out;
+}
+.newtab-cell:empty
+{
+ border: 1px dashed;
+}
+.newtab-cell:last-child
+{
+ -moz-margin-end: 0;
+}
+.newtab-cell:hover:not(:empty):not([dragged])
+{
+ border-color: #FFFFFF;
+ border-bottom-color: #909090;
+ border-right-color: #909090;
+}
+.newtab-site
+{
+ text-decoration: none;
+}
+.newtab-site:hover, .newtab-site[dragged]
+{
+ box-shadow: 0 0 10px #FFFFFF;
+}
+.newtab-site[dragged]
+{
+ transition-property: box-shadow;
+ background-color: #A0A0A0;
+}
+.newtab-thumbnail
+{
+ background-origin: padding-box;
+ background-clip: padding-box;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.newtab-title
+{
+ padding: 0 8px;
+ background-color: #000000;
+ color: #FFFFFF;
+ line-height: 24px;
+}
+.newtab-control
+{
+ width: 24px;
+ height: 24px;
+ padding: 1px 2px 3px;
+ border: none;
+ background: transparent url(chrome://browser/skin/newtab/controls.png);
+}
+.newtab-control-pin:hover
+{
+ background-position: -24px 0;
+}
+.newtab-control-pin:active
+{
+ background-position: -48px 0;
+}
+.newtab-control-pin[pinned]
+{
+ background-position: -72px 0;
+}
+.newtab-control-pin[pinned]:hover
+{
+ background-position: -96px 0;
+}
+.newtab-control-pin[pinned]:active
+{
+ background-position: -120px 0;
+}
+.newtab-control-block
+{ 
+ background-position: -144px 0;
+}
+.newtab-control-block:hover
+{
+ background-position: -168px 0;
+}
+.newtab-control-block:active
+{
+ background-position: -192px 0;
+}

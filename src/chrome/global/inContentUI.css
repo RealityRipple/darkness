@@ -1,0 +1,144 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* Page background */
+*|*:root
+{
+ -moz-appearance: none;
+ padding: 18px;
+ background-repeat: repeat;
+ color: #FFFFFF;
+ background-color: #000000;
+}
+html|html
+{
+ font: message-box;
+}
+@media (-moz-windows-default-theme)
+{
+ *|*:root
+ {
+  color: #FFFFFF;
+  background-color: #000000;
+ }
+}
+@media (-moz-windows-compositor)
+{
+ *|*:root
+ {
+  color: #FFFFFF;
+  background-color: #000000;
+ }
+}
+
+/* Content */
+*|*.main-content
+{
+ /* Needed to allow the radius to clip the inner content, see bug 595656 */
+ overflow: hidden;
+ background-color: #000000;
+ border: 1px solid;
+ border-top-color: #606060;
+ border-right-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-left-color: #606060;
+}
+@media (-moz-windows-compositor)
+{
+ /* Buttons */
+ *|button, menulist, colorpicker[type="button"]
+ {
+  -moz-appearance: none;
+  color: #FFFFFF;
+  padding: 0 5px;
+  background: #000000;
+  background-clip: padding-box;
+  border-radius: 0px;
+  border: 2px solid;
+  -moz-border-top-colors: transparent #D0D0D0;
+  -moz-border-right-colors: transparent #606060;
+  -moz-border-bottom-colors: transparent #606060;
+  -moz-border-left-colors: transparent #D0D0D0;
+ }
+ menulist
+ {
+  -moz-padding-end: 0;
+ }
+ colorpicker[type="button"]:-moz-focusring:not([open="true"]) > .colorpicker-button-colorbox
+ {
+  outline: 1px dotted #D0D0D0;
+ }
+ html|button[disabled], button[disabled="true"], menulist[disabled="true"], colorpicker[type="button"][disabled="true"]
+ {
+  -moz-border-top-colors: transparent #A0A0A0 !important;
+  -moz-border-right-colors: transparent #303030 !important;
+  -moz-border-bottom-colors: transparent #303030 !important;
+  -moz-border-left-colors: transparent #A0A0A0 !important;
+  color: #606060 !important;
+  background-color: #202020 !important;
+ }
+ html|button:not([disabled]):active:hover, button:not([disabled="true"]):active:hover, menulist[open="true"]:not([disabled="true"]), colorpicker[type="button"][open="true"]:not([disabled="true"])
+ {
+  -moz-border-top-colors: #606060 #505050;
+  -moz-border-right-colors: #D0D0D0 #505050;
+  -moz-border-bottom-colors: #D0D0D0 #505050;
+  -moz-border-left-colors: #606060 #505050;
+  background-color: #505050;
+ }
+ html|button:not([disabled]):hover, button:not([disabled="true"]):hover
+ {
+  -moz-border-top-colors: transparent #D0D0D0;
+  -moz-border-right-colors: transparent #606060;
+  -moz-border-bottom-colors: transparent #606060;
+  -moz-border-left-colors: transparent #D0D0D0;
+  background-color: #303030;
+ }
+ html|button:not([disabled]):focus, button:not([disabled="true"]):focus
+ {
+  -moz-border-top-colors: #D0D0D0 #505050;
+  -moz-border-right-colors: #606060 #505050;
+  -moz-border-bottom-colors: #606060 #505050;
+  -moz-border-left-colors: #D0D0D0 #505050;
+  background-color: #404040;
+ }
+ html|button:not([disabled]):hover:focus, button:not([disabled="true"]):hover:focus
+ {
+  -moz-border-top-colors: #D0D0D0 #505050;
+  -moz-border-right-colors: #606060 #505050;
+  -moz-border-bottom-colors: #606060 #505050;
+  -moz-border-left-colors: #D0D0D0 #505050;
+  background-color: #303030;
+ }
+ html|button:not([disabled]):hover:active:focus, button:not([disabled="true"]):hover:active:focus
+ {
+  -moz-border-top-colors: #606060 #505050;
+  -moz-border-right-colors: #D0D0D0 #505050;
+  -moz-border-bottom-colors: #D0D0D0 #505050;
+  -moz-border-left-colors: #606060 #505050;
+  background-color: #505050;
+ }
+ button > .button-box
+ {
+  padding: 1px !important;
+ }
+ spinbuttons > .spinbuttons-box > .spinbuttons-button
+ {
+  border-radius: 0;
+  padding: 0 4px;
+ }
+ spinbuttons > .spinbuttons-box > .spinbuttons-up
+ {
+  list-style-image: url("chrome://global/skin/arrow/arrow-up.gif");
+  border-bottom-width: 0;
+ }
+ spinbuttons > .spinbuttons-box > .spinbuttons-down
+ {
+  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+ }
+}
+colorpicker[type="button"]
+{
+ margin: 1px 5px 2px 5px;
+ padding: 3px;
+ height: 25px;
+}

@@ -1,0 +1,85 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+toolbox
+{
+ -moz-appearance: none;
+ background-color: #000000;
+ color: #FFFFFF;
+ border: 0px;
+}
+toolbar, menubar
+{
+ -moz-appearance: none;
+}
+toolbar
+{
+ min-width: 1px;
+ min-height: 19px;
+ border: 0px;
+ color: #FFFFFF;
+}
+toolbar:first-child, menubar
+{
+ min-width: 1px;
+ border: 0;
+}
+toolbarseparator
+{
+ -moz-appearance: none;
+ margin: 0px;
+ border-left: 1px solid #FFFFFF;
+ width: 1px;
+}
+toolbarspacer
+{
+ width: 15px;
+}
+toolbarpaletteitem
+{
+ cursor: -moz-grab;
+}
+.toolbarpaletteitem-box[type="spacer"]
+{
+ border: 1px dotted #909090;
+ background-color: #000000 !important;
+}
+.toolbarpaletteitem-box[type="spring"]
+{
+ border: 1px dotted #909090;
+ background: #000000 !important;
+}
+toolbarpaletteitem[place="toolbar"]
+{
+ margin: 0px;
+ border: 0px;
+}
+toolbarpaletteitem[place="toolbar"] > toolbarspacer
+{
+ width: 11px;
+}
+.toolbarpaletteitem-box[type="spacer"][place="toolbar"], .toolbarpaletteitem-box[type="spring"][place="toolbar"]
+{
+ margin: 0px;
+}
+.toolbarpaletteitem-box[type="separator"][place="palette"]
+{
+ width: 2px;
+ height: 50px;
+}
+.toolbarpaletteitem-box[type="spacer"][place="palette"], .toolbarpaletteitem-box[type="spring"][place="palette"]
+{
+ margin-bottom: 2px;
+ width: 50px;
+ height: 50px;
+}
+.toolbarpaletteitem-box[type="spring"][place="palette"]
+{
+ background: url("chrome://global/skin/toolbar/spring.png") no-repeat center;
+}
+toolbarpaletteitem[dragover="left"]
+{
+ border-left-color: #000000;
+}
+toolbarpaletteitem[dragover="right"]
+{
+ border-right-color: #000000;
+}

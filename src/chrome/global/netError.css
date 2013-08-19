@@ -1,0 +1,214 @@
+html
+{
+ background: #000000;
+}
+body
+{
+ margin: 0;
+ padding: 0 1em;
+ color: #FFFFFF;
+ background: #000000;
+ font: message-box;
+}
+h1
+{
+ margin: 0 0 .6em 0;
+ border-bottom: 1px solid #C0C0C0;
+ font-size: 160%;
+}
+ul, ol
+{
+ margin: 0;
+ -moz-margin-start: 1.5em;
+ padding: 0;
+}
+ul > li, ol > li
+{
+ margin-bottom: .5em;
+}
+ul
+{
+ list-style: square;
+}
+#errorPageContainer
+{
+ position: relative;
+ min-width: 13em;
+ max-width: 52em;
+ margin: 4em auto;
+ border: 1px solid #909090;
+ border-radius: 10px;
+ padding: 3em;
+ -moz-padding-start: 30px;
+ background: url("chrome://global/skin/icons/warning-large.png") left 0 no-repeat;
+ background-color: #000000 !important;
+ background-origin: content-box;
+}
+#errorPageContainer.certerror
+{
+ background-image: url("chrome://global/skin/icons/sslWarning.png");
+}
+#errorPageContainer:-moz-dir(rtl)
+{
+ background-position: right 0;
+}
+#errorTitle
+{
+ -moz-margin-start: 80px;
+}
+#errorLongContent
+{
+ -moz-margin-start: 80px;
+}
+#errorShortDesc > p
+{
+ overflow: auto;
+ border-bottom: 1px solid #C0C0C0;
+ padding-bottom: 1em;
+ font-size: 130%;
+ white-space: pre-wrap;
+}
+#errorLongDesc
+{
+ -moz-padding-end: 3em;
+ font-size: 110%;
+}
+#errorLongDesc > p
+{
+}
+#errorTryAgain
+{
+ margin-top: 2em;
+ -moz-margin-start: 80px;
+}
+#brand
+{
+ position: absolute;
+ right: 0;
+ bottom: -1.5em;
+ -moz-margin-end: 10px;
+ opacity: .4;
+}
+#brand:-moz-dir(rtl)
+{
+ right: auto;
+ left: 0;
+}
+#brand > p
+{
+ margin: 0;
+}
+#errorContainer
+{
+ display: none;
+}
+#securityOverrideDiv
+{
+ padding-top: 10px;
+}
+#securityOverrideContent
+{
+ background-color: #101010;
+ color: #FFFFFF;
+ padding: 10px;
+ border-radius: 10px;
+}
+:root.blacklist #errorTitle, :root.blacklist #errorLongContent, :root.blacklist #errorShortDesc, :root.blacklist #errorLongDesc, :root.blacklist a
+{
+ background-color: #300000;
+ color: white;
+}
+:root.blacklist #errorPageContainer
+{
+ background-image: url("chrome://global/skin/icons/blacklist_large.png");
+ background-color: #300000;
+}
+:root.blacklist
+{
+ background: #200000;
+}
+:root.blacklist #errorTryAgain
+{
+ display: none;
+}
+*|*:link
+{
+ color: #FFFFFF;
+ text-decoration: none;
+}
+*|*:link:hover, *|*:link:focus
+{
+ color: #FFFFFF;
+ text-decoration: underline;
+}
+button
+{
+ -moz-appearance: none;
+ margin: 1px;
+ margin-top: 0px;
+ min-width: 60px;
+ min-height: 25px;
+ border: 2px solid;
+ -moz-border-top-colors: transparent #D0D0D0;
+ -moz-border-right-colors: transparent #606060;
+ -moz-border-bottom-colors: transparent #606060;
+ -moz-border-left-colors: transparent #D0D0D0;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+button:hover
+{
+ -moz-border-top-colors: transparent #D0D0D0;
+ -moz-border-right-colors: transparent #606060;
+ -moz-border-bottom-colors: transparent #606060;
+ -moz-border-left-colors: transparent #D0D0D0;
+ background-color: #303030;
+}
+button:focus
+{
+ -moz-border-top-colors: #D0D0D0 #505050;
+ -moz-border-right-colors: #606060 #505050;
+ -moz-border-bottom-colors: #606060 #505050;
+ -moz-border-left-colors: #D0D0D0 #505050;
+ background-color: #404040;
+}
+button[default="true"]
+{
+ -moz-border-top-colors: #404040 #D0D0D0;
+ -moz-border-right-colors: #404040 #606060;
+ -moz-border-bottom-colors: #404040 #606060;
+ -moz-border-left-colors: #404040 #D0D0D0;
+}
+button:hover:focus
+{
+ -moz-border-top-colors: #D0D0D0 #505050;
+ -moz-border-right-colors: #606060 #505050;
+ -moz-border-bottom-colors: #606060 #505050;
+ -moz-border-left-colors: #D0D0D0 #505050;
+ background-color: #303030;
+}
+button:hover:active, button[open="true"], button[checked="true"]
+{
+ -moz-border-top-colors: #606060 #505050;
+ -moz-border-right-colors: #D0D0D0 #505050;
+ -moz-border-bottom-colors: #D0D0D0 #505050;
+ -moz-border-left-colors: #606060 #505050;
+ background-color: #404040;
+}
+button:hover:active:focus, button[checked="true"]:focus, button[open="true"]:focus
+{
+ -moz-border-top-colors: #606060 #505050;
+ -moz-border-right-colors: #D0D0D0 #505050;
+ -moz-border-bottom-colors: #D0D0D0 #505050;
+ -moz-border-left-colors: #606060 #505050;
+ background-color: #505050;
+}
+button[disabled="true"]
+{
+ -moz-border-top-colors: transparent #A0A0A0 !important;
+ -moz-border-right-colors: transparent #303030 !important;
+ -moz-border-bottom-colors: transparent #303030 !important;
+ -moz-border-left-colors: transparent #A0A0A0 !important;
+ color: #606060 !important;
+ background-color: #202020 !important;
+}

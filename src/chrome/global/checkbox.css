@@ -1,0 +1,79 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+checkbox
+{
+ -moz-appearance: none;
+ -moz-box-align: center;
+ margin: 2px 4px;
+ padding-top: 1px;
+ padding-bottom: 1px;
+ -moz-padding-start: 4px;
+ -moz-padding-end: 2px;
+}
+.checkbox-label-box
+{
+ -moz-margin-start: 2px;
+ border: 1px solid transparent;
+ padding: 0px 1px;
+ color: #FFFFFF;
+}
+checkbox:not([disabled="true"]):hover > .checkbox-label-box
+{
+ color: #D0D0D0 !important;
+}
+checkbox:not([disabled="true"]):focus > .checkbox-label-box
+{
+ color: #C0C0C0 !important;
+}
+checkbox:not([disabled="true"]):hover:focus > .checkbox-label-box
+{
+ color: #D0D0D0 !important;
+}
+checkbox:not([disabled="true"]):hover:active > .checkbox-label-box
+{
+ color: #FFFFFF !important;
+}
+.checkbox-icon
+{
+ -moz-margin-end: 2px;
+}
+.checkbox-label
+{
+ margin: 0 !important;
+}
+checkbox[disabled="true"] > .checkbox-check
+{
+ opacity: 0.8;
+}
+checkbox[disabled="true"] > .checkbox-label-box
+{
+ color: #606060 !important;
+}
+.checkbox-check
+{
+ -moz-appearance: none;
+ -moz-box-align: center;
+ border: 0px;
+ min-width: 13px;
+ min-height: 13px;
+ list-style-image: url("chrome://global/skin/checkbox/unchecked.png");
+}
+checkbox:hover:active > .checkbox-check
+{
+ list-style-image: url("chrome://global/skin/checkbox/unchecking.png");
+}
+.checkbox-check[disabled="true"]
+{
+ list-style-image: url("chrome://global/skin/checkbox/disabledunchecked.png") !important
+}
+.checkbox-check[checked="true"]
+{
+ list-style-image: url("chrome://global/skin/checkbox/checked.png");
+}
+checkbox:hover:active > .checkbox-check[checked="true"]
+{
+ list-style-image: url("chrome://global/skin/checkbox/checking.png");
+}
+.checkbox-check[checked="true"][disabled="true"]
+{
+ list-style-image: url("chrome://global/skin/checkbox/disabledchecked.png") !important;
+}

@@ -1,0 +1,152 @@
+#placesToolbar
+{
+ padding: 3px;
+ -moz-padding-end: 6px;
+}
+#back-button, #forward-button
+{
+ list-style-image: url("chrome://browser/skin/Toolbar-small.png");
+}
+#back-button, #forward-button:-moz-locale-dir(rtl) 
+{
+ -moz-image-region: rect(0, 16px, 16px, 0);
+}
+#back-button:hover, #forward-button:-moz-locale-dir(rtl):hover
+{
+ -moz-image-region: rect(16px, 16px, 32px, 0px);
+}
+#back-button:hover:active:not([disabled]), #forward-button:-moz-locale-dir(rtl):hover:active:not([disabled])
+{
+ -moz-image-region: rect(32px, 16px, 48px, 0px);
+}
+#back-button[disabled], #forward-button[disabled]:-moz-locale-dir(rtl)
+{
+ -moz-image-region: rect(48px, 16px, 64px, 0px);
+}
+#forward-button, #back-button:-moz-locale-dir(rtl) 
+{
+ -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+#forward-button:hover, #back-button:-moz-locale-dir(rtl):hover
+{
+ -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+#forward-button:hover:active:not([disabled]), #back-button:-moz-locale-dir(rtl):hover:active:not([disabled])
+{
+ -moz-image-region: rect(32px, 32px, 48px, 16px);
+}
+#forward-button[disabled], #back-button[disabled]:-moz-locale-dir(rtl)
+{
+ -moz-image-region: rect(48px, 32px, 64px, 16px);
+}
+#placesMenu
+{
+ -moz-margin-start: 6px;
+ -moz-appearance: none;
+}
+#placesMenu > menu > .menubar-text
+{
+ -moz-padding-end: 8px;
+ background: url(chrome://global/skin/arrow/arrow-dn.gif) right center no-repeat;
+}
+#placesMenu > menu > .menubar-text:-moz-locale-dir(rtl)
+{
+ background-position: left center;
+}
+#organizeButton, #viewMenu, #maintenanceButton
+{
+ list-style-image: url("chrome://browser/skin/places/libraryToolbar.png");
+}
+#organizeButton
+{
+ -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+#organizeButton:hover, #organizeButton[open="true"]
+{
+ -moz-image-region: rect(16px, 16px, 32px, 0px);
+}
+#viewMenu
+{
+ -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+#viewMenu:hover, #viewMenu[open="true"]
+{
+ -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+#maintenanceButton
+{
+ -moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+#maintenanceButton:hover, #maintenanceButton[open="true"]
+{
+ -moz-image-region: rect(16px, 48px, 32px, 32px);
+}
+#placesView
+{
+ border-top: 1px solid #A0A0A0;
+}
+#detailsDeck
+{
+ border-top: 1px solid #A0A0A0;
+ padding: 5px;
+}
+#infoBoxExpanderLabel
+{
+ -moz-padding-start: 2px;
+}
+#searchFilter
+{
+ margin: 0;
+}
+#clearDownloadsButton
+{
+ -moz-padding-start: 9px;
+ -moz-padding-end: 9px;
+ background-color: #000000 !important;
+ color: #FFFFFF !important;
+ border: 2px solid !important;
+ -moz-border-top-colors: transparent !important;
+ -moz-border-right-colors: transparent !important;
+ -moz-border-bottom-colors: transparent !important;
+ -moz-border-left-colors: transparent !important;
+ padding: 1px !important;
+ list-style-image: url("chrome://browser/skin/Toolbar-small.png");
+ -moz-image-region: rect(0px, 48px, 16px, 32px); 
+}
+#clearDownloadsButton:hover
+{
+ background-color: #404040 !important;
+ color: #FFFFFF !important;
+ border: 2px solid !important;
+ -moz-border-top-colors: #D0D0D0 #505050 !important;
+ -moz-border-right-colors: #606060 #505050 !important;
+ -moz-border-bottom-colors: #606060 #505050 !important;
+ -moz-border-left-colors: #D0D0D0 #505050 !important;
+ -moz-image-region: rect(16px, 48px, 32px, 32px);
+}
+#clearDownloadsButton:not([disabled="true"]):hover:active
+{
+ background-color: #505050 !important;
+ color: #FFFFFF !important;
+ border: 2px solid !important;
+ -moz-border-top-colors: #606060 #505050 !important;
+ -moz-border-right-colors: #D0D0D0 #505050 !important;
+ -moz-border-bottom-colors: #D0D0D0 #505050 !important;
+ -moz-border-left-colors: #606060 #505050 !important;
+ -moz-image-region: rect(32px, 48px, 48px, 32px);
+}
+#clearDownloadsButton[disabled="true"]
+{
+ background-color: #000000 !important;
+ color: #606060 !important;
+ border: 1px solid !important;
+ -moz-border-top-colors: transparent #A0A0A0 !important;
+ -moz-border-right-colors: transparent #303030 !important;
+ -moz-border-bottom-colors: transparent #303030 !important;
+ -moz-border-left-colors: transparent #A0A0A0 !important;
+ -moz-image-region: rect(48px, 48px, 64px, 32px);
+}
+#placesView
+{
+ border-top: none;
+}

@@ -1,0 +1,153 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+menupopup, panel
+{
+ border: 1px solid;
+ border-top-color: #D0D0D0;
+ border-right-color: #606060;
+ border-bottom-color: #606060;
+ border-left-color: #D0D0D0;
+ padding: 0px;
+ min-width: 1px;
+ background-color: #000000;
+ color: #FFFFFF;
+}
+menupopup
+{
+ -moz-appearance: none;
+}
+menupopup > menu > menupopup
+{
+ -moz-margin-start: -3px;
+ margin-top: -3px;
+}
+panel[type="arrow"]
+{
+ -moz-appearance: none;
+ background: transparent;
+ border: none;
+ transition: opacity 300ms;
+}
+.panel-arrowcontainer[panelopen]
+{
+ transition-duration: 200ms, 150ms;
+ transition-property: opacity, transform;
+ transition-timing-function: ease-out;
+}
+.panel-arrowcontainer:not([panelopen])
+{
+ opacity: 0;
+}
+.panel-arrowcontainer:not([panelopen])[side="top"]
+{
+ transform: translateY(-20px);
+}
+.panel-arrowcontainer:not([panelopen])[side="bottom"]
+{
+ transform: translateY(20px);
+}
+.panel-arrowcontainer:not([panelopen])[side="left"]
+{
+ transform: translateX(-20px);
+}
+.panel-arrowcontainer:not([panelopen])[side="right"]
+{
+ transform: translateX(20px);
+}
+panel[type="arrow"][side="top"], panel[type="arrow"][side="bottom"]
+{
+ margin-left: -20px;
+ margin-right: -20px;
+}
+panel[type="arrow"][side="left"], panel[type="arrow"][side="right"]
+{
+ margin-top: -20px;
+ margin-bottom: -20px;
+}
+.panel-arrowcontent
+{
+ border-radius: 4px;
+ padding: 10px;
+ color: #FFFFFF;
+ background: #000000;
+ background-clip: padding-box;
+ border: 1px solid #C0C0C0;
+ margin: 4px;
+}
+.panel-arrow[side="top"], .panel-arrow[side="bottom"]
+{
+ list-style-image: url("chrome://global/skin/arrow/panelarrow-vertical.svg");
+ position: relative;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+.panel-arrow[side="top"]
+{
+ margin-bottom: -5px;
+}
+.panel-arrow[side="bottom"]
+{
+ transform: scaleY(-1);
+ margin-top: -5px;
+}
+.panel-arrow[side="left"], .panel-arrow[side="right"]
+{
+ list-style-image: url("chrome://global/skin/arrow/panelarrow-horizontal.svg");
+ position: relative;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.panel-arrow[side="left"]
+{
+ margin-right: -5px;
+}
+.panel-arrow[side="right"]
+{
+ transform: scaleX(-1);
+ margin-left: -5px;
+}
+
+@media (-moz-windows-default-theme)
+{
+ .panel-arrowcontent
+ {
+  border-color: #C0C0C0;
+ }
+ .panel-arrow[side="top"], .panel-arrow[side="bottom"]
+ {
+  list-style-image: url("chrome://global/skin/arrow/panelarrow-vertical-white.png");
+ }
+ .panel-arrow[side="left"], .panel-arrow[side="right"]
+ {
+  list-style-image: url("chrome://global/skin/arrow/panelarrow-horizontal-white.png");
+ }
+}
+tooltip
+{
+ -moz-appearance: none;
+ margin-top: 21px;
+ border: 1px solid;
+ border-top-color: #606060;
+ border-right-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-left-color: #606060;
+ padding: 2px 3px;
+ max-width: 40em;
+ background-color: #000000;
+ color: #FFFFFF;
+ font: message-box;
+}
+tooltip[titletip="true"]
+{
+ /* See bug 32157 comment 128
+  * margin: -2px 0px 0px -3px;
+  */
+ max-width: none;
+}
+menulist > menupopup, .menulist-menupopup
+{
+ -moz-appearance: none;
+ border: 1px solid #606060;
+ padding: 0px;
+ min-width: 0px;
+ background-color: #000000;
+}
