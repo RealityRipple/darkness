@@ -13,6 +13,9 @@
 {
  -moz-appearance: none;
  margin: 0;
+ list-style-image: none;
+ list-style: none;
+ padding: 0;
 }
 .splitview-nav > li
 {
@@ -21,16 +24,6 @@
  border-bottom: 1px solid #404040;
  -moz-padding-end: 8px;
  -moz-box-align: center;
-}
-.splitview-nav
-{
- list-style-image: none;
- list-style: none;
- padding: 0;
- margin: 0;
-}
-.splitview-nav > li
-{
  outline: 0;
  vertical-align: bottom;
 }

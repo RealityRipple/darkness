@@ -1,7 +1,25 @@
 .theme-body
 {
- background: #000000;
- color: #FFFFFF;
+ background: #000000 !important;
+ color: #FFFFFF !important;
+}
+.CodeMirror
+{
+ background-color: black !important;
+ color: white !important;
+}
+.CodeMirror-gutters
+{
+ background-color: #101010;
+ border-right-color: #505050;
+}
+.CodeMirror-linenumber
+{
+ color: #A0A0A0 !important;
+}
+.CodeMirror-activeline-background
+{
+ background-color: #202020 !important;
 }
 .theme-twisty
 {
