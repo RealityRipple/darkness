@@ -1,0 +1,331 @@
+#padlock-ib[padshow="ib-trans-bg"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="ev"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="ev"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="high"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="high"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="low"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="low"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="low"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="broken"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-ib[padshow="ib-trans-bg"][level="broken"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="ev"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="ev"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="high"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="high"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="low"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="low"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="low"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="broken"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ib-left[padshow="ib-left"][level="broken"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  padding:2px;
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="ev"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="ev"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="high"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="high"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="low"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="low"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="low"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="broken"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-ub-right[padshow="ub-right"][level="broken"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="ev"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="ev"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="high"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="high"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="low"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="low"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="low"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="broken"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-sb[padshow="statbar"][level="broken"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="ev"] {
+  list-style-image: url("padlock_mod_ev.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="ev"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="ev"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="high"] {
+  list-style-image: url("padlock_mod_https.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="high"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="high"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="low"] {
+  list-style-image: url("padlock_mod_low.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="low"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="low"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="broken"] {
+  list-style-image: url("padlock_mod_broken.png") !important;
+  -moz-image-region: rect(0px 16px 16px 0px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="broken"]:hover {
+  -moz-image-region: rect(0px 32px 16px 16px);
+  background-color: transparent;
+}
+
+#padlock-tab[padshow="tabs-bar"][level="broken"]:hover:active {
+  -moz-image-region: rect(0px 48px 16px 32px);
+  background-color: transparent;
+}
