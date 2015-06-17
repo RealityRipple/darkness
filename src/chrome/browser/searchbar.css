@@ -1,8 +1,8 @@
 .searchbar-textbox
 {
  -moz-appearance: none;
- width: 300px;
- min-width: 200px;
+ width: 6em;
+ min-width: 6em;
  height: 27px;
  margin-left: 0px !important;
  background-color: #000000;
@@ -21,6 +21,9 @@
 {
  margin: 0;
 }
+
+/* ::::: searchbar-engine-button ::::: */
+
 .searchbar-engine-image
 {
  height: 16px;
@@ -55,6 +58,9 @@
 {
  -moz-image-region: rect(0, 26px, 11px, 13px);
 }
+
+/* ::::: search-go-button ::::: */
+
 .search-go-container
 {
  -moz-box-align: center;

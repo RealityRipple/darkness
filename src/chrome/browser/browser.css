@@ -1457,8 +1457,6 @@ toolbar[iconsize="small"] #tabview-button[groups="3"][disabled], toolbar[iconsiz
 /* ::::: Location Bar ::::: */
 #urlbar
 {
- width: 350px;
- min-width: 250px;
  height: 27px;
  margin-right: 0px !important;
  background-color: #000000;
