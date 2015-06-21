@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.2
+- remove background box on images
+- remove min-width of urlbar/searchbar
+
 ### 1.0.1
 - add mixed padlock state
 
