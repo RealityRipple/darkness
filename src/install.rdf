@@ -22,7 +22,7 @@
       <Description>
         <!-- Pale Moon -->
         <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
-        <em:minVersion>25.0</em:minVersion>
+        <em:minVersion>25.6.0</em:minVersion>
         <em:maxVersion>26.*</em:maxVersion>
       </Description>
     </em:targetApplication>
