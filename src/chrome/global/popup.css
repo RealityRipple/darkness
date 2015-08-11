@@ -27,6 +27,8 @@ panel[type="arrow"]
  border: none;
  transition: opacity 300ms;
 }
+
+@media (-moz-windows-default-theme) {
 .panel-arrowcontainer[panelopen]
 {
  transition-duration: 200ms, 150ms;
@@ -53,6 +55,8 @@ panel[type="arrow"]
 {
  transform: translateX(20px);
 }
+}
+
 panel[type="arrow"][side="top"], panel[type="arrow"][side="bottom"]
 {
  margin-left: -20px;
