@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.1.0
+- Pale Moon v26 compatibility
+- fix window borders on Windows 10
+- don't animate popups on non-Windows
+
 ### 1.0.2
 - remove background box on images
 - remove min-width of urlbar/searchbar
