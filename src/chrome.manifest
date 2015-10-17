@@ -2,3 +2,5 @@ skin	browser		darkness	chrome/browser/
 skin	communicator	darkness	chrome/communicator/
 skin	global		darkness	chrome/global/
 skin	mozapps		darkness	chrome/mozapps/
+skin	appver		darkness	chrome/appver/25/ appversion<=26.0.0b1
+skin	appver		darkness	chrome/appver/26/ appversion>26.0.0b1
