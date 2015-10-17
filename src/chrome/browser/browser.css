@@ -84,7 +84,7 @@
  -moz-border-left-colors: #000000 #D0D0D0;
  color: #FFFFFF;
  font-weight: bold;
- padding: 0 1.5em .05em;
+ padding: 0 1em .05em;
  margin: 0 0 2px;
 }
 @media (-moz-windows-classic)
