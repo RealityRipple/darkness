@@ -4198,13 +4198,13 @@ chatbox
  background-repeat: no-repeat;
  background-position: left center;
 }
-#menu_showAllHistory
+#appmenu_showAllHistory, #menu_showAllHistory, #HMB_showAllHistory
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 112, 16, 96);
  background-repeat: no-repeat;
  background-position: left center;
 }
-#sanitizeItem
+#appmenu_sanitizeHistory, #sanitizeItem, #HMB_sanitizeItem
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
  background-repeat: no-repeat;
