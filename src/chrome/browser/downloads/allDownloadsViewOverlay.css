@@ -18,7 +18,7 @@
 {
  list-style-image: url("chrome://global/skin/icons/Error.png");
 }
-.downloadTarget
+.downloadTarget, .downloadDisplayName
 {
  margin-bottom: 3px;
  cursor: inherit;
