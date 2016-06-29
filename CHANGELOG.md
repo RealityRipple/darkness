@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.3.0
+- refactor media controls for Pale Moon 26.3
+- use unified close button icons
+
 ### 1.2.1
 - (PM26) add download location styling
 
