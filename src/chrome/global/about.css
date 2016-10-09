@@ -24,21 +24,13 @@ body
 }
 #aboutLogoContainer
 {
- border: 1px solid #D0D0D0;
- border-bottom-color: #606060;
- border-right-color: #606060;
+ margin: 0 auto;
  width: 300px;
  margin-bottom: 2em;
 }
 img
 {
  border: 0;
-}
-#version
-{
- font-weight: bold;
- color: #FFFFFF;
- margin: -24px 0 9px 17px;
 }
 ul
 {

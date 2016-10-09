@@ -1,5 +1,6 @@
 @import url("chrome://global/skin/");
 @import url("chrome://browser/skin/padlock/padlock.css");
+@import url("chrome://appver/skin/browser.css");
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url("http://www.w3.org/1999/xhtml");
 #main-window[sizemode="normal"] #browser-panel
@@ -2938,44 +2939,6 @@ html|*.highlighter-nodeinfobar-pseudo-classes
 }
 
 /* GCLI */
-html|*#gcli-tooltip-frame, html|*#gcli-output-frame
-{
- padding: 0;
- border-width: 0;
- background-color: transparent;
-}
-#gcli-output, #gcli-tooltip
-{
- border-width: 0;
- background-color: transparent;
- -moz-appearance: none;
- margin-bottom: -2px;
-}
-.gclitoolbar-input-node, .gclitoolbar-complete-node, .gclitoolbar-prompt
-{
- margin: 0;
- -moz-margin-end: 5px;
- -moz-box-align: center;
- padding-top: 0;
- padding-bottom: 0;
- padding-right: 4px;
- border: 1px solid transparent;
- text-shadow: none;
-}
-.gclitoolbar-input-node
-{
- padding-left: 20px;
- background-color: transparent;
- -moz-appearance: none;
- border-top-color: #606060;
- border-left-color: #606060;
- border-bottom-color: #A0A0A0;
- border-right-color: #A0A0A0;
- color: #FFFFFF;
- background-image: url("chrome://browser/skin/devtools/commandline.png");
- background-position: 4px center;
- background-repeat: no-repeat;
-}
 .gclitoolbar-input-node > .textbox-input-box > html|*.textbox-input::-moz-selection
 {
  background-color: #FF0000;
@@ -3034,57 +2997,6 @@ html|*#gcli-tooltip-frame, html|*#gcli-output-frame
 .web-console-frame[animated]
 {
  transition: height 100ms;
-}
-
-/* Developer toolbar */
-#developer-toolbar-toolbox-button
-{
- min-width: 18px;
- width: 22px;
-}
-#developer-toolbar-toolbox-button > .toolbarbutton-text
-{
- display: none;
-}
-#developer-toolbar-toolbox-button > .toolbarbutton-icon
-{
- -moz-margin-end: 0;
-}
-.developer-toolbar-button
-{
- -moz-appearance: none;
- min-width: 78px;
- min-height: 22px;
- color: inherit;
- border: 1px solid transparent;
- margin: 0 5px;
- padding: 0 10px;
- list-style-image: url("chrome://browser/skin/devtools/tools-icons-small.png");
-}
-.developer-toolbar-button[open=true], .developer-toolbar-button:active:hover, .developer-toolbar-button[checked=true]
-{
- border-top-color: #606060;
- border-left-color: #606060;
- border-bottom-color: #A0A0A0;
- border-right-color: #A0A0A0;
- background-color: #101010;
-}
-.developer-toolbar-button:hover
-{
- border-top-color: #A0A0A0;
- border-left-color: #A0A0A0;
- border-bottom-color: #606060;
- border-right-color: #606060;
- color: #C0C0C0 !important;
- background-color: #303030;
-}
-.developer-toolbar-button[checked=true]
-{
- background-color: #404040;
-}
-#developer-toolbar-toolbox-button
-{
- -moz-image-region: rect(64px, 16px, 80px, 0);
 }
 
 /* Error counter */
