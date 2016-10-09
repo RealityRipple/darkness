@@ -1,5 +1,1 @@
-#scratchpad-sidebar > tabs
-{
- height: 0;
- border: none;
-}
+@import url("chrome://appver/skin/devtools/scratchpad.css");
