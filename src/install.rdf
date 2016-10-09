@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{434de990-fa69-4811-b98e-98e62085837f}</em:id>
-    <em:version>1.3.0</em:version>
+    <em:version>1.4.0</em:version>
     <em:name>Darkness</em:name>
     <em:description>A dark, simple, grayscale theme for Pale Moon. Fork of "In The Dark" by RealityRipple</em:description>
     <em:creator>Lootyhoof</em:creator>
