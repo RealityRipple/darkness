@@ -1,4 +1,10 @@
 @import url("chrome://global/skin/inContentUI.css");
+#permissions-pagetitle
+{
+ font-size: 200%;
+ font-weight: bold;
+ padding-bottom: 0.5em;
+}
 #sites-box
 {
  padding: 10px;
@@ -98,6 +104,14 @@
 .pref-icon[type="fullscreen"]
 {
  list-style-image: url(chrome://global/skin/icons/question-64.png);
+}
+.pref-icon[type="desktop-notification"]
+{
+ list-style-image: url(chrome://browser/skin/notification-64.png);
+}
+.pref-icon[type="pointerLock"]
+{
+ list-style-image: url(chrome://browser/skin/pointerLock-64.png);
 }
 .pref-title
 {
