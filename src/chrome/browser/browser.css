@@ -3418,23 +3418,6 @@ toolbar[iconsize="small"] #social-provider-button
 {
  -moz-margin-end: 0;
 }
-.toolbarbutton-badge[badge=""]
-{
- display: none;
-}
-.toolbarbutton-badge[badge]:not([badge=""])::after
-{
- /* The |content| property is set in the content stylesheet. */
- font-size: 9px;
- font-weight: bold;
- padding: 0 1px;
- color: #FFFFFF;
- background-color: #000000;
- border: 1px solid #A0A0A0;
- position: absolute;
- top: 0;
- right: 0;
-}
 #navigator-toolbox[iconsize=large][mode=icons] > #nav-bar *|* > .toolbarbutton-badge[badge]:not([badge=""])::after
 {
  top: 1px;
