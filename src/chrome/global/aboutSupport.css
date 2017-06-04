@@ -76,7 +76,7 @@ td
  white-space: nowrap;
  overflow: hidden;
 }
-#reset-box
+#action-box
 {
  background-color: #000000;
  border: 1px solid #606060;
@@ -91,7 +91,17 @@ td
  padding: 16px;
  width: 30%;
 }
-#reset-box:-moz-dir(rtl)
+#contents
+{
+ clear: right;
+}
+#action-box,
+#reset-box,
+#safe-mode-box
+{
+ display: none;
+}
+#action-box:-moz-dir(rtl)
 {
  float: left;
 }
@@ -99,10 +109,22 @@ td
 {
  margin-top: 0;
 }
-#reset-box > button
+#action-box button
 {
  display: block;
- margin: auto;
+}
+#verify-place-result
+{
+ max-height: 200px;
+ overflow: auto;
+}
+.block
+{
+ display: block;
+}
+.hidden
+{
+ display: none;
 }
 *|*:link
 {
