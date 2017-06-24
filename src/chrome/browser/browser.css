@@ -2492,6 +2492,24 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 {
  background-color: rgba(32,32,32,0.7);
 }
+.KUI-panel-closebutton
+{
+ list-style-image: url(KUI-close.png);
+ -moz-appearance: none;
+ border: none;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ margin: 5px;
+}
+.KUI-panel-closebutton:not(:hover)
+{
+ opacity: .6;
+}
+.KUI-panel-closebutton > .toolbarbutton-icon
+{
+ margin: 0;
+}
 
 /* Ctrl-Tab */
 #ctrlTab-panel
