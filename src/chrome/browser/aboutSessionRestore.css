@@ -48,13 +48,17 @@ treechildren::-moz-tree-image(container, noicon)
 {
  list-style-image: url("chrome://browser/skin/aboutSessionRestore-window-icon.png");
 }
+treechildren::-moz-tree-image(restore)
+{
+ list-style-image: url("chrome://global/skin/checkbox/unchecked.png");
+}
 treechildren::-moz-tree-image(checked)
 {
- list-style-image: url("chrome://global/skin/checkbox/cbox-check.gif");
+ list-style-image: url("chrome://global/skin/checkbox/checked.png");
 }
 treechildren::-moz-tree-image(partial)
 {
- list-style-image: url("chrome://global/skin/checkbox/cbox-check-dis.gif");
+ list-style-image: url("chrome://global/skin/checkbox/disabledchecked.png");
 }
 #buttons
 {
