@@ -1,0 +1,241 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+html {
+ font: message-box;
+ font-size: 100%;
+ background-color: #000;
+ color: #fff;
+ height: 100%;
+}
+
+body {
+ margin: 0;
+ display: -moz-box;
+ -moz-box-orient: vertical;
+ width: 100%;
+ height: 100%;
+}
+
+input,
+button {
+ font-size: inherit;
+ font-family: inherit;
+}
+
+a {
+ color: -moz-nativehyperlinktext;
+ text-decoration: none;
+}
+
+.spacer {
+ -moz-box-flex: 1;
+}
+
+#topSection {
+ text-align: center;
+}
+
+#brandLogo {
+ height: 192px;
+ width: 192px;
+ margin: 22px auto 31px;
+ background-image: url("chrome://branding/content/about-logo.png");
+ filter: grayscale(1);
+ background-size: 192px auto;
+ background-position: center center;
+ background-repeat: no-repeat;
+}
+
+#searchForm {
+ width: 470px;
+}
+
+#searchForm {
+ display: -moz-box;
+}
+
+#searchLogoContainer {
+ display: -moz-box;
+ -moz-box-align: center;
+ padding-top: 2px;
+ -moz-padding-end: 8px;
+}
+
+#searchLogoContainer[hidden] {
+ display: none;
+}
+
+#searchEngineLogo {
+ display: inline-block;
+ height: 28px;
+ width: 70px;
+ filter: saturate(65%);
+ min-width: 70px;
+}
+
+#searchText {
+ -moz-box-flex: 1;
+ padding: 6px 8px;
+ background-color: #000000;
+ color: #FFFFFF;
+ border-radius: 5px;
+ border: 1px solid;
+ border-top-color: #606060;
+ border-bottom-color: #A0A0A0;
+ border-right-color: #A0A0A0;
+ border-left-color: #606060;
+}
+
+#searchSubmit {
+ margin-left: 4px;
+ padding: 0 9px;
+ color: #FFFFFF;
+ background-color: transparent;
+ border: 1px solid transparent;
+ cursor: pointer;
+}
+
+#searchSubmit:hover {
+ background-color: #404040;
+ border-top-color: #D0D0D0;
+ border-left-color: #D0D0D0;
+ border-bottom-color: #606060;
+ border-right-color: #606060;
+}
+
+#searchSubmit:hover:active {
+ background-color: #606060;
+ border-top-color: #606060;
+ border-left-color: #606060;
+ border-bottom-color: #D0D0D0;
+ border-right-color: #D0D0D0;
+}
+
+#launcher {
+ display: -moz-box;
+ -moz-box-align: center;
+ -moz-box-pack: center;
+ width: 100%;
+ border-top: 1px solid #FFFFFF;
+}
+
+#launcher:not([session]),
+body[narrow] #launcher[session] {
+ display: block; /* display separator and restore button on separate lines */
+ text-align: center;
+ white-space: nowrap; /* prevent navigational buttons from wrapping */
+}
+
+.launchButton {
+ display: -moz-box;
+ -moz-box-orient: vertical;
+ margin: 16px 1px;
+ padding: 14px 6px;
+ min-width: 88px;
+ max-width: 176px;
+ max-height: 85px;
+ vertical-align: top;
+ white-space: normal;
+ border: 1px solid transparent;
+ background: transparent padding-box;
+ color: #fff;
+ font-size: 75%;
+ cursor: pointer;
+}
+
+.launchButton:hover {
+ background-color: #404040;
+ border-top-color: #D0D0D0;
+ border-left-color: #D0D0D0;
+ border-bottom-color: #606060;
+ border-right-color: #606060;
+}
+
+.launchButton:hover:active {
+ background-color: #606060;
+ border-top-color: #606060;
+ border-left-color: #606060;
+ border-bottom-color: #D0D0D0;
+ border-right-color: #D0D0D0;
+}
+
+body[narrow] #launcher[session] > .launchButton {
+ margin: 4px 1px;
+}
+
+.launchButton[hidden],
+#launcher:not([session]) > #restorePreviousSessionSeparator,
+#launcher:not([session]) > #restorePreviousSession {
+  display: none;
+}
+
+#restorePreviousSessionSeparator {
+  width: 1px;
+  height: 100px;
+  margin: 0 10px;
+  border-left: 1px solid;
+  border-left-color: #FFFFFF;
+}
+
+body[narrow] #restorePreviousSessionSeparator {
+  margin: 0 auto;
+  width: 512px;
+  height: 3px;
+}
+
+#restorePreviousSession {
+  max-width: none;
+  font-size: 90%;
+}
+
+body[narrow] #restorePreviousSession {
+  font-size: 80%;
+}
+
+.launchButton::before {
+ display: block;
+ width: 32px;
+ height: 32px;
+ margin: 0 auto 6px;
+ line-height: 0; /* remove extra vertical space due to non-zero font-size */
+}
+
+#downloads::before {
+ content: url("chrome://abouthome/skin/downloads.png");
+}
+
+#bookmarks::before {
+ content: url("chrome://abouthome/skin/bookmarks.png");
+}
+
+#history::before {
+ content: url("chrome://abouthome/skin/history.png");
+}
+
+#addons::before {
+ content: url("chrome://abouthome/skin/addons.png");
+}
+
+#sync::before {
+ content: url("chrome://abouthome/skin/sync.png");
+}
+
+#settings::before {
+ content: url("chrome://abouthome/skin/settings.png");
+}
+
+#restorePreviousSession::before {
+ content: url("chrome://abouthome/skin/restore.png");
+ height: 32px;
+ width: 32px;
+ display: inline-block; /* display on same line as text label */
+ vertical-align: middle;
+ margin-bottom: 0;
+ -moz-margin-end: 8px;
+}
+
+#restorePreviousSession:-moz-dir(rtl)::before {
+ transform: scaleX(-1);
+}
