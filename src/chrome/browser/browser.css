@@ -866,16 +866,6 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button])
  -moz-image-region: rect(96px, 672px, 128px, 640px);
 }
 
-/* download status button */
-#status4evar-download-button #status4evar-download-icon,
-#status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-large.png"),
-                              0, 192, 32, 160) !important;
-  width:32px;
-  height:32px;
-}
-
-
 #tabview-button, #menu_tabview
 {
  list-style-image: url(chrome://browser/skin/tabview/tabview-32.png);
@@ -1314,15 +1304,6 @@ toolbar[iconsize="small"] #webrtc-status-button:hover:active
 toolbar[iconsize="small"] #webrtc-status-button[disabled]
 {
  -moz-image-region: rect(48px, 336px, 64px, 320px);
-}
-
-/* download status button */
-toolbar[iconsize="small"] #status4evar-download-button #status4evar-download-icon,
-toolbar[iconsize="small"] #status4evar-download-button:-moz-lwtheme-brighttext #status4evar-download-icon {
-  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"),
-                              0, 96, 16, 80) !important;
-  width:16px;
-  height:16px;
 }
 
 toolbar[iconsize="small"] #tabview-button, toolbar[iconsize="small"] #menu_tabview
