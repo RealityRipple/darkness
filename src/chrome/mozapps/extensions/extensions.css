@@ -280,6 +280,10 @@
 {
  list-style-image: url("chrome://mozapps/skin/extensions/category-recent.png");
 }
+.category:not(:-moz-any(#category-search, #category-discover, #category-locale, #category-extension, #category-theme, #category-plugin, #category-dictionary, #category-availableUpdates, #category-recentUpdates)) > .category-icon
+{
+ filter: grayscale(1);
+}
 
 /*** header ***/
 #header
