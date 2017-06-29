@@ -1,5 +1,18 @@
 # Changelog
 
+### 1.7.0
+- use correct checkboxes on about:sessionrestore
+- add KUI close button
+- add about:home styling for Home Styler
+- fix download indicator styling
+- darken category icons in about:addons created by extensions
+- style radio panes globally as in Preferences window
+- add smaller toolbar image for extension compatibility
+- sync devtools styling with default-27.4.0
+- use smaller image document favicon
+- cleanup download status indicator styling
+- remove Social API components
+
 ### 1.6.0
 - sync about:support styling with default
 - sync about:permissions styling with default
