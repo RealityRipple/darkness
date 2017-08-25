@@ -49,30 +49,15 @@
 .expander-up > .button-box, .expander-down > .button-box
 {
  padding: 0;
+ margin-right: -9px;
 }
 .expander-up
 {
- background-image: url("chrome://global/skin/arrow/arrow-up.gif");
-}
-.expander-up:hover
-{
- background-image: url("chrome://global/skin/arrow/arrow-up-hov.gif");
-}
-.expander-up[disabled="true"]
-{
- background-image: url("chrome://global/skin/arrow/arrow-up-dis.gif");
+ list-style-image: url("chrome://global/skin/icons/collapse.png");
 }
 .expander-down
 {
- background-image: url("chrome://global/skin/arrow/arrow-dn.gif");
-}
-.expander-down:hover
-{
- background-image: url("chrome://global/skin/arrow/arrow-dn-hov.gif");
-}
-.expander-down[disabled="true"]
-{
- background-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
+ list-style-image: url("chrome://global/skin/icons/expand.png");
 }
 #itemList
 {
