@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.7.1
+- fix clean recent history dropdown
+- fix notification icons
+- sync devtools styling with default
+
 ### 1.7.0
 - use correct checkboxes on about:sessionrestore
 - add KUI close button
