@@ -228,6 +228,22 @@ treechildren::-moz-tree-image(Name, separator)
  height: 0px !important;
  margin: 0px 0px;
 }
+treechildren::-moz-tree-checkbox
+{
+ list-style-image: none;
+}
+treechildren::-moz-tree-checkbox(checked)
+{
+ list-style-image: url("chrome://global/skin/menu/menu-check.gif") !important;
+}
+treechildren::-moz-tree-checkbox(checked, hover), treechildren::-moz-tree-checkbox(checked, current)
+{
+ list-style-image: url("chrome://global/skin/menu/menu-check-hover.gif") !important;
+}
+treechildren::-moz-tree-checkbox(disabled)
+{
+ list-style-image: url("chrome://global/skin/menu/menu-check-disabled.gif") !important;
+}
 treechildren::-moz-tree-cell-text(Name, separator)
 {
  color: #FFFFFF;
