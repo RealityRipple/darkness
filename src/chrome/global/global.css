@@ -259,8 +259,7 @@ label[disabled="true"]:-moz-system-metric(windows-classic)
 /* FireFTP Fix */
 #cmdlog
 {
- background-color: #000000 !important;
- color: #FFFFFF;
+ background-color: #606060 !important;
  border: 0 !important;
 }
 .blue, .output

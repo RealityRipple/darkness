@@ -74,3 +74,11 @@ tab:first-of-type[selected="true"]
  -moz-border-bottom-colors: #D0D0D0 !important;
  -moz-border-top-colors: #000000 !important;
 }
+
+/* FireFTP Fix */
+#logQueueTabs .tab-bottom:first-of-type[selected="true"]
+{
+ color: #000000;
+ -moz-border-top-colors: #606060 !important;
+ background-color: #606060;
+}
