@@ -227,6 +227,10 @@ label[disabled="true"]:-moz-system-metric(windows-classic)
  border: 1px solid transparent;
  cursor: pointer;
 }
+#PMaboutDialog .text-link
+{
+ color: #000000;
+}
 .text-link:hover, .text-link:focus
 {
  text-decoration: underline;
