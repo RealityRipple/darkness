@@ -2,42 +2,43 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-html {
+html
+{
  font: message-box;
  font-size: 100%;
  background-color: #000;
  color: #fff;
  height: 100%;
 }
-
-body {
+body
+{
  margin: 0;
  display: -moz-box;
  -moz-box-orient: vertical;
  width: 100%;
  height: 100%;
+ background-image: url("chrome://abouthome/skin/static.gif");
 }
-
-input,
-button {
+input, button
+{
  font-size: inherit;
  font-family: inherit;
 }
-
-a {
+a
+{
  color: -moz-nativehyperlinktext;
  text-decoration: none;
 }
-
-.spacer {
+.spacer
+{
  -moz-box-flex: 1;
 }
-
-#topSection {
+#topSection
+{
  text-align: center;
 }
-
-#brandLogo {
+#brandLogo
+{
  height: 192px;
  width: 192px;
  margin: 22px auto 31px;
@@ -47,35 +48,35 @@ a {
  background-position: center center;
  background-repeat: no-repeat;
 }
-
-#searchForm {
+#searchForm
+{
  width: 470px;
 }
-
-#searchForm {
+#searchForm
+{
  display: -moz-box;
 }
-
-#searchLogoContainer {
+#searchLogoContainer
+{
  display: -moz-box;
  -moz-box-align: center;
  padding-top: 2px;
  -moz-padding-end: 8px;
 }
-
-#searchLogoContainer[hidden] {
+#searchLogoContainer[hidden]
+{
  display: none;
 }
-
-#searchEngineLogo {
+#searchEngineLogo
+{
  display: inline-block;
  height: 28px;
  width: 70px;
  filter: saturate(65%);
  min-width: 70px;
 }
-
-#searchText {
+#searchText
+{
  -moz-box-flex: 1;
  padding: 6px 8px;
  background-color: #000000;
@@ -87,8 +88,8 @@ a {
  border-right-color: #A0A0A0;
  border-left-color: #606060;
 }
-
-#searchSubmit {
+#searchSubmit
+{
  margin-left: 4px;
  padding: 0 9px;
  color: #FFFFFF;
@@ -96,39 +97,39 @@ a {
  border: 1px solid transparent;
  cursor: pointer;
 }
-
-#searchSubmit:hover {
+#searchSubmit:hover
+{
  background-color: #404040;
  border-top-color: #D0D0D0;
  border-left-color: #D0D0D0;
  border-bottom-color: #606060;
  border-right-color: #606060;
 }
-
-#searchSubmit:hover:active {
+#searchSubmit:hover:active
+{
  background-color: #606060;
  border-top-color: #606060;
  border-left-color: #606060;
  border-bottom-color: #D0D0D0;
  border-right-color: #D0D0D0;
 }
-
-#launcher {
+#launcher
+{
  display: -moz-box;
  -moz-box-align: center;
  -moz-box-pack: center;
  width: 100%;
  border-top: 1px solid #FFFFFF;
+ background-color: rgba(0, 0, 0, 0.8);
 }
-
-#launcher:not([session]),
-body[narrow] #launcher[session] {
- display: block; /* display separator and restore button on separate lines */
+#launcher:not([session]), body[narrow] #launcher[session]
+{
+ display: block;
  text-align: center;
- white-space: nowrap; /* prevent navigational buttons from wrapping */
+ white-space: nowrap;
 }
-
-.launchButton {
+.launchButton
+{
  display: -moz-box;
  -moz-box-orient: vertical;
  margin: 16px 1px;
@@ -144,98 +145,102 @@ body[narrow] #launcher[session] {
  font-size: 75%;
  cursor: pointer;
 }
-
-.launchButton:hover {
+.launchButton:hover
+{
  background-color: #404040;
  border-top-color: #D0D0D0;
  border-left-color: #D0D0D0;
  border-bottom-color: #606060;
  border-right-color: #606060;
 }
-
-.launchButton:hover:active {
+.launchButton:hover:active
+{
  background-color: #606060;
  border-top-color: #606060;
  border-left-color: #606060;
  border-bottom-color: #D0D0D0;
  border-right-color: #D0D0D0;
 }
-
-body[narrow] #launcher[session] > .launchButton {
+body[narrow] #launcher[session] > .launchButton
+{
  margin: 4px 1px;
+ padding: 8px 1px;
+ min-width: 75px;
 }
-
-.launchButton[hidden],
-#launcher:not([session]) > #restorePreviousSessionSeparator,
-#launcher:not([session]) > #restorePreviousSession {
+.launchButton[hidden], #launcher:not([session]) > #restorePreviousSessionSeparator, #launcher:not([session]) > #restorePreviousSession
+{
   display: none;
 }
-
-#restorePreviousSessionSeparator {
-  width: 1px;
-  height: 100px;
-  margin: 0 10px;
-  border-left: 1px solid;
-  border-left-color: #FFFFFF;
+#restorePreviousSessionSeparator
+{
+ width: 1px;
+ height: 100px;
+ margin: 0 10px;
+ border-left: 1px solid;
+ border-left-color: #FFFFFF;
 }
-
-body[narrow] #restorePreviousSessionSeparator {
-  margin: 0 auto;
-  width: 512px;
-  height: 3px;
+body[narrow] #restorePreviousSessionSeparator
+{
+ margin: 4px auto;
+ width: 100%;
+ max-width: 512px;
+ height: 1px;
+ border-left: 0px solid;
+ border-top: 1px solid;
+ border-top-color: #FFFFFF;
 }
-
-#restorePreviousSession {
-  max-width: none;
-  font-size: 90%;
+#restorePreviousSession
+{
+ max-width: none;
+ font-size: 90%;
 }
-
-body[narrow] #restorePreviousSession {
-  font-size: 80%;
+body[narrow] #restorePreviousSession
+{
+ font-size: 80%;
 }
-
-.launchButton::before {
+.launchButton::before
+{
  display: block;
  width: 32px;
  height: 32px;
  margin: 0 auto 6px;
- line-height: 0; /* remove extra vertical space due to non-zero font-size */
+ line-height: 0;
 }
-
-#downloads::before {
+#downloads::before
+{
  content: url("chrome://abouthome/skin/downloads.png");
 }
-
-#bookmarks::before {
+#bookmarks::before
+{
  content: url("chrome://abouthome/skin/bookmarks.png");
 }
-
-#history::before {
+#history::before
+{
  content: url("chrome://abouthome/skin/history.png");
 }
-
-#addons::before {
+#addons::before
+{
  content: url("chrome://abouthome/skin/addons.png");
 }
-
-#sync::before {
+#sync::before
+{
  content: url("chrome://abouthome/skin/sync.png");
 }
-
-#settings::before {
+#settings::before
+{
  content: url("chrome://abouthome/skin/settings.png");
 }
-
-#restorePreviousSession::before {
+#restorePreviousSession::before
+{
  content: url("chrome://abouthome/skin/restore.png");
  height: 32px;
  width: 32px;
- display: inline-block; /* display on same line as text label */
+ display: inline-block;
  vertical-align: middle;
  margin-bottom: 0;
  -moz-margin-end: 8px;
 }
-
-#restorePreviousSession:-moz-dir(rtl)::before {
+#restorePreviousSession:-moz-dir(rtl)::before
+{
  transform: scaleX(-1);
 }
