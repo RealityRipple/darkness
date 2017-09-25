@@ -492,6 +492,11 @@ toolbar[iconsize="small"] .toolbarbutton-1
 {
  list-style-image: url("chrome://browser/skin/Toolbar-small.png");
 }
+/* FireFTP Fix */
+toolbar[iconsize="small"] #fireftp-button
+{
+ list-style-image: url("chrome://fireftp/skin/icons/logo.png");
+}
 .toolbarbutton-1 > .toolbarbutton-menu-dropmarker, .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker
 {
  list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow.png");
