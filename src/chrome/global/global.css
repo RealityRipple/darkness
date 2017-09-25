@@ -262,22 +262,6 @@ label[disabled="true"]:-moz-system-metric(windows-classic)
  background-color: #606060 !important;
  border: 0 !important;
 }
-.blue, .output
-{
- color: #00FFFF !important;
-}
-.green, .input
-{
- color: #00FF00 !important;
-}
-.debug
-{
- color: #FFFFFF !important;
-}
-.custom
-{
- background-color: #101010 !important;
-}
 .close-icon
 {
  list-style-image: url("chrome://global/skin/icons/close.png");
