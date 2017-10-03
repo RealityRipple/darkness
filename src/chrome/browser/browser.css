@@ -378,7 +378,7 @@ toolbarbutton.bookmark-item:hover:active:not([disabled="true"]), toolbarbutton.b
 }
 #PlacesToolbarItems > .bookmark-item:not([image]):not([label=""]):not([container]) > .toolbarbutton-icon
 {
- display: none;
+/* display: none; */
 }
 .bookmark-item > .toolbarbutton-text
 {
@@ -1571,8 +1571,13 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  -moz-padding-start: 2px;
  -moz-padding-end: 5px;
 }
-
-/* Location bar dropmarker */
+@media(max-width: 675px)
+{
+ #urlbar #identity-box #identity-icon-labels
+ {
+  display: none;
+ }
+}
 .urlbar-history-dropmarker
 {
  -moz-appearance: none;
@@ -1836,15 +1841,29 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 /* ::::: throbber ::::: */
 #navigator-throbber
 {
+ width: 32px;
+ min-height: 32px;
+ margin: 0 3px;
+}
+toolbar[iconsize="small"] #navigator-throbber
+{
  width: 16px;
  min-height: 16px;
  margin: 0 3px;
 }
 #navigator-throbber[busy="true"]
 {
- list-style-image: url("chrome://global/skin/icons/loading_16.png");
+ list-style-image: url("chrome://global/skin/icons/loading_32.png");
 }
 #navigator-throbber, #wrapper-navigator-throbber > #navigator-throbber
+{
+ list-style-image: url("chrome://global/skin/icons/notloading_32.png");
+}
+toolbar[iconsize="small"] #navigator-throbber[busy="true"]
+{
+ list-style-image: url("chrome://global/skin/icons/loading_16.png");
+}
+toolbar[iconsize="small"] #navigator-throbber, toolbar[iconsize="small"] #wrapper-navigator-throbber > #navigator-throbber
 {
  list-style-image: url("chrome://global/skin/icons/notloading_16.png");
 }
@@ -2063,7 +2082,7 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 }
 .alltabs-item[busy] > .menu-iconic-left > .menu-iconic-icon
 {
- list-style-image: url("chrome://global/skin/icons/loading_16.png");
+ list-style-image: url("chrome://global/skin/icons/loading.png");
 }
 .alltabs-item[tabIsVisible]
 {
@@ -4114,6 +4133,12 @@ html|*#gcli-output-frame {
  background-image: url("chrome://global/skin/dirListing/remote.png");
  background-repeat: no-repeat;
  background-position: left center;
+}
+#goOfflineMenuitem[checked="true"]
+{
+ background-image: url("chrome://global/skin/menu/menu-check.gif");
+ background-repeat: no-repeat;
+ background-position: 2px 50%;
 }
 #menu_FileQuitItem
 {

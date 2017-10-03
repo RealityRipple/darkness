@@ -1,30 +1,21 @@
 <?xml version="1.0"?>
-
-<!-- This Source Code is subject to the terms of the Mozilla Public License
-   - version 2.0 (the "License"). You can obtain a copy of the License at
-   - http://mozilla.org/MPL/2.0/. -->
-
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-
-  <Description about="urn:mozilla:install-manifest">
-    <em:id>{434de990-fa69-4811-b98e-98e62085837f}</em:id>
-    <em:version>1.7.1</em:version>
-    <em:name>Darkness</em:name>
-    <em:description>A dark, simple, grayscale theme for Pale Moon. Fork of "In The Dark" by RealityRipple</em:description>
-    <em:creator>Lootyhoof</em:creator>
-    <em:type>4</em:type>
-    <em:internalName>darkness</em:internalName>
-
-    <em:contributor>RealityRipple</em:contributor>
-
-    <em:targetApplication>
-      <Description>
-        <!-- Pale Moon -->
-        <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
-        <em:minVersion>27.0.0b3</em:minVersion>
-        <em:maxVersion>27.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-  </Description>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+ <Description about="urn:mozilla:install-manifest">
+  <em:name>In The Dark</em:name>
+  <em:id>{86FA6F53-95FE-7A69-D8C3-E1454281F8B6}</em:id>
+  <em:version>4.3a3</em:version>
+  <em:type>4</em:type>
+  <em:targetApplication>
+   <Description>
+    <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+    <em:minVersion>20.0</em:minVersion>
+    <em:maxVersion>28.0</em:maxVersion>
+   </Description>
+  </em:targetApplication>
+  <em:description>A dark, simple, grayscale theme for Pale Moon.</em:description>
+  <em:homepageURL>http://realityripple.com/Software/Themes/In-The-Dark/Pale-Moon/</em:homepageURL>
+  <em:creator>RealityRipple</em:creator>
+  <em:contributor>Lootyhoof</em:contributor>
+  <em:internalName>InTheDark</em:internalName>
+ </Description>
 </RDF>
