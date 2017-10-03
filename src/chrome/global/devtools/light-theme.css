@@ -45,6 +45,10 @@
   color: var(--theme-body-color);
 }
 
+.checkbox-label, .radio-label {
+ color: var(--theme-body-color);
+}
+
 ::-moz-selection {
   background-color: var(--theme-selection-background);
   color: var(--theme-selection-color);
