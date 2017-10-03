@@ -181,17 +181,17 @@
 
 .security-state-secure {
   cursor: pointer;
-  list-style-image: url(chrome://browser/skin/identity-icons-https.png);
+  list-style-image: url(chrome://browser/skin/padlock/padlock_mod_https.png);
 }
 
 .security-state-weak {
   cursor: pointer;
-  list-style-image: url(chrome://browser/skin/identity-icons-https-mixed-display.png);
+  list-style-image: url(chrome://browser/skin/padlock/padlock_mod_low.png);
 }
 
 .security-state-broken {
   cursor: pointer;
-  list-style-image: url(chrome://browser/skin/identity-icons-https-mixed-active.png);
+  list-style-image: url(chrome://browser/skin/padlock/padlock_mod_broken.png);
 }
 
 .requests-menu-type {

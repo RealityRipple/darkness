@@ -419,6 +419,11 @@ menu.bookmark-item, menuitem.bookmark-item
 {
  list-style-image: url("chrome://mozapps/skin/places/defaultFavicon.png");
 }
+.bookmark-item[scheme="https"]
+{
+ list-style-image: url("chrome://browser/skin/padlock/padlock_mod_low.png") !important;
+ -moz-image-region: rect(0px 32px 16px 16px);
+}
 .bookmark-item[container]
 {
  list-style-image: url("chrome://global/skin/icons/folder-item.png");
@@ -1608,7 +1613,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 }
 #notification-popup-box[hidden] + #page-proxy-favicon[pageproxystate="invalid"]
 {
- list-style-image: url(chrome://browser/skin/identity-icons-bad.png);
+ list-style-image: url(chrome://browser/skin/padlock/padlock_mod_broken.png);
 }
 #identity-box:hover > #page-proxy-favicon
 {
