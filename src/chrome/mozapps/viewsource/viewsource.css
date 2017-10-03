@@ -1,1 +1,175 @@
-/* This is for styling the menus of the viewsource window */
+/* File */
+#menu_savePage
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 96, 16, 80);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_pageSetup
+{
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 32, 16, 48, 0);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_printPreview
+{
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_print
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 144, 16, 128);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_close
+{
+ background-image: url("chrome://global/skin/icons/Close.gif");
+ background-repeat: no-repeat;
+ background-position: 3px center;
+}
+
+/* Edit */
+#menu_undo
+{
+ background-image: url("chrome://browser/skin/menu-back.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_redo
+{
+ background-image: url("chrome://browser/skin/menu-forward.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_cut
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 192, 16, 176);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_copy, #cMenu_copy, #context-copyLink
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#context-copyEmail
+{
+ background-image: url("chrome://browser/skin/preferences/mail.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_paste
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 224, 16, 208);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_delete
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_selectAll, #cMenu_selectAll
+{
+ background-image: url("chrome://global/skin/icons/information-16.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_find
+{
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_findAgain, #cMenu_findAgain
+{
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 32, 16, 16);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_goToLine
+{
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/find.png"), 0, 16, 16, 0);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+
+/* View */
+#menu_reload
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#viewTextZoomMenu
+{
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_textEnlarge
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 16, 16, 0);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_textReduce
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 32, 16, 16);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_textReset
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 48, 16, 32);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#charsetMenu
+{
+ background-image: url("chrome://browser/skin/social/services-16.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#charsetMenu menuitem[name="charsetCustomize"]
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+
+/* Help */
+#menu_openHelp
+{
+ background-image: url("chrome://global/skin/icons/question-16.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#troubleShooting
+{
+ background-image: url("chrome://global/skin/icons/error-16.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#feedbackPage
+{
+ background-image: url("chrome://browser/skin/social/services-16.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#helpSafeMode
+{
+ background-image: url("chrome://global/skin/icons/blacklist_favicon.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#aboutName
+{
+ background-image: url("chrome://browser/skin/preferences/application.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
