@@ -15,9 +15,16 @@
 }
 #emptyDownloads
 {
- padding: 10px 20px;
- max-width: 40ch;
- color: #FFFFFF;
+ margin: 4px;
+ padding: 2.75em 9.75em;
+ color: #909090;
+ background-color: #101010;
+ border: 2px solid;
+ border-top-color: #606060;
+ border-right-color: #D0D0D0;
+ border-bottom-color: #D0D0D0;
+ border-left-color: #606060;
+ white-space: nowrap;
 }
 #downloadsHistory
 {
