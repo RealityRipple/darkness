@@ -3959,7 +3959,7 @@ html|*#gcli-output-frame {
 }
 #appmenu_webDeveloper > .splitmenu-menuitem
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/devtools/tools-icons-small.png"), 64, 16, 80, 0);
+ background-image: -moz-image-rect(url("chrome://global/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -3972,6 +3972,12 @@ html|*#gcli-output-frame {
 #appmenu_fullScreen
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 240, 16, 224);
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_restart, #appmenu_restart
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -4037,13 +4043,19 @@ html|*#gcli-output-frame {
 }
 #appmenu_customize > .splitmenu-menuitem, #appmenu_preferences
 {
- background-image: url("chrome://browser/skin/devtools/tool-options.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/options.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #appmenu_toolbarLayout
 {
  background-image: url("chrome://browser/skin/places/bookmarksToolbar.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#statusbar-options-app, #statusbar-options-fx
+{
+ background-image: url("chrome://browser/skin/statusbar/pms16.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -4407,6 +4419,12 @@ html|*#gcli-output-frame {
  background-repeat: no-repeat;
  background-position: left center;
 }
+#menu_openPermissions, #appmenu_permissions
+{
+ background-image: url("chrome://mozapps/skin/passwordmgr/key-16.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
 #menu_socialAmbientMenu
 {
  background-image: url("chrome://browser/skin/social/services-16.png");
@@ -4427,61 +4445,79 @@ html|*#gcli-output-frame {
 }
 #webDeveloperMenu
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/devtools/tools-icons-small.png"), 64, 16, 80, 0);
- background-repeat: no-repeat;
- background-position: left center;
-}
-#menuitem_webconsole, #appmenuitem_webconsole
-{
- background-image: url("chrome://browser/skin/devtools/tool-webconsole.png");
+ background-image: -moz-image-rect(url("chrome://global/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_inspector, #appmenuitem_inspector
 {
- background-image: url("chrome://browser/skin/devtools/tool-inspector.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/inspector.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menuitem_webconsole, #appmenuitem_webconsole
+{
+ background-image: url("chrome://global/skin/devtools/tool-icons/webconsole.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_jsdebugger, #appmenuitem_jsdebugger
 {
- background-image: url("chrome://browser/skin/devtools/tool-debugger.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/debugger.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_styleeditor, #appmenuitem_styleeditor
 {
- background-image: url("chrome://browser/skin/devtools/tool-styleeditor.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/styleeditor.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_jsprofiler, #appmenuitem_jsprofiler
 {
- background-image: url("chrome://browser/skin/devtools/tool-profiler.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/profiler.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_netmonitor, #appmenuitem_netmonitor
 {
- background-image: url("chrome://browser/skin/devtools/tool-network.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/network.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menuitem_storage, #appmenuitem_storage
+{
+ background-image: url("chrome://global/skin/devtools/tool-icons/storage.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menu_chromeDebugger, #appmenu_chromeDebugger
 {
- background-image: url("chrome://browser/skin/devtools/tool-debugger.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/debugger.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menu_browserConsole, #appmenu_browserConsole
 {
- background-image: url("chrome://browser/skin/devtools/tool-webconsole.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/webconsole.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_responsiveUI, #appmenu_responsiveUI
+{
+ background-image: url("chrome://global/skin/devtools/tool-icons/responsivemode.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_eyedropper, #appmenu_eyedropper
+{
+ background-image: url("chrome://global/skin/devtools/tool-icons/eyedropper.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menu_scratchpad, #appmenu_scratchpad
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/devtools/command-scratchpad.png"), 0, 16, 16, 0);
+ background-image: url("chrome://global/skin/devtools/tool-icons/scratchpad.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -4523,7 +4559,7 @@ html|*#gcli-output-frame {
 }
 #menu_preferences
 {
- background-image: url("chrome://browser/skin/devtools/tool-options.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/options.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -4543,7 +4579,7 @@ html|*#gcli-output-frame {
 }
 #healthReport, #appmenu_healthReport
 {
- background-image: url("chrome://browser/skin/devtools/tool-profiler.png");
+ background-image: url("chrome://global/skin/devtools/tool-icons/profiler.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
