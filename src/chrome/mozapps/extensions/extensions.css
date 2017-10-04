@@ -514,6 +514,23 @@
 {
  -moz-box-align: stretch;
 }
+.addon[native] .nativeAddon
+{
+ color: #106090;
+}
+.addon[native] .compatAddon
+{
+ color: #FF6000;
+}
+.addon[native]:not([selected]) .nativeAddon
+{
+ text-shadow: 1px 1px 6px;
+}
+.addon[native]:not([selected]) .compatAddon
+{
+ text-shadow: 1px 1px 6px;
+}
+
 .advancedinfo-container, .update-info-container
 {
  -moz-box-align: center;
