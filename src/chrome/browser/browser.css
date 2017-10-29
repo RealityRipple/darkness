@@ -4047,6 +4047,12 @@ html|*#gcli-output-frame {
  background-repeat: no-repeat;
  background-position: left center;
 }
+#pmcommander-options-app
+{
+ background-image: url("chrome://global/skin/icons/warning-16.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
 #appmenu_toolbarLayout
 {
  background-image: url("chrome://browser/skin/places/bookmarksToolbar.png");
@@ -4560,6 +4566,12 @@ html|*#gcli-output-frame {
 #menu_preferences
 {
  background-image: url("chrome://global/skin/devtools/tool-icons/options.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#pmcommander-options-fx
+{
+ background-image: url("chrome://global/skin/icons/warning-16.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
