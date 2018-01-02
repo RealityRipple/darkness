@@ -1,9 +1,18 @@
 # Changelog
 
+### 4.3a4
+- Revert duplicate code for download indicator styling in download.css.
+- Add menu icons to View Source window.
+- Cleanup padlock icons and modify mixed content icons.
+- Prevent overwrite of text color for checkboxes and radios in developer tools "light theme".
+- Initial customizations to statusbar settings.
+- Re-add background box on images.
+- Box for empty downloads.
+- Addon compatibility indicator style changes.
+- Recover missing menu items and include a few new ones.
+- Add Pale Moon Commander "Advanced options..." menu icon.
+
 ### 4.3a3
-- Add "blank" icon to bookmark toolbar items without a favicon.
-- New throbber globe icon for non-tab throbber usage.
-- Add checkbox display to Work Offline menu item to replace the connection icon when checked.
 - Return to In The Dark naming.
 - Fix FireFTP small toolbar icon.
 - Remove non-functional FireFTP log color overrides.
@@ -13,4 +22,11 @@
 - Remove extra bordering pixel between menu and child popup.
 - Color links black in Pale Moon About dialog.
 - Change about:home styling: Add "static.gif" background, Reduce padding of launch buttons when narrow
-- Import changes from Darkness 1.7.1 for Pale Moon.
+
+### 4.3a2
+- Add checkbox display to Work Offline menu item to replace the connection icon when checked.
+
+### 4.3a1
+- Add "blank" icon to bookmark toolbar items without a favicon.
+- New throbber globe icon for non-tab throbber usage.
+- Fix download toolbar icon progress for 27.0a1.
