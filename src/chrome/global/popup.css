@@ -29,33 +29,34 @@ panel[type="arrow"]
  transition: opacity 300ms;
 }
 
-@media (-moz-windows-default-theme) {
-.panel-arrowcontainer[panelopen]
+@media (-moz-windows-default-theme)
 {
- transition-duration: 200ms, 150ms;
- transition-property: opacity, transform;
- transition-timing-function: ease-out;
-}
-.panel-arrowcontainer:not([panelopen])
-{
- opacity: 0;
-}
-.panel-arrowcontainer:not([panelopen])[side="top"]
-{
- transform: translateY(-20px);
-}
-.panel-arrowcontainer:not([panelopen])[side="bottom"]
-{
- transform: translateY(20px);
-}
-.panel-arrowcontainer:not([panelopen])[side="left"]
-{
- transform: translateX(-20px);
-}
-.panel-arrowcontainer:not([panelopen])[side="right"]
-{
- transform: translateX(20px);
-}
+ .panel-arrowcontainer[panelopen]
+ {
+  transition-duration: 200ms, 150ms;
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+ }
+ .panel-arrowcontainer:not([panelopen])
+ {
+  opacity: 0;
+ }
+ .panel-arrowcontainer:not([panelopen])[side="top"]
+ {
+  transform: translateY(-20px);
+ }
+ .panel-arrowcontainer:not([panelopen])[side="bottom"]
+ {
+  transform: translateY(20px);
+ }
+ .panel-arrowcontainer:not([panelopen])[side="left"]
+ {
+  transform: translateX(-20px);
+ }
+ .panel-arrowcontainer:not([panelopen])[side="right"]
+ {
+  transform: translateX(20px);
+ }
 }
 
 panel[type="arrow"][side="top"], panel[type="arrow"][side="bottom"]
@@ -136,10 +137,13 @@ tooltip
  border-bottom-color: #D0D0D0;
  border-left-color: #606060;
  padding: 2px 3px;
- max-width: 40em;
+ max-width: 80em;
  background-color: #000000;
  color: #FFFFFF;
  font: message-box;
+ word-wrap: break-word;
+ white-space: pre-wrap;
+ word-break: break-all;
 }
 tooltip[titletip="true"]
 {
