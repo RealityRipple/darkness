@@ -1,5 +1,9 @@
 # Changelog
 
+### 4.3a5
+- Fix excessive ToolTip Text length crash.
+- Fix occasional Menu background coloring issue.
+
 ### 4.3a4
 - Revert duplicate code for download indicator styling in download.css.
 - Add menu icons to View Source window.
