@@ -665,3 +665,8 @@ menuitem[anonid="paste-and-go"]
 {
  background: -moz-image-rect(url("chrome://browser/skin/reload-stop-go.png"), 0, 42, 14, 28) left center no-repeat;
 }
+
+button menuitem
+{
+ background-color: transparent;
+}
