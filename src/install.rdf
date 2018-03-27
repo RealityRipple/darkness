@@ -15,6 +15,8 @@
   <em:description>A dark, simple, grayscale theme for Pale Moon.</em:description>
   <em:homepageURL>https://realityripple.com/Software/Themes/In-The-Dark/Pale-Moon/</em:homepageURL>
   <em:updateURL>https://realityripple.com/Software/Themes/In-The-Dark/Pale-Moon/update.rdf</em:updateURL>
+  <em:iconURL>chrome://inthedark/skin/logo.png</em:iconURL>
+  <em:icon64URL>chrome://inthedark/skin/logo64.png</em:icon64URL>
   <em:creator>RealityRipple</em:creator>
   <em:contributor>Lootyhoof</em:contributor>
   <em:internalName>InTheDark</em:internalName>
