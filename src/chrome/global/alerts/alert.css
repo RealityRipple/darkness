@@ -2,10 +2,10 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 .alertBox
 {
- border-right: 2px solid #A0A0A0;
- border-bottom: 2px solid #A0A0A0;
- border-top: 2px solid #A0A0A0;
- border-left: 2px solid #A0A0A0;
+ border-right: 2px solid #801818;
+ border-bottom: 2px solid #801818;
+ border-top: 2px solid #801818;
+ border-left: 2px solid #801818;
  background-color: #000000;
 }
 .alertImageBox
@@ -24,7 +24,7 @@
 }
 .alertTextBox, .alertCloseBox
 {
- background: #101010;
+ background: #100000;
 }
 .alertTitle
 {

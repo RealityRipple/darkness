@@ -34,7 +34,7 @@ spinbuttons
 .spinbuttons-up[disabled="true"]
 {
  background-image: url("chrome://global/skin/arrow/arrow-up-dis.gif");
- background-color: #404040 !important;
+ background-color: #401010 !important;
 }
 .spinbuttons-down
 {
@@ -54,5 +54,5 @@ spinbuttons
 .spinbuttons-down[disabled="true"]
 {
  background-image: url("chrome://global/skin/arrow/arrow-dn-dis.gif");
- background-color: #404040 !important;
+ background-color: #401010 !important;
 }

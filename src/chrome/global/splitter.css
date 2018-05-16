@@ -6,8 +6,8 @@ splitter
  cursor: ew-resize;
  border-width: 0 1px;
  border-style: solid;
- -moz-border-left-colors: #D0D0D0;
- -moz-border-right-colors: #606060;
+ -moz-border-left-colors: #C01818;
+ -moz-border-right-colors: #601818;
  min-width: 6px;
  background-color: #000000;
 }
@@ -23,8 +23,8 @@ splitter[orient="vertical"]
 {
  cursor: ns-resize;
  border-width: 1px 0;
- -moz-border-top-colors: #D0D0D0;
- -moz-border-bottom-colors: #606060;
+ -moz-border-top-colors: #C01818;
+ -moz-border-bottom-colors: #601818;
  min-height: 6px;
 }
 splitter[orient="vertical"][state="collapsed"][collapse="before"], splitter[orient="vertical"][state="collapsed"][substate="before"]
@@ -50,7 +50,7 @@ grippy
 }
 grippy:hover
 {
- background-color: #202020;
+ background-color: #200808;
 }
 splitter[orient="vertical"] > grippy
 {

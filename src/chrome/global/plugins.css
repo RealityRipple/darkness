@@ -40,12 +40,12 @@ dl
 }
 table
 {
- background-color: #202020;
+ background-color: #200808;
  color: #FFFFFF;
  font: message-box;
  text-align: start;
  width: 100%;
- border: 1px solid #C0C0C0;
+ border: 1px solid #B01818;
  border-spacing: 0px;
 }
 th, td
@@ -56,17 +56,17 @@ th, td
 th
 {
  text-align: center;
- background-color: #404040;
+ background-color: #401010;
  color: #FFFFFF;
 }
 th + th, td + td
 {
- -moz-border-start: 1px solid #606060;
+ -moz-border-start: 1px solid #601818;
 }
 td
 {
  text-align: start;
- border-top: 1px solid #606060;
+ border-top: 1px solid #601818;
 }
 th.type, th.suff
 {

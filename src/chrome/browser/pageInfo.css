@@ -15,18 +15,18 @@
 }
 #viewGroup > radio:hover
 {
- background-color: #303030;
+ background-color: #301010;
  color: #FFFFFF;
 }
 #viewGroup > radio[selected="true"]
 {
- background-color: #606060;
+ background-color: #601818;
  color: #FFFFFF;
 }
 #topBar
 {
  border-bottom: 2px solid;
- -moz-border-bottom-colors: #606060 #A0A0A0;
+ -moz-border-bottom-colors: #601818 #801818;
  -moz-padding-start: 10px;
  background-color: #000000;
  color: #FFFFFF;
@@ -98,7 +98,7 @@ textbox.header
 .iframe
 {
  margin: .5em;
- background: radial-gradient(circle at 50% 0%, #202020 0%, #000000 100%) #000000;
+ background: radial-gradient(circle at 50% 0%, #200808 0%, #000000 100%) #000000;
  overflow: auto;
 }
 .fixedsize
@@ -169,7 +169,7 @@ groupbox tree
 treechildren::-moz-tree-cell-text(broken)
 {
  font-style: italic;
- color: #909090;
+ color: #701818;
 }
 #feedtree
 {
@@ -183,20 +183,20 @@ treechildren::-moz-tree-cell-text(broken)
  -moz-padding-end: 7px;
  min-height: 25px;
  border: 2px solid;
- border-top-color: #606060;
- border-right-color: #D0D0D0;
- border-bottom-color: #D0D0D0;
- border-left-color: #606060;
+ border-top-color: #601818;
+ border-right-color: #C01818;
+ border-bottom-color: #C01818;
+ border-left-color: #601818;
  background-color: #000000;
  color: #FFFFFF;
 }
 #feedListbox richlistitem[selected="true"]
 {
- background-color: #202020;
- border-top-color: #D0D0D0;
- border-right-color: #606060;
- border-bottom-color: #606060;
- border-left-color: #D0D0D0;
+ background-color: #200808;
+ border-top-color: #C01818;
+ border-right-color: #601818;
+ border-bottom-color: #601818;
+ border-left-color: #C01818;
 }
 #feedListbox
 {
@@ -221,10 +221,10 @@ treechildren::-moz-tree-cell-text(broken)
  -moz-padding-end: 7px;
  min-height: 25px;
  border: 2px solid;
- border-top-color: #606060;
- border-right-color: #D0D0D0;
- border-bottom-color: #D0D0D0;
- border-left-color: #606060;
+ border-top-color: #601818;
+ border-right-color: #C01818;
+ border-bottom-color: #C01818;
+ border-left-color: #601818;
  background-color: #000000;
  color: #FFFFFF;
 }
@@ -234,11 +234,11 @@ treechildren::-moz-tree-cell-text(broken)
 }
 .permission:hover
 {
- background-color: #404040;
- border-top-color: #D0D0D0;
- border-right-color: #606060;
- border-bottom-color: #606060;
- border-left-color: #D0D0D0;
+ background-color: #401010;
+ border-top-color: #C01818;
+ border-right-color: #601818;
+ border-bottom-color: #601818;
+ border-left-color: #C01818;
 }
 #securityPanel .caption-icon
 {

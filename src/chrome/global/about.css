@@ -11,12 +11,12 @@ body
  min-width: 330px;
  max-width: 50em;
  margin: 4em auto;
- border: 1px solid #D0D0D0;
- border-bottom-color: #606060;
- border-right-color: #606060;
+ border: 1px solid #C01818;
+ border-bottom-color: #601818;
+ border-right-color: #601818;
  padding: 3em;
  -moz-padding-start: 30px;
- background: #101010;
+ background: #100000;
 }
 .aboutPageWideContainer
 {

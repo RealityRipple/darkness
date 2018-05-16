@@ -1,16 +1,16 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 .tabs-left, .tabs-right
 {
- border-bottom: 1px solid #C0C0C0;
+ border-bottom: 1px solid #B01818;
 }
 tabpanels
 {
  -moz-appearance: none;
  border-style: solid;
  border-top: 0px;
- border-right: 1px solid #808080;
- border-bottom: 1px solid #808080;
- border-left: 1px solid #C0C0C0;
+ border-right: 1px solid #681818;
+ border-bottom: 1px solid #681818;
+ border-left: 1px solid #B01818;
  padding: 8px;
  background-color: #000000;
  color: #FFFFFF;
@@ -23,7 +23,7 @@ tab
  padding: 1px 4px 2px 4px;
  background-color: #000000;
  color: #FFFFFF;
- border: 1px solid #D0D0D0;
+ border: 1px solid #C01818;
  border-bottom-width: 2px;
 }
 .tab-text
@@ -56,7 +56,7 @@ tab:first-of-type[selected="true"]
 }
 .tabs-bottom > .tabs-left, .tabs-bottom > .tabs-right
 {
- border-top: 1px solid #808080 !important;
+ border-top: 1px solid #681818 !important;
  border-bottom: none !important;
 }
 .tab-bottom
@@ -71,7 +71,7 @@ tab:first-of-type[selected="true"]
  margin-bottom: 0 !important;
  margin-top: -1px !important;
  padding: 4px 6px 1px 6px !important;
- -moz-border-bottom-colors: #D0D0D0 !important;
+ -moz-border-bottom-colors: #C01818 !important;
  -moz-border-top-colors: #000000 !important;
 }
 
@@ -79,6 +79,6 @@ tab:first-of-type[selected="true"]
 #logQueueTabs .tab-bottom:first-of-type[selected="true"]
 {
  color: #000000;
- -moz-border-top-colors: #606060 !important;
- background-color: #606060;
+ -moz-border-top-colors: #601818 !important;
+ background-color: #601818;
 }

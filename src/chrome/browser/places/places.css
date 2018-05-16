@@ -3,7 +3,7 @@
  -moz-appearance: none;
  border: 0;
  margin: 0;
- border-top: 1px solid #A0A0A0;
+ border-top: 1px solid #801818;
 }
 .sidebar-placesTreechildren::-moz-tree-cell(leaf), .sidebar-placesTreechildren::-moz-tree-image(leaf)
 {

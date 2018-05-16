@@ -197,8 +197,8 @@ scrollcorner
  {
   background-color: #CCCCCC;
   -moz-border-top-colors: #111111 #F7F7F7 #DBDBDB;
-  -moz-border-right-colors: #111111 #AEAEAE #C0C0C0;
-  -moz-border-bottom-colors: #111111 #AEAEAE #C0C0C0;
+  -moz-border-right-colors: #111111 #AEAEAE #B01818;
+  -moz-border-bottom-colors: #111111 #AEAEAE #B01818;
   -moz-border-left-colors: #111111 #E8E8E8 #DBDBDB;
  }
  html|div thumb
@@ -220,7 +220,7 @@ scrollcorner
  {
   border-left-width: 2px;
   border-right-width: 2px;
-  -moz-border-top-colors: #000000 #818181 #A0A0A0;
+  -moz-border-top-colors: #000000 #818181 #801818;
   -moz-border-right-colors: #000000 #828282 #A9A9A9;
   -moz-border-bottom-colors: #000000 #959595 #9F9F9F;
   -moz-border-left-colors: #000000 #B6B6B6 #A9A9A9;

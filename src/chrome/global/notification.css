@@ -7,7 +7,7 @@ notification
 }
 notification[type="info"]
 {
- background-image: linear-gradient(#202020, #000000);
+ background-image: linear-gradient(#200808, #000000);
  background-color: #000000;
  color: #FFFFFF;
 }
@@ -80,13 +80,13 @@ XXX: apply styles to all themes until bug 509642 is fixed
  }
  .popup-notification-menubutton:hover:active
  {
-  border-color: #A0A0A0;
+  border-color: #801818;
  }
  .popup-notification-menubutton:not([type="menu-button"]), .popup-notification-menubutton > .button-menubutton-button, .popup-notification-menubutton > .button-menubutton-dropmarker
  {
   -moz-appearance: none;
   margin: 0;
-  border: 1px solid #606060;
+  border: 1px solid #601818;
   background: #000000;
  }
  .popup-notification-menubutton > .button-menubutton-button
@@ -121,11 +121,11 @@ XXX: apply styles to all themes until bug 509642 is fixed
  }
  .popup-notification-menubutton:not([type="menu-button"]):hover, .popup-notification-menubutton > .button-menubutton-button:hover, .popup-notification-menubutton > .button-menubutton-dropmarker:hover
  {
-  background: #303030;
+  background: #301010;
  }
  .popup-notification-menubutton:not([type="menu-button"]):hover:active, .popup-notification-menubutton > .button-menubutton-button:hover:active, .popup-notification-menubutton > .button-menubutton-dropmarker:hover:active, .popup-notification-menubutton[open="true"] > .button-menubutton-dropmarker
  {
-  background: #505050;
+  background: #501818;
  }
 /*}*/
 

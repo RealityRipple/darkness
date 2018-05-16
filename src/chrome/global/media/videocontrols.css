@@ -122,7 +122,7 @@
  margin: 8px 22px 9px;
  -moz-appearance: none;
  border: none;
- background-color: #101010;
+ background-color: #100000;
  min-width: 0;
  min-height: 0;
 }
@@ -134,14 +134,14 @@
   * has the same background-color specified, the semitransparent
   * compositing gives it a different visual appearance.
   */
- background-color: #A0A0A0;
+ background-color: #801818;
  background-image: none;
  -moz-appearance: none;
  opacity: 0.7
 }
 .progressBar .progress-bar
 {
- background-color: #FFFFFF;
+ background-color: #FF3030;
  -moz-appearance: none;
 }
 /* .scale-slider is an element inside the <scale> implementation. */

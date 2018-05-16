@@ -12,17 +12,17 @@ richlistbox[disabled="true"]
 }
 richlistitem[selected="true"]
 {
- background-color: #404040;
- color: #A0A0A0;
+ background-color: #401010;
+ color: #a0a0a0;
 }
 richlistbox:focus > richlistitem[selected="true"]
 {
- background-color: #404040;
+ background-color: #401010;
  color: #C0C0C0;
 }
 richlistbox[seltype="multiple"]:focus > richlistitem[current="true"]
 {
- outline: 1px dotted #A0A0A0;
+ outline: 1px dotted #801818;
  outline-offset: -1px;
 }
 richlistbox[seltype="multiple"]:focus > richlistitem[current="true"][selected="true"]

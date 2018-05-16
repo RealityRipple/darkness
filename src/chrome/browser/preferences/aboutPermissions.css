@@ -17,14 +17,14 @@
 #sites-list
 {
  -moz-appearance: none;
- border: 1px solid #808080;
+ border: 1px solid #681818;
  background-color: #000000;
  margin: 5px 0 0 0;
 }
 .site
 {
  padding: 4px;
- border-bottom: 1px solid #808080;
+ border-bottom: 1px solid #681818;
 }
 .site-favicon
 {

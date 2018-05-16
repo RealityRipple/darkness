@@ -16,25 +16,25 @@ menuitem[default="true"]
 }
 menu[disabled="true"], menuitem[disabled="true"], .splitmenu-menuitem[disabled="true"], menu[_moz-menuactive="true"][disabled="true"], menuitem[_moz-menuactive="true"][disabled="true"],.splitmenu-menuitem[_moz-menuactive="true"][disabled="true"]
 {
- color: #909090;
+ color: #701818;
 }
 menu[_moz-menuactive="true"]:not([disabled="true"]), menuitem[_moz-menuactive="true"]:not([disabled="true"]), .splitmenu-menuitem[_moz-menuactive="true"]:not([disabled="true"])
 {
- border-top-color: #606060 !important;
- border-right-color: #D0D0D0 !important;
- border-bottom-color: #D0D0D0 !important;
- border-left-color: #606060 !important;
- background-color: #404040 !important;
+ border-top-color: #601818 !important;
+ border-right-color: #C01818 !important;
+ border-bottom-color: #C01818 !important;
+ border-left-color: #601818 !important;
+ background-color: #401010 !important;
  color: #FFFFFF !important;
 }
 menu[_moz-menuactive="true"][disabled="true"], menuitem[_moz-menuactive="true"][disabled="true"], .splitmenu-menuitem[_moz-menuactive="true"][disabled="true"]
 {
- border-top-color: #606060 !important;
- border-right-color: #D0D0D0 !important;
- border-bottom-color: #D0D0D0 !important;
- border-left-color: #606060 !important;
- background-color: #101010 !important;
- color: #909090 !important;
+ border-top-color: #601818 !important;
+ border-right-color: #C01818 !important;
+ border-bottom-color: #C01818 !important;
+ border-left-color: #601818 !important;
+ background-color: #100000 !important;
+ color: #701818 !important;
 }
 menuitem.spell-suggestion
 {
@@ -61,7 +61,7 @@ menuitem.spell-suggestion
 .menu-description
 {
  font-style: italic;
- color: #909090;
+ color: #701818;
  -moz-margin-start: 1ex !important;
 }
 .menu-accel, .menu-iconic-accel
@@ -135,35 +135,35 @@ menubar > menu
 menubar > menu[_moz-menuactive="true"]
 {
  -moz-appearance: none;
- background-color: #404040 !important;
+ background-color: #401010 !important;
  color: #FFFFFF !important;
  border: 2px solid !important;
- -moz-border-top-colors: #D0D0D0 #505050 !important;
- -moz-border-right-colors: #606060 #505050 !important;
- -moz-border-bottom-colors: #606060 #505050 !important;
- -moz-border-left-colors: #D0D0D0 #505050 !important;
+ -moz-border-top-colors: #C01818 #501818 !important;
+ -moz-border-right-colors: #601818 #501818 !important;
+ -moz-border-bottom-colors: #601818 #501818 !important;
+ -moz-border-left-colors: #C01818 #501818 !important;
 }
 menubar > menu[_moz-menuactive="true"][open="true"]
 {
  -moz-appearance: none;
- background-color: #505050 !important;
+ background-color: #501818 !important;
  color: #FFFFFF !important;
  border: 2px solid !important;
- -moz-border-top-colors: #606060 #505050 !important;
- -moz-border-right-colors: #D0D0D0 #505050 !important;
- -moz-border-bottom-colors: #D0D0D0 #505050 !important;
- -moz-border-left-colors: #606060 #505050 !important;
+ -moz-border-top-colors: #601818 #501818 !important;
+ -moz-border-right-colors: #C01818 #501818 !important;
+ -moz-border-bottom-colors: #C01818 #501818 !important;
+ -moz-border-left-colors: #601818 #501818 !important;
 }
 menubar > menu[disabled="true"]
 {
  -moz-appearance: none;
- background-color: #202020 !important;
+ background-color: #200808 !important;
  color: #606060 !important;
  border: 1px solid !important;
- -moz-border-top-colors: transparent #A0A0A0 !important;
- -moz-border-right-colors: transparent #303030 !important;
- -moz-border-bottom-colors: transparent #303030 !important;
- -moz-border-left-colors: transparent #A0A0A0 !important;
+ -moz-border-top-colors: transparent #801818 !important;
+ -moz-border-right-colors: transparent #301010 !important;
+ -moz-border-bottom-colors: transparent #301010 !important;
+ -moz-border-left-colors: transparent #801818 !important;
 }
 menubar > menu:-moz-window-inactive
 {
@@ -184,7 +184,7 @@ menupopup > menu, menupopup > menuitem
 }
 menu[_moz-menuactive="true"], menuitem[_moz-menuactive="true"], .splitmenu-menuitem[_moz-menuactive="true"]
 {
- background-color: #C0C0C0;
+ background-color: #B01818;
  color: #000000;
 }
 .menulist-menupopup > menuitem, menulist > menupopup > menuitem, .menulist-menupopup > menu, menulist > menupopup > menu
@@ -199,7 +199,7 @@ menu[_moz-menuactive="true"], menuitem[_moz-menuactive="true"], .splitmenu-menui
 }
 .menulist-menupopup > menuitem[_moz-menuactive="true"], menulist > menupopup > menuitem[_moz-menuactive="true"], .menulist-menupopup > menu[_moz-menuactive="true"], menulist > menupopup > menu[_moz-menuactive="true"]
 {
- background-color: #C0C0C0;
+ background-color: #B01818;
  color: #000000;
 }
 .menulist-menupopup > menuitem > .menu-iconic-left, menulist > menupopup > menuitem > .menu-iconic-left, .menulist-menupopup > menu > .menu-iconic-left, menulist > menupopup > menu > .menu-iconic-left
@@ -235,11 +235,11 @@ menuitem[type="checkbox"][checked="true"]
 }
 menuitem[type="checkbox"][checked="true"][_moz-menuactive="true"]
 {
- background: url("chrome://global/skin/menu/menu-check-hover.gif") 2px 50% no-repeat #C0C0C0;
+ background: url("chrome://global/skin/menu/menu-check-hover.gif") 2px 50% no-repeat #B01818;
 }
 menuitem[type="checkbox"][checked="true"][disabled="true"]
 {
- background: url("chrome://global/skin/menu/menu-check-disabled.gif") 2px 50% no-repeat #202020;
+ background: url("chrome://global/skin/menu/menu-check-disabled.gif") 2px 50% no-repeat #200808;
 }
 menuitem[checked="true"][type="radio"]
 {
@@ -247,11 +247,11 @@ menuitem[checked="true"][type="radio"]
 }
 menuitem[checked="true"][type="radio"][disabled="true"]
 {
- background: url("chrome://global/skin/menu/menu-radio-disabled.gif") 2px 50% no-repeat #202020;
+ background: url("chrome://global/skin/menu/menu-radio-disabled.gif") 2px 50% no-repeat #200808;
 }
 menuitem[checked="true"][type="radio"][_moz-menuactive="true"]
 {
- background: url("chrome://global/skin/menu/menu-radio-hover.gif") 2px 50% no-repeat #C0C0C0;
+ background: url("chrome://global/skin/menu/menu-radio-hover.gif") 2px 50% no-repeat #B01818;
 }
 menuitem[type="checkbox"] > .menu-iconic-left, menuitem[checked="true"] > .menu-iconic-left, menuitem[type="radio"] > .menu-iconic-left
 {
@@ -266,12 +266,12 @@ menuseparator
 {
  -moz-appearance: none;
  margin: 1px;
- border-top: 1px solid #FFFFFF;
+ border-top: 1px solid #FF3030;
 }
 menulist > menupopup > menuseparator, .menulist-menupopup > menuseparator
 {
  padding: 6px 0 5px 0;
- border-top: 1px solid #FFFFFF;
+ border-top: 1px solid #FF3030;
  border-bottom: none;
 }
 .autocomplete-history-popup > menuitem

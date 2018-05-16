@@ -12,7 +12,7 @@
 }
 #placesTreechildren::-moz-tree-row(selected), #placesTreechildren::-moz-tree-row(grippyRow)
 {
- background: #404040;
+ background: #401010;
 }
 #placesTreechildren::-moz-tree-cell-text(selected)
 {
@@ -21,7 +21,7 @@
 #sanitizeEverythingWarningBox
 {
  background-color: #000000;
- border: 1px solid #909090;
+ border: 1px solid #701818;
  border-radius: 5px;
  padding: 16px;
 }

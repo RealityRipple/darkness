@@ -60,7 +60,7 @@ autorepeatbutton
 autorepeatbutton:not([disabled="true"]):hover, autorepeatbutton:not([disabled="true"]):hover:active
 {
  margin: 1px;
- border: 1px inset #C0C0C0;
+ border: 1px inset #B01818;
  padding-top: 2px;
  padding-bottom: 1px;
  -moz-padding-start: 2px;

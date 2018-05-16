@@ -13,7 +13,7 @@ body
 h1
 {
  margin: 0 0 .6em 0;
- border-bottom: 1px solid #C0C0C0;
+ border-bottom: 1px solid #B01818;
  font-size: 160%;
 }
 ul, ol
@@ -36,7 +36,7 @@ ul
  min-width: 13em;
  max-width: 52em;
  margin: 4em auto;
- border: 1px solid #909090;
+ border: 1px solid #701818;
  border-radius: 10px;
  padding: 3em;
  -moz-padding-start: 30px;
@@ -63,7 +63,7 @@ ul
 #errorShortDesc > p
 {
  overflow: auto;
- border-bottom: 1px solid #C0C0C0;
+ border-bottom: 1px solid #B01818;
  padding-bottom: 1em;
  font-size: 130%;
  white-space: pre-wrap;
@@ -108,7 +108,7 @@ ul
 }
 #securityOverrideContent
 {
- background-color: #101010;
+ background-color: #100000;
  color: #FFFFFF;
  padding: 10px;
  border-radius: 10px;
@@ -149,66 +149,66 @@ button
  min-width: 60px;
  min-height: 25px;
  border: 2px solid;
- -moz-border-top-colors: transparent #D0D0D0;
- -moz-border-right-colors: transparent #606060;
- -moz-border-bottom-colors: transparent #606060;
- -moz-border-left-colors: transparent #D0D0D0;
+ -moz-border-top-colors: transparent #C01818;
+ -moz-border-right-colors: transparent #601818;
+ -moz-border-bottom-colors: transparent #601818;
+ -moz-border-left-colors: transparent #C01818;
  background-color: #000000;
  color: #FFFFFF;
 }
 button:hover
 {
- -moz-border-top-colors: transparent #D0D0D0;
- -moz-border-right-colors: transparent #606060;
- -moz-border-bottom-colors: transparent #606060;
- -moz-border-left-colors: transparent #D0D0D0;
- background-color: #303030;
+ -moz-border-top-colors: transparent #C01818;
+ -moz-border-right-colors: transparent #601818;
+ -moz-border-bottom-colors: transparent #601818;
+ -moz-border-left-colors: transparent #C01818;
+ background-color: #301010;
 }
 button:focus
 {
- -moz-border-top-colors: #D0D0D0 #505050;
- -moz-border-right-colors: #606060 #505050;
- -moz-border-bottom-colors: #606060 #505050;
- -moz-border-left-colors: #D0D0D0 #505050;
- background-color: #404040;
+ -moz-border-top-colors: #C01818 #501818;
+ -moz-border-right-colors: #601818 #501818;
+ -moz-border-bottom-colors: #601818 #501818;
+ -moz-border-left-colors: #C01818 #501818;
+ background-color: #401010;
 }
 button[default="true"]
 {
- -moz-border-top-colors: #404040 #D0D0D0;
- -moz-border-right-colors: #404040 #606060;
- -moz-border-bottom-colors: #404040 #606060;
- -moz-border-left-colors: #404040 #D0D0D0;
+ -moz-border-top-colors: #401010 #C01818;
+ -moz-border-right-colors: #401010 #601818;
+ -moz-border-bottom-colors: #401010 #601818;
+ -moz-border-left-colors: #401010 #C01818;
 }
 button:hover:focus
 {
- -moz-border-top-colors: #D0D0D0 #505050;
- -moz-border-right-colors: #606060 #505050;
- -moz-border-bottom-colors: #606060 #505050;
- -moz-border-left-colors: #D0D0D0 #505050;
- background-color: #303030;
+ -moz-border-top-colors: #C01818 #501818;
+ -moz-border-right-colors: #601818 #501818;
+ -moz-border-bottom-colors: #601818 #501818;
+ -moz-border-left-colors: #C01818 #501818;
+ background-color: #301010;
 }
 button:hover:active, button[open="true"], button[checked="true"]
 {
- -moz-border-top-colors: #606060 #505050;
- -moz-border-right-colors: #D0D0D0 #505050;
- -moz-border-bottom-colors: #D0D0D0 #505050;
- -moz-border-left-colors: #606060 #505050;
- background-color: #404040;
+ -moz-border-top-colors: #601818 #501818;
+ -moz-border-right-colors: #C01818 #501818;
+ -moz-border-bottom-colors: #C01818 #501818;
+ -moz-border-left-colors: #601818 #501818;
+ background-color: #401010;
 }
 button:hover:active:focus, button[checked="true"]:focus, button[open="true"]:focus
 {
- -moz-border-top-colors: #606060 #505050;
- -moz-border-right-colors: #D0D0D0 #505050;
- -moz-border-bottom-colors: #D0D0D0 #505050;
- -moz-border-left-colors: #606060 #505050;
- background-color: #505050;
+ -moz-border-top-colors: #601818 #501818;
+ -moz-border-right-colors: #C01818 #501818;
+ -moz-border-bottom-colors: #C01818 #501818;
+ -moz-border-left-colors: #601818 #501818;
+ background-color: #501818;
 }
 button[disabled="true"]
 {
- -moz-border-top-colors: transparent #A0A0A0 !important;
- -moz-border-right-colors: transparent #303030 !important;
- -moz-border-bottom-colors: transparent #303030 !important;
- -moz-border-left-colors: transparent #A0A0A0 !important;
+ -moz-border-top-colors: transparent #801818 !important;
+ -moz-border-right-colors: transparent #301010 !important;
+ -moz-border-bottom-colors: transparent #301010 !important;
+ -moz-border-left-colors: transparent #801818 !important;
  color: #606060 !important;
- background-color: #202020 !important;
+ background-color: #200808 !important;
 }

@@ -41,7 +41,7 @@ radio[pane]
 }
 .paneSelector
 {
- border-bottom: 2px groove #C0C0C0;
+ border-bottom: 2px groove #B01818;
  margin: 0px;
  -moz-padding-start: 10px;
  background-color: #000000;
@@ -54,21 +54,21 @@ radio[pane]
 }
 radio[pane]:hover
 {
- background-color: #404040;
+ background-color: #401010;
  color: #FFFFFF;
  -moz-appearance: none;
- border-top-color: #D0D0D0;
- border-left-color: #D0D0D0;
- border-bottom-color: #606060;
- border-right-color: #606060;
+ border-top-color: #C01818;
+ border-left-color: #C01818;
+ border-bottom-color: #601818;
+ border-right-color: #601818;
 }
 radio[pane][selected="true"]
 {
- background-color: #606060;
+ background-color: #601818;
  color: #FFFFFF; 
  -moz-appearance: none;
- border-top-color: #606060;
- border-left-color: #606060;
- border-bottom-color: #D0D0D0;
- border-right-color: #D0D0D0;
+ border-top-color: #601818;
+ border-left-color: #601818;
+ border-bottom-color: #C01818;
+ border-right-color: #C01818;
 }

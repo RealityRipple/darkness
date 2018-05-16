@@ -7,10 +7,10 @@
 .console-row
 {
  border: 2px solid;
- -moz-border-top-colors: transparent #D0D0D0;
- -moz-border-right-colors: transparent #606060;
- -moz-border-bottom-colors: transparent #606060;
- -moz-border-left-colors: transparent #D0D0D0;
+ -moz-border-top-colors: transparent #C01818;
+ -moz-border-right-colors: transparent #601818;
+ -moz-border-bottom-colors: transparent #601818;
+ -moz-border-left-colors: transparent #C01818;
  padding: 4px 0px;
 }
 .console-row-icon
@@ -41,7 +41,7 @@
  padding-bottom: 3px;
  -moz-padding-start: 3px;
  -moz-padding-end: 0px;
- color: #B0B0B0;
+ color: #A01818;
  font-size: larger;
 }
 .console-dots, .console-caret
@@ -64,15 +64,15 @@
 .console-row[selected="true"]
 {
  border: 2px solid;
- -moz-border-top-colors: #000000 #606060;
- -moz-border-right-colors: #000000 #D0D0D0;
- -moz-border-bottom-colors: #000000 #D0D0D0;
- -moz-border-left-colors: #000000 #606060;
- background-color: #202020;
+ -moz-border-top-colors: #000000 #601818;
+ -moz-border-right-colors: #000000 #C01818;
+ -moz-border-bottom-colors: #000000 #C01818;
+ -moz-border-left-colors: #000000 #601818;
+ background-color: #200808;
 }
 .console-row-code[selected="true"], .console-row-content[selected="true"] > .console-row-file > .console-error-source > .text-link
 {
- background-color: #202020;
+ background-color: #200808;
  color: inherit !important;
 }
 .console-row[type="error"], .console-row[type="exception"]
@@ -187,7 +187,7 @@ toolbar#ToolbarMode .toolbarbutton-text
  background-color: black;
  color: white;
  border: 0px;
- border-bottom: 1px solid #606060;
+ border-bottom: 1px solid #601818;
 }
 #ToolbarEval
 {
@@ -195,5 +195,5 @@ toolbar#ToolbarMode .toolbarbutton-text
  background-color: black;
  color: white;
  border: 0px;
- border-top: 1px solid #C0C0C0;
+ border-top: 1px solid #B01818;
 }

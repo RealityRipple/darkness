@@ -3,7 +3,7 @@
  font: message-box;
  color: #FFFFFF;
  font-size: 13px;
- background: radial-gradient(circle at 50% 0%, #202020 0%, #000000 100%) #202020 !important;
+ background: radial-gradient(circle at 50% 0%, #200808 0%, #000000 100%) #200808 !important;
 }
 .tab
 {
@@ -15,35 +15,35 @@
  background-color: #000000;
  border-radius: 0.4em;
  border: 1px solid;
- border-top-color: #606060;
- border-right-color: #A0A0A0;
- border-bottom-color: #A0A0A0;
- border-left-color: #606060;
+ border-top-color: #601818;
+ border-right-color: #801818;
+ border-bottom-color: #801818;
+ border-left-color: #601818;
  cursor: pointer;
 }
 .tab canvas, .cached-thumb
 {
  border: 1px solid;
- border-top-color: #A0A0A0;
- border-right-color: #606060;
- border-bottom-color: #606060;
- border-left-color: #A0A0A0;
+ border-top-color: #801818;
+ border-right-color: #601818;
+ border-bottom-color: #601818;
+ border-left-color: #801818;
 }
 .thumb
 {
- background-color: #303030;
+ background-color: #301010;
 }
 .favicon
 {
- background-color: #202020;
+ background-color: #200808;
  padding-top: 4px;
  -moz-padding-end: 6px;
  padding-bottom: 6px;
  -moz-padding-start: 4px;
  top: 4px;
  left: 4px;
- -moz-border-end: 1px solid #606060;
- border-bottom: 1px solid #606060;
+ -moz-border-end: 1px solid #601818;
+ border-bottom: 1px solid #601818;
  height: 17px;
  width: 17px;
 }
@@ -120,7 +120,7 @@ html[dir=rtl] .expander
  bottom: -20px;
  text-align: center;
  width: 94.5%;
- text-shadow: 1px 1px 1px #A0A0A0;
+ text-shadow: 1px 1px 1px #801818;
 }
 .stacked
 {
@@ -128,13 +128,13 @@ html[dir=rtl] .expander
 }
 .stack-trayed .tab-title
 {
- text-shadow: 1px 1px 1px #A0A0A0;
+ text-shadow: 1px 1px 1px #801818;
  color: #E0E0E0;
  font-size: 11px;
 }
 html[dir=rtl] .stack-trayed .tab-title
 {
- text-shadow: -1px 1px 1px #A0A0A0;
+ text-shadow: -1px 1px 1px #801818;
 }
 .stack-trayed .thumb
 {
@@ -191,7 +191,7 @@ html[dir=rtl] .groupItem .close
 {
  top: 34px;
  right: 1px;
- -moz-border-start: 1px solid #A0A0A0;
+ -moz-border-start: 1px solid #801818;
  padding: 0 5px;
  overflow: -moz-hidden-unscrollable;
  text-align: start;
@@ -271,7 +271,7 @@ html[dir=rtl] .undo .close
 .guideTrench
 {
  opacity: 0.9;
- border: 1px dashed #808080;
+ border: 1px dashed #681818;
  border-bottom: none;
  -moz-border-end: none;
 }
@@ -334,7 +334,7 @@ html[dir=rtl] input.name
 }
 .title-container:hover input.name, .title-container input.name:focus
 {
- border: 1px solid #606060;
+ border: 1px solid #601818;
 }
 .title-container:hover input.name-locked
 {
@@ -550,7 +550,7 @@ html[dir=rtl] .iq-resizable-se
  width: 29px;
  border: none;
  text-align: center;
- background-color: #101010;
+ background-color: #100000;
  border-radius: 0.4em;
 }
 #actions #searchbutton
@@ -581,14 +581,14 @@ html[dir=rtl] #otherresults
 }
 #otherresults .label
 {
- color: #A0A0A0;
+ color: #a0a0a0;
  line-height: 30px;
  -moz-margin-start: 5px;
  -moz-margin-end: 5px;
 }
 .inlineMatch
 {
- background-color: #404040;
+ background-color: #401010;
  border-radius: 0.4em;
  border: 1px solid rgba(255, 255, 255, 0.5);
  -moz-padding-start: 3px;

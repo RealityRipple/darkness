@@ -33,7 +33,7 @@
 }
 #select-list
 {
- border-top: 1px solid #606060;
+ border-top: 1px solid #601818;
  background-color: #000000;
 }
 #select-grid column
@@ -60,7 +60,7 @@
 }
 #select-header .select-keep, #select-header .select-icon, #select-header .select-name, #select-header .select-action
 {
- background-color: #202020;
+ background-color: #200808;
  background-size: 1px 100%;
  background-position: right;
  background-repeat: no-repeat;
@@ -81,7 +81,7 @@
 }
 .select-keep .addon-keep-checkbox:-moz-focusring
 {
- outline: 1px dotted #C0C0C0;
+ outline: 1px dotted #B01818;
 }
 .select-keep .checkbox-label-box
 {
@@ -98,7 +98,7 @@
 }
 #select-grid separator
 {
- border-top: 1px solid #606060;
+ border-top: 1px solid #601818;
  height: 0;
  margin-top: 0.4em;
  margin-bottom: 0.4em;

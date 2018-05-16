@@ -6,27 +6,27 @@ textbox
  cursor: text;
  margin: 2px 4px;
  border: 2px solid;
- -moz-border-top-colors: #303030 #606060;
- -moz-border-right-colors: #808080 #D0D0D0;
- -moz-border-bottom-colors: #808080 #D0D0D0;
- -moz-border-left-colors: #303030 #606060;
+ -moz-border-top-colors: #301010 #601818;
+ -moz-border-right-colors: #681818 #C01818;
+ -moz-border-bottom-colors: #681818 #C01818;
+ -moz-border-left-colors: #301010 #601818;
  padding: 2px 2px 3px 4px;
  background-color: #000000;
  color: #FFFFFF;
 }
 textbox:not([disabled="true"]):hover, textbox[focused="true"]:not([disabled="true"])
 {
- -moz-border-top-colors: #C0C0C0 #606060;
- -moz-border-right-colors: #FFFFFF #D0D0D0;
- -moz-border-bottom-colors: #FFFFFF #D0D0D0;
- -moz-border-left-colors: #C0C0C0 #606060;
+ -moz-border-top-colors: #B01818 #601818;
+ -moz-border-right-colors: #FF3030 #C01818;
+ -moz-border-bottom-colors: #FF3030 #C01818;
+ -moz-border-left-colors: #B01818 #601818;
 }
 textbox[focused="true"]:not([disabled="true"]):hover
 {
- -moz-border-top-colors: #C0C0C0 #808080;
- -moz-border-right-colors: #FFFFFF #E0E0E0;
- -moz-border-bottom-colors: #FFFFFF #E0E0E0;
- -moz-border-left-colors: #C0C0C0 #808080;
+ -moz-border-top-colors: #B01818 #681818;
+ -moz-border-right-colors: #FF3030 #D01818;
+ -moz-border-bottom-colors: #FF3030 #D01818;
+ -moz-border-left-colors: #B01818 #681818;
 }
 html|*.textbox-input, html|*.textbox-textarea
 {
@@ -43,17 +43,17 @@ html|*.textbox-input, html|*.textbox-textarea
 }
 textbox[readonly="true"]
 {
- background-color: #202020;
+ background-color: #200808;
 }
 textbox[disabled="true"]
 {
  cursor: default;
- background-color: #404040;
+ background-color: #401010;
  color: #C0C0C0;
 }
 textbox[empty="true"], textbox[isempty="true"]
 {
- color: #A0A0A0;
+ color: #a0a0a0;
 }
 textbox.plain
 {
@@ -111,10 +111,10 @@ textbox#localpath, textbox#remotepath
  margin: 2px 4px !important;
  border: 2px solid !important;
  border-radius: 0 !important;
- -moz-border-top-colors: #303030 #606060 !important;
- -moz-border-right-colors: #808080 #D0D0D0 !important;
- -moz-border-bottom-colors: #808080 #D0D0D0 !important;
- -moz-border-left-colors: #303030 #606060 !important;
+ -moz-border-top-colors: #301010 #601818 !important;
+ -moz-border-right-colors: #681818 #C01818 !important;
+ -moz-border-bottom-colors: #681818 #C01818 !important;
+ -moz-border-left-colors: #301010 #601818 !important;
  padding: 2px 2px 3px 4px !important;
  background-color: #000000 !important;
  background-image: none !important;

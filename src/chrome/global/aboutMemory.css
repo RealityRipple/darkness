@@ -20,20 +20,20 @@ div.section
 {
  padding: 2em;
  margin: 1em 0em;
- border: 1px solid #D0D0D0;
- border-bottom-color: #606060;
- border-right-color: #606060;
+ border: 1px solid #C01818;
+ border-bottom-color: #601818;
+ border-right-color: #601818;
  border-radius: 10px;
- background: #202020;
+ background: #200808;
 }
 div.opsRow
 {
  padding: 0.5em;
  margin-right: 0.5em;
  margin-top: 0.5em;
- border: 1px solid #D0D0D0;
- border-bottom-color: #606060;
- border-right-color: #606060;
+ border: 1px solid #C01818;
+ border-bottom-color: #601818;
+ border-right-color: #601818;
  border-radius: 10px;
  background: #000000;
  display: inline-block;
@@ -61,7 +61,7 @@ h1
 }
 h2
 {
- background: #303030;
+ background: #301010;
  padding-left: .1em;
 }
 .accuracyWarning
@@ -146,73 +146,73 @@ button
  color: #FFFFFF;
  background-color: #000000;
  border: 2px solid;
- -moz-border-top-colors: #000000 #D0D0D0;
- -moz-border-left-colors: #000000 #D0D0D0;
- -moz-border-bottom-colors: #000000 #606060;
- -moz-border-right-colors: #000000 #606060;
+ -moz-border-top-colors: #000000 #C01818;
+ -moz-border-left-colors: #000000 #C01818;
+ -moz-border-bottom-colors: #000000 #601818;
+ -moz-border-right-colors: #000000 #601818;
 }
 button:hover
 {
  color: #D0D0D0;
- background-color: #303030;
+ background-color: #301010;
 }
 button:focus
 {
  color: #C0C0C0;
- -moz-border-top-colors: #303030 #D0D0D0;
- -moz-border-left-colors: #303030 #D0D0D0;
- -moz-border-bottom-colors: #303030 #606060;
- -moz-border-right-colors: #303030 #606060;
+ -moz-border-top-colors: #301010 #C01818;
+ -moz-border-left-colors: #301010 #C01818;
+ -moz-border-bottom-colors: #301010 #601818;
+ -moz-border-right-colors: #301010 #601818;
 }
 button[default="true"]
 {
- -moz-border-top-colors: #404040 #D0D0D0;
- -moz-border-right-colors: #404040 #606060;
- -moz-border-bottom-colors: #404040 #606060;
- -moz-border-left-colors: #404040 #D0D0D0;
+ -moz-border-top-colors: #401010 #C01818;
+ -moz-border-right-colors: #401010 #601818;
+ -moz-border-bottom-colors: #401010 #601818;
+ -moz-border-left-colors: #401010 #C01818;
 }
 button:hover:focus
 {
  color: #D0D0D0;
- background-color: #303030;
- -moz-border-top-colors: #303030 #D0D0D0;
- -moz-border-left-colors: #303030 #D0D0D0;
- -moz-border-bottom-colors: #303030 #606060;
- -moz-border-right-colors: #303030 #606060;
+ background-color: #301010;
+ -moz-border-top-colors: #301010 #C01818;
+ -moz-border-left-colors: #301010 #C01818;
+ -moz-border-bottom-colors: #301010 #601818;
+ -moz-border-right-colors: #301010 #601818;
 }
 button:hover:active, button[open="true"], button[checked="true"]
 {
  color: #FFFFFF;
- background-color: #404040;
- -moz-border-top-colors: #000000 #606060;
- -moz-border-left-colors: #000000 #606060;
- -moz-border-bottom-colors: #000000 #D0D0D0;
- -moz-border-right-colors: #000000 #D0D0D0;
+ background-color: #401010;
+ -moz-border-top-colors: #000000 #601818;
+ -moz-border-left-colors: #000000 #601818;
+ -moz-border-bottom-colors: #000000 #C01818;
+ -moz-border-right-colors: #000000 #C01818;
 }
 button[default="true"]:hover:active
 {
  color: #FFFFFF;
- background-color: #404040;
- -moz-border-top-colors: #404040 #606060;
- -moz-border-left-colors: #404040 #606060;
- -moz-border-bottom-colors: #404040 #D0D0D0;
- -moz-border-right-colors: #404040 #D0D0D0;
+ background-color: #401010;
+ -moz-border-top-colors: #401010 #601818;
+ -moz-border-left-colors: #401010 #601818;
+ -moz-border-bottom-colors: #401010 #C01818;
+ -moz-border-right-colors: #401010 #C01818;
 }
 button:hover:active:focus, button[checked="true"]:focus, button[open="true"]:focus
 {
  color: #FFFFFF;
- background-color: #404040;
- -moz-border-top-colors: #303030 #606060;
- -moz-border-left-colors: #303030 #606060;
- -moz-border-bottom-colors: #303030 #D0D0D0;
- -moz-border-right-colors: #303030 #D0D0D0;
+ background-color: #401010;
+ -moz-border-top-colors: #301010 #601818;
+ -moz-border-left-colors: #301010 #601818;
+ -moz-border-bottom-colors: #301010 #C01818;
+ -moz-border-right-colors: #301010 #C01818;
 }
 button[disabled="true"]
 {
  color: #606060 !important;
- background-color: #202020 !important;
- -moz-border-top-colors: #202020 #505050 !important;
- -moz-border-left-colors: #202020 #505050 !important;
- -moz-border-bottom-colors: #101010 #303030 !important;
- -moz-border-right-colors: #101010 #303030 !important;
+ background-color: #200808 !important;
+ -moz-border-top-colors: #200808 #501818 !important;
+ -moz-border-left-colors: #200808 #501818 !important;
+ -moz-border-bottom-colors: #100000 #301010 !important;
+ -moz-border-right-colors: #100000 #301010 !important;
 }

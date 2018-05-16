@@ -8,17 +8,17 @@ tabmodalprompt
 {
  color: #FFFFFF;
  background-color: #000000;
- border: 2px solid #A0A0A0;
- border-bottom-color: #606060;
- border-right-color: #606060;
+ border: 2px solid #801818;
+ border-bottom-color: #601818;
+ border-right-color: #601818;
  box-shadow: 3px 3px 4px #000000;
  border-radius: 16px;
 }
 .topContainer
 {
  padding: 20px;
- background-color: #101010;
- border-bottom: 2px solid #606060;
+ background-color: #100000;
+ border-bottom: 2px solid #601818;
  border-top-right-radius: 16px;
  border-top-left-radius: 16px;
 }
@@ -26,7 +26,7 @@ tabmodalprompt
 {
  padding: 12px 20px 15px;
  background-color: #000000;
- border-top: 2px solid #A0A0A0;
+ border-top: 2px solid #801818;
  border-bottom-right-radius: 16px;
  border-bottom-left-radius: 16px;
 }

@@ -4,18 +4,18 @@
  {
   color: #FFFFFF;
   height: 100%;
-  background: radial-gradient(circle at 50% 0%, #202020 0%, #000000 100%) fixed #000000;
+  background: radial-gradient(circle at 50% 0%, #200808 0%, #000000 100%) fixed #000000;
  }
  img
  {
   background-color: #000000;
-  background-image: linear-gradient(45deg, #404040 25%, transparent 30%),
-                    linear-gradient(-45deg, #404040 25%, transparent 30%),
-                    linear-gradient(45deg, transparent 70%, #404040 75%),
-                    linear-gradient(-45deg, transparent 70%, #404040 75%);
+  background-image: linear-gradient(45deg, #401010 25%, transparent 30%),
+                    linear-gradient(-45deg, #401010 25%, transparent 30%),
+                    linear-gradient(45deg, transparent 70%, #401010 75%),
+                    linear-gradient(-45deg, transparent 70%, #401010 75%);
   background-size: 20px 20px;
   background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-  box-shadow: 0 0 2px #FFFFFF;
+  box-shadow: 0 0 2px #FF3030;
  }
  img.transparent
  {

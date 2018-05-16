@@ -14,10 +14,10 @@ window, dialog
  background: #000000;
  color: #FFFFFF;
  border: 1px solid;
- -moz-border-top-colors: #606060;
- -moz-border-right-colors: #A0A0A0;
- -moz-border-bottom-colors: #A0A0A0;
- -moz-border-left-colors: #606060;
+ -moz-border-top-colors: #601818;
+ -moz-border-right-colors: #801818;
+ -moz-border-bottom-colors: #801818;
+ -moz-border-left-colors: #601818;
 }
 #palette-box > toolbarpaletteitem
 {

@@ -14,7 +14,7 @@ body
 h1
 {
  margin: 0 0 .6em 0;
- border-bottom: 1px solid #C0C0C0;
+ border-bottom: 1px solid #B01818;
  font-size: 160%;
 }
 h2
@@ -27,7 +27,7 @@ h2
  min-width: 13em;
  max-width: 52em;
  margin: 4em auto;
- border: 1px solid #909090;
+ border: 1px solid #701818;
  border-radius: 10px;
  padding: 3em;
  -moz-padding-start: 30px;

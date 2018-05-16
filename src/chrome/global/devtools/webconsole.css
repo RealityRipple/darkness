@@ -339,7 +339,7 @@ a {
 /* Input and output styles */
 .message[category=input] > .indent,
 .message[category=output] > .indent {
-  -moz-border-end: solid #808080 6px;
+  -moz-border-end: solid #681818 6px;
 }
 
 .message[category=input] > .icon::before {

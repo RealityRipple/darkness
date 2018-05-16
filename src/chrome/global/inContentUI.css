@@ -38,10 +38,10 @@ html|html
  overflow: hidden;
  background-color: #000000;
  border: 1px solid;
- border-top-color: #606060;
- border-right-color: #D0D0D0;
- border-bottom-color: #D0D0D0;
- border-left-color: #606060;
+ border-top-color: #601818;
+ border-right-color: #C01818;
+ border-bottom-color: #C01818;
+ border-left-color: #601818;
 }
 @media (-moz-windows-compositor)
 {
@@ -55,10 +55,10 @@ html|html
   background-clip: padding-box;
   border-radius: 0px;
   border: 2px solid;
-  -moz-border-top-colors: transparent #D0D0D0;
-  -moz-border-right-colors: transparent #606060;
-  -moz-border-bottom-colors: transparent #606060;
-  -moz-border-left-colors: transparent #D0D0D0;
+  -moz-border-top-colors: transparent #C01818;
+  -moz-border-right-colors: transparent #601818;
+  -moz-border-bottom-colors: transparent #601818;
+  -moz-border-left-colors: transparent #C01818;
  }
  menulist
  {
@@ -66,56 +66,56 @@ html|html
  }
  colorpicker[type="button"]:-moz-focusring:not([open="true"]) > .colorpicker-button-colorbox
  {
-  outline: 1px dotted #D0D0D0;
+  outline: 1px dotted #C01818;
  }
  html|button[disabled], button[disabled="true"], menulist[disabled="true"], colorpicker[type="button"][disabled="true"]
  {
-  -moz-border-top-colors: transparent #A0A0A0 !important;
-  -moz-border-right-colors: transparent #303030 !important;
-  -moz-border-bottom-colors: transparent #303030 !important;
-  -moz-border-left-colors: transparent #A0A0A0 !important;
+  -moz-border-top-colors: transparent #801818 !important;
+  -moz-border-right-colors: transparent #301010 !important;
+  -moz-border-bottom-colors: transparent #301010 !important;
+  -moz-border-left-colors: transparent #801818 !important;
   color: #606060 !important;
-  background-color: #202020 !important;
+  background-color: #200808 !important;
  }
  html|button:not([disabled]):active:hover, button:not([disabled="true"]):active:hover, menulist[open="true"]:not([disabled="true"]), colorpicker[type="button"][open="true"]:not([disabled="true"])
  {
-  -moz-border-top-colors: #606060 #505050;
-  -moz-border-right-colors: #D0D0D0 #505050;
-  -moz-border-bottom-colors: #D0D0D0 #505050;
-  -moz-border-left-colors: #606060 #505050;
-  background-color: #505050;
+  -moz-border-top-colors: #601818 #501818;
+  -moz-border-right-colors: #C01818 #501818;
+  -moz-border-bottom-colors: #C01818 #501818;
+  -moz-border-left-colors: #601818 #501818;
+  background-color: #501818;
  }
  html|button:not([disabled]):hover, button:not([disabled="true"]):hover
  {
-  -moz-border-top-colors: transparent #D0D0D0;
-  -moz-border-right-colors: transparent #606060;
-  -moz-border-bottom-colors: transparent #606060;
-  -moz-border-left-colors: transparent #D0D0D0;
-  background-color: #303030;
+  -moz-border-top-colors: transparent #C01818;
+  -moz-border-right-colors: transparent #601818;
+  -moz-border-bottom-colors: transparent #601818;
+  -moz-border-left-colors: transparent #C01818;
+  background-color: #301010;
  }
  html|button:not([disabled]):focus, button:not([disabled="true"]):focus
  {
-  -moz-border-top-colors: #D0D0D0 #505050;
-  -moz-border-right-colors: #606060 #505050;
-  -moz-border-bottom-colors: #606060 #505050;
-  -moz-border-left-colors: #D0D0D0 #505050;
-  background-color: #404040;
+  -moz-border-top-colors: #C01818 #501818;
+  -moz-border-right-colors: #601818 #501818;
+  -moz-border-bottom-colors: #601818 #501818;
+  -moz-border-left-colors: #C01818 #501818;
+  background-color: #401010;
  }
  html|button:not([disabled]):hover:focus, button:not([disabled="true"]):hover:focus
  {
-  -moz-border-top-colors: #D0D0D0 #505050;
-  -moz-border-right-colors: #606060 #505050;
-  -moz-border-bottom-colors: #606060 #505050;
-  -moz-border-left-colors: #D0D0D0 #505050;
-  background-color: #303030;
+  -moz-border-top-colors: #C01818 #501818;
+  -moz-border-right-colors: #601818 #501818;
+  -moz-border-bottom-colors: #601818 #501818;
+  -moz-border-left-colors: #C01818 #501818;
+  background-color: #301010;
  }
  html|button:not([disabled]):hover:active:focus, button:not([disabled="true"]):hover:active:focus
  {
-  -moz-border-top-colors: #606060 #505050;
-  -moz-border-right-colors: #D0D0D0 #505050;
-  -moz-border-bottom-colors: #D0D0D0 #505050;
-  -moz-border-left-colors: #606060 #505050;
-  background-color: #505050;
+  -moz-border-top-colors: #601818 #501818;
+  -moz-border-right-colors: #C01818 #501818;
+  -moz-border-bottom-colors: #C01818 #501818;
+  -moz-border-left-colors: #601818 #501818;
+  background-color: #501818;
  }
  button > .button-box
  {

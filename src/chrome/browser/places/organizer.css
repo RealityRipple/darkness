@@ -83,11 +83,11 @@
 }
 #placesView
 {
- border-top: 1px solid #A0A0A0;
+ border-top: 1px solid #801818;
 }
 #detailsDeck
 {
- border-top: 1px solid #A0A0A0;
+ border-top: 1px solid #801818;
  padding: 5px;
 }
 #infoBoxExpanderLabel
@@ -115,24 +115,24 @@
 }
 #clearDownloadsButton:hover
 {
- background-color: #404040 !important;
+ background-color: #401010 !important;
  color: #FFFFFF !important;
  border: 2px solid !important;
- -moz-border-top-colors: #D0D0D0 #505050 !important;
- -moz-border-right-colors: #606060 #505050 !important;
- -moz-border-bottom-colors: #606060 #505050 !important;
- -moz-border-left-colors: #D0D0D0 #505050 !important;
+ -moz-border-top-colors: #C01818 #501818 !important;
+ -moz-border-right-colors: #601818 #501818 !important;
+ -moz-border-bottom-colors: #601818 #501818 !important;
+ -moz-border-left-colors: #C01818 #501818 !important;
  -moz-image-region: rect(16px, 48px, 32px, 32px);
 }
 #clearDownloadsButton:not([disabled="true"]):hover:active
 {
- background-color: #505050 !important;
+ background-color: #501818 !important;
  color: #FFFFFF !important;
  border: 2px solid !important;
- -moz-border-top-colors: #606060 #505050 !important;
- -moz-border-right-colors: #D0D0D0 #505050 !important;
- -moz-border-bottom-colors: #D0D0D0 #505050 !important;
- -moz-border-left-colors: #606060 #505050 !important;
+ -moz-border-top-colors: #601818 #501818 !important;
+ -moz-border-right-colors: #C01818 #501818 !important;
+ -moz-border-bottom-colors: #C01818 #501818 !important;
+ -moz-border-left-colors: #601818 #501818 !important;
  -moz-image-region: rect(32px, 48px, 48px, 32px);
 }
 #clearDownloadsButton[disabled="true"]
@@ -140,10 +140,10 @@
  background-color: #000000 !important;
  color: #606060 !important;
  border: 1px solid !important;
- -moz-border-top-colors: transparent #A0A0A0 !important;
- -moz-border-right-colors: transparent #303030 !important;
- -moz-border-bottom-colors: transparent #303030 !important;
- -moz-border-left-colors: transparent #A0A0A0 !important;
+ -moz-border-top-colors: transparent #801818 !important;
+ -moz-border-right-colors: transparent #301010 !important;
+ -moz-border-bottom-colors: transparent #301010 !important;
+ -moz-border-left-colors: transparent #801818 !important;
  -moz-image-region: rect(48px, 48px, 64px, 32px);
 }
 #placesView

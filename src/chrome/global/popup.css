@@ -2,10 +2,10 @@
 menupopup, panel
 {
  border: 1px solid;
- border-top-color: #D0D0D0;
- border-right-color: #606060;
- border-bottom-color: #606060;
- border-left-color: #D0D0D0;
+ border-top-color: #C01818;
+ border-right-color: #601818;
+ border-bottom-color: #601818;
+ border-left-color: #C01818;
  padding: 0px;
  min-width: 1px;
  background-color: #000000;
@@ -76,7 +76,7 @@ panel[type="arrow"][side="left"], panel[type="arrow"][side="right"]
  color: #FFFFFF;
  background: #000000;
  background-clip: padding-box;
- border: 1px solid #C0C0C0;
+ border: 1px solid #B01818;
  margin: 4px;
 }
 .panel-arrow[side="top"], .panel-arrow[side="bottom"]
@@ -116,7 +116,7 @@ panel[type="arrow"][side="left"], panel[type="arrow"][side="right"]
 {
  .panel-arrowcontent
  {
-  border-color: #C0C0C0;
+  border-color: #B01818;
  }
  .panel-arrow[side="top"], .panel-arrow[side="bottom"]
  {
@@ -132,10 +132,10 @@ tooltip
  -moz-appearance: none;
  margin-top: 21px;
  border: 1px solid;
- border-top-color: #606060;
- border-right-color: #D0D0D0;
- border-bottom-color: #D0D0D0;
- border-left-color: #606060;
+ border-top-color: #601818;
+ border-right-color: #C01818;
+ border-bottom-color: #C01818;
+ border-left-color: #601818;
  padding: 2px 3px;
  max-width: 80em;
  background-color: #000000;
@@ -155,7 +155,7 @@ tooltip[titletip="true"]
 menulist > menupopup, .menulist-menupopup
 {
  -moz-appearance: none;
- border: 1px solid #606060;
+ border: 1px solid #601818;
  padding: 0px;
  min-width: 0px;
  background-color: #000000;

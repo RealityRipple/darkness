@@ -16,10 +16,10 @@
 {
  padding: 4px 3px;
  border: 1px solid;
- border-color: #606060;
- border-bottom-color: #A0A0A0;
- border-right-color: #A0A0A0;
- background-color: #202020;
+ border-color: #601818;
+ border-bottom-color: #801818;
+ border-right-color: #801818;
+ background-color: #200808;
  color: #FFFFFF;
 }
 #newtab-undo-label
@@ -102,10 +102,10 @@
 .newtab-cell
 {
  -moz-margin-end: 20px;
- background-color: #303030;
- border: 1px solid #A0A0A0;
- border-bottom-color: #606060;
- border-right-color: #606060;
+ background-color: #301010;
+ border: 1px solid #801818;
+ border-bottom-color: #601818;
+ border-right-color: #601818;
  transition: box-shadow 0.1s ease-out;
 }
 .newtab-cell:empty
@@ -118,9 +118,9 @@
 }
 .newtab-cell:hover:not(:empty):not([dragged])
 {
- border-color: #FFFFFF;
- border-bottom-color: #909090;
- border-right-color: #909090;
+ border-color: #FF3030;
+ border-bottom-color: #701818;
+ border-right-color: #701818;
 }
 .newtab-site
 {
@@ -128,12 +128,12 @@
 }
 .newtab-site:hover, .newtab-site[dragged]
 {
- box-shadow: 0 0 10px #FFFFFF;
+ box-shadow: 0 0 10px #FF3030;
 }
 .newtab-site[dragged]
 {
  transition-property: box-shadow;
- background-color: #A0A0A0;
+ background-color: #801818;
 }
 .newtab-thumbnail
 {

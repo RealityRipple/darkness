@@ -9,14 +9,14 @@
   -moz-appearance: none;
   margin: 0;
   border-bottom: 2px solid;
-  -moz-border-bottom-colors: #D0D0D0 #606060;
+  -moz-border-bottom-colors: #C01818 #601818;
  }
 }
 richlistitem[type="download"]
 {
  padding: 4px 8px 4px 4px;
  min-height: 46px;
- border-bottom: 1px solid #606060;
+ border-bottom: 1px solid #601818;
 }
 richlistitem[type="download"][selected="true"]
 {

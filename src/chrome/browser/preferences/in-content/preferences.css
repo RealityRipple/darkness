@@ -78,7 +78,7 @@ caption
 .heading
 {
  height: 50px;
- background-color: #202020;
+ background-color: #200808;
  border-radius: 5px 5px 0 0;
  margin-bottom: 15px;
  -moz-box-align: center;
@@ -135,10 +135,10 @@ description > html|a
  color: #FFFFFF;
  background-color: #000000;
  border: 2px solid;
- -moz-border-top-colors: #000000 #D0D0D0;
- -moz-border-left-colors: #000000 #D0D0D0;
- -moz-border-bottom-colors: #000000 #606060;
- -moz-border-right-colors: #000000 #606060;
+ -moz-border-top-colors: #000000 #C01818;
+ -moz-border-left-colors: #000000 #C01818;
+ -moz-border-bottom-colors: #000000 #601818;
+ -moz-border-right-colors: #000000 #601818;
 }
 .header-button[disabled="true"] > .toolbarbutton-icon
 {
@@ -147,51 +147,51 @@ description > html|a
 .header-button:not([disabled="true"]):hover
 {
  color: #D0D0D0;
- background-color: #303030;
+ background-color: #301010;
 }
 .header-button:not([disabled="true"]):focus
 {
  color: #C0C0C0;
- -moz-border-top-colors: #303030 #D0D0D0;
- -moz-border-left-colors: #303030 #D0D0D0;
- -moz-border-bottom-colors: #303030 #606060;
- -moz-border-right-colors: #303030 #606060;
+ -moz-border-top-colors: #301010 #C01818;
+ -moz-border-left-colors: #301010 #C01818;
+ -moz-border-bottom-colors: #301010 #601818;
+ -moz-border-right-colors: #301010 #601818;
 }
 .header-button:not([disabled="true"]):hover:focus
 {
  color: #D0D0D0;
- background-color: #303030;
- -moz-border-top-colors: #303030 #D0D0D0;
- -moz-border-left-colors: #303030 #D0D0D0;
- -moz-border-bottom-colors: #303030 #606060;
- -moz-border-right-colors: #303030 #606060;
+ background-color: #301010;
+ -moz-border-top-colors: #301010 #C01818;
+ -moz-border-left-colors: #301010 #C01818;
+ -moz-border-bottom-colors: #301010 #601818;
+ -moz-border-right-colors: #301010 #601818;
 }
 .header-button:not([disabled="true"]):active:hover, .header-button[open="true"]
 {
  color: #FFFFFF;
- background-color: #404040;
- -moz-border-top-colors: #000000 #606060;
- -moz-border-left-colors: #000000 #606060;
- -moz-border-bottom-colors: #000000 #D0D0D0;
- -moz-border-right-colors: #000000 #D0D0D0;
+ background-color: #401010;
+ -moz-border-top-colors: #000000 #601818;
+ -moz-border-left-colors: #000000 #601818;
+ -moz-border-bottom-colors: #000000 #C01818;
+ -moz-border-right-colors: #000000 #C01818;
 }
 .header-button:hover:active:focus, .header-button[checked="true"]:focus, .header-button[open="true"]:focus
 {
  color: #FFFFFF;
- background-color: #404040;
- -moz-border-top-colors: #303030 #606060;
- -moz-border-left-colors: #303030 #606060;
- -moz-border-bottom-colors: #303030 #D0D0D0;
- -moz-border-right-colors: #303030 #D0D0D0;
+ background-color: #401010;
+ -moz-border-top-colors: #301010 #601818;
+ -moz-border-left-colors: #301010 #601818;
+ -moz-border-bottom-colors: #301010 #C01818;
+ -moz-border-right-colors: #301010 #C01818;
 }
 .header-button[disabled="true"]
 {
  color: #606060 !important;
- background-color: #202020 !important;
- -moz-border-top-colors: #202020 #505050 !important;
- -moz-border-left-colors: #202020 #505050 !important;
- -moz-border-bottom-colors: #101010 #303030 !important;
- -moz-border-right-colors: #101010 #303030 !important;
+ background-color: #200808 !important;
+ -moz-border-top-colors: #200808 #501818 !important;
+ -moz-border-left-colors: #200808 #501818 !important;
+ -moz-border-bottom-colors: #100000 #301010 !important;
+ -moz-border-right-colors: #100000 #301010 !important;
 }
 .header-button > .toolbarbutton-text
 {

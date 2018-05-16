@@ -97,8 +97,8 @@ sidebarheader
  height: 25px;
  background-color: #000000;
  -moz-appearance: none;
- border-bottom: 1px solid #808080;
- border-top: 1px solid #C0C0C0;
+ border-bottom: 1px solid #681818;
+ border-top: 1px solid #B01818;
 }
 sidebarheader > label
 {
@@ -116,19 +116,19 @@ toolbar[mode="text"] .toolbarbutton-text
 .inset
 {
  border: 1px solid;
- -moz-border-top-colors: #606060;
- -moz-border-right-colors: #A0A0A0;
- -moz-border-bottom-colors: #A0A0A0;
- -moz-border-left-colors: #606060;
+ -moz-border-top-colors: #601818;
+ -moz-border-right-colors: #801818;
+ -moz-border-bottom-colors: #801818;
+ -moz-border-left-colors: #601818;
  margin: 0 5px 5px;
 }
 .outset
 {
  border: 1px solid;
- -moz-border-top-colors: #A0A0A0;
- -moz-border-right-colors: #606060;
- -moz-border-bottom-colors: #606060;
- -moz-border-left-colors: #A0A0A0;
+ -moz-border-top-colors: #801818;
+ -moz-border-right-colors: #601818;
+ -moz-border-bottom-colors: #601818;
+ -moz-border-left-colors: #801818;
 }
 separator:not([orient="vertical"])
 {
@@ -148,16 +148,16 @@ separator.thin[orient="vertical"]
 }
 separator.groove:not([orient="vertical"])
 {
- border-top: 1px solid #606060;
- border-bottom: 1px solid #A0A0A0;
+ border-top: 1px solid #601818;
+ border-bottom: 1px solid #801818;
  height: 0;
  margin-top: 0.4em;
  margin-bottom: 0.4em;
 }
 separator.groove[orient="vertical"]
 {
- border-left: 1px solid #606060;
- border-right: 1px solid #A0A0A0;
+ border-left: 1px solid #601818;
+ border-right: 1px solid #801818;
  width: 0;
  margin-left: 0.4em;
  margin-right: 0.4em;
@@ -187,11 +187,11 @@ description
 }
 label[disabled="true"]
 {
- color: #909090;
+ color: #701818;
 }
 label[disabled="true"]:-moz-system-metric(windows-classic)
 {
- color: #909090;
+ color: #701818;
 }
 .tooltip-label
 {
@@ -259,7 +259,7 @@ label[disabled="true"]:-moz-system-metric(windows-classic)
 /* FireFTP Fix */
 #cmdlog
 {
- background-color: #606060 !important;
+ background-color: #601818 !important;
  border: 0 !important;
 }
 .close-icon

@@ -26,7 +26,7 @@ toolbarseparator
 {
  -moz-appearance: none;
  margin: 3px;
- border-left: 1px solid #FFFFFF;
+ border-left: 1px solid #FF3030;
  width: 1px;
 }
 toolbarspacer
@@ -39,12 +39,12 @@ toolbarpaletteitem
 }
 .toolbarpaletteitem-box[type="spacer"]
 {
- border: 1px dotted #909090;
+ border: 1px dotted #701818;
  background-color: #000000 !important;
 }
 .toolbarpaletteitem-box[type="spring"]
 {
- border: 1px dotted #909090;
+ border: 1px dotted #701818;
  background: #000000 !important;
 }
 toolbarpaletteitem[place="toolbar"]

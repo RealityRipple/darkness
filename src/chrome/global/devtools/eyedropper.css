@@ -5,7 +5,7 @@
 #canvas {
   image-rendering: -moz-crisp-edges;
   cursor: none;
-  border: 3px solid #E0E0E0;
+  border: 3px solid #D01818;
   border-radius: 50%;
 }
 
@@ -24,7 +24,7 @@
 }
 
 #color-value-box {
-  background-color: #E0E0E0;
+  background-color: #D01818;
   border-radius: 1px;
   width: 150px;
 }

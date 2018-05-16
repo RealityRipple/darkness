@@ -38,7 +38,7 @@ richlistitem[selected="true"], richlistitem:focus
 richlistitem[type="tab"]
 {
  min-height: 3em;
- border: #606060 1px solid !important;
+ border: #601818 1px solid !important;
  padding: 2px 5px;
  margin-bottom: 4px;
  -moz-margin-start: 4em;
@@ -49,7 +49,7 @@ richlistitem[type="tab"]
 }
 richlistitem[type="tab"][selected="true"]
 {
- background-color: #202020;
+ background-color: #200808;
 }
 richlistitem[type="client"]
 {

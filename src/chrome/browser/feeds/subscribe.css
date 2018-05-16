@@ -5,7 +5,7 @@ html
 }
 #feedBody
 {
- border: 1px solid #C0C0C0;
+ border: 1px solid #B01818;
  padding: 3em;
  -moz-padding-start: 30px;
  margin: 2em auto;
@@ -13,7 +13,7 @@ html
 }
 #feedHeaderContainer
 {
- border: 1px solid #C0C0C0;
+ border: 1px solid #B01818;
  -moz-border-radius: 10px;
  margin: -4em auto 0 auto;
  background-color: #000000;
@@ -80,7 +80,7 @@ body
 h1
 {
  font-size: 160%;
- border-bottom: 2px solid #C0C0C0;
+ border-bottom: 2px solid #B01818;
  margin: 0 0 .2em 0;
 }
 h2
@@ -149,7 +149,7 @@ a[href] img
 }
 .enclosures
 {
- border: 1px solid #C0C0C0;
+ border: 1px solid #B01818;
  padding: 1em;
  margin: 1em auto;
  background: #000000;

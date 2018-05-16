@@ -12,7 +12,7 @@
  background-color: #000000;
  color: #FFFFFF;
  min-height: 75px;
- border-bottom: 1px solid #808080;
+ border-bottom: 1px solid #681818;
 }
 #itemWarningIntro
 {
@@ -31,10 +31,10 @@ installitem
  -moz-padding-start: 5px;
  -moz-padding-end: 0px;
  border: 2px solid;
- -moz-border-top-colors: #D0D0D0 #808080;
- -moz-border-right-colors: #202020 #606060;
- -moz-border-bottom-colors: #202020 #606060;
- -moz-border-left-colors: #D0D0D0 #808080;
+ -moz-border-top-colors: #C01818 #681818;
+ -moz-border-right-colors: #200808 #601818;
+ -moz-border-bottom-colors: #200808 #601818;
+ -moz-border-left-colors: #C01818 #681818;
  margin-bottom: 5px;
  background-color: #000000;
  color: #FFFFFF;
@@ -71,17 +71,17 @@ installitem
 {
  -moz-appearance: none;
  padding: 0;
- background-color: #202020;
+ background-color: #200808;
  color: #FFFFFF;
  margin-top: 1px;
  margin-bottom: 1px;
  -moz-margin-start: 6px;
  -moz-margin-end: 5px;
  border: 1px solid;
- border-top-color: #606060;
- border-left-color: #606060;
- border-bottom-color: #A0A0A0;
- border-right-color: #A0A0A0;
+ border-top-color: #601818;
+ border-left-color: #601818;
+ border-bottom-color: #801818;
+ border-right-color: #801818;
 }
 .xpinstallItemIcon
 {
