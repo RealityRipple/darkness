@@ -9,5 +9,5 @@
   <path d="M 10,0 L 0,10 10,20 z"
         fill="#C0C0C0"/>
   <path d="M 10,1 L 1,10 10,19 z"
-        fill="#FFFFFF"/>
+        fill="#000000"/>
 </svg>

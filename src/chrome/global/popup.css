@@ -111,22 +111,6 @@ panel[type="arrow"][side="left"], panel[type="arrow"][side="right"]
  transform: scaleX(-1);
  margin-left: -5px;
 }
-
-@media (-moz-windows-default-theme)
-{
- .panel-arrowcontent
- {
-  border-color: #C0C0C0;
- }
- .panel-arrow[side="top"], .panel-arrow[side="bottom"]
- {
-  list-style-image: url("chrome://global/skin/arrow/panelarrow-vertical-white.png");
- }
- .panel-arrow[side="left"], .panel-arrow[side="right"]
- {
-  list-style-image: url("chrome://global/skin/arrow/panelarrow-horizontal-white.png");
- }
-}
 tooltip
 {
  -moz-appearance: none;
