@@ -1,19 +1,19 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 menupopup, panel
 {
- border: 1px solid;
- border-top-color: #C01818;
- border-right-color: #601818;
- border-bottom-color: #601818;
- border-left-color: #C01818;
+ border: 1px solid transparent;
  padding: 0px;
  min-width: 1px;
- background-color: #000000;
  color: #FFFFFF;
 }
 menupopup
 {
  -moz-appearance: none;
+ border-top-color: #D0D0D0;
+ border-right-color: #606060;
+ border-bottom-color: #606060;
+ border-left-color: #D0D0D0;
+ background-color: #000000;
  margin-top: -1px;
 }
 menupopup > menu > menupopup
@@ -24,9 +24,6 @@ menupopup > menu > menupopup
 panel[type="arrow"]
 {
  -moz-appearance: none;
- background: transparent;
- border: none;
- transition: opacity 300ms;
 }
 
 @media (-moz-windows-default-theme)
