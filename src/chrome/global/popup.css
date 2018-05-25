@@ -9,10 +9,10 @@ menupopup, panel
 menupopup
 {
  -moz-appearance: none;
- border-top-color: #D0D0D0;
- border-right-color: #606060;
- border-bottom-color: #606060;
- border-left-color: #D0D0D0;
+ border-top-color: #C01818;
+ border-right-color: #601818;
+ border-bottom-color: #601818;
+ border-left-color: #C01818;
  background-color: #000000;
  margin-top: -1px;
 }
