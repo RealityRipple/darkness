@@ -1,0 +1,110 @@
+@import url("chrome://global/skin/in-content/common.css");
+html
+{
+ height: 100%;
+}
+body
+{
+ display: flex;
+ align-items: stretch;
+ height: 100%;
+}
+#sectionTitle
+{
+ float: left;
+}
+#refreshDiv
+{
+ justify-content: flex-end;
+ margin-bottom: 0.5em;
+}
+#refreshButton
+{
+ margin-top: 0;
+}
+.category
+{
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+}
+.category .category-name
+{
+ pointer-events: none;
+}
+#categories hr
+{
+ border-top-color: #FF0000;
+}
+.warningBackground:not([hidden])
+{
+ display: flex;
+}
+.warningBackground
+{
+ flex-direction: column;
+ box-sizing: border-box;
+ min-height: 100vh;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ height: 100%;
+ z-index: 10;
+ top: 0;
+ left: 0;
+ position: fixed;
+ background: var(--in-content-page-background);
+}
+.title
+{
+ position: relative;
+ border-bottom: 1px solid var(--in-content-box-border-color);
+ margin-bottom: 1em;
+ padding-bottom: 0.5em;
+}
+.title::before
+{
+ content: "";
+ left: -2.3em;
+ top: 0;
+ position: absolute;
+ display: block;
+ width: 64px;
+ height: 64px;
+ background: url("chrome://global/skin/icons/warning-64.png") no-repeat left center;
+ background-size: 64px;
+}
+.warningBackground button
+{
+ margin-top: 1em;
+ margin-left: 0;
+ min-width: 100px;
+}
+.main-content
+{
+ flex: 1;
+}
+.tab
+{
+ padding: 0.5em 0;
+}
+.tab table
+{
+ width: 100%;
+}
+th, td, table
+{
+ border-collapse: collapse;
+ border: none;
+ text-align: start;
+}
+th
+{
+ padding-bottom: 0.5em;
+ font-size: larger;
+}
+td
+{
+ padding-bottom: 0.25em;
+ border-bottom: 1px solid var(--in-content-box-border-color);
+}
