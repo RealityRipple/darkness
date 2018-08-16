@@ -330,7 +330,7 @@ menuitem#context_closeTab
 
 menuitem[command="cmd_CustomizeToolbars"]
 {
- background: url("chrome://browser/skin/devtools/tool-options.png") left center no-repeat;
+ background: url("chrome://browser/skin/devtools/tool-icons/options.png") left center no-repeat;
 }
 
 menuitem[observes="blockedPopupAllowSite"]
@@ -339,7 +339,7 @@ menuitem[observes="blockedPopupAllowSite"]
 }
 menuitem[observes="blockedPopupEditSettings"]
 {
- background: url("chrome://browser/skin/devtools/tool-options.png") left center no-repeat;
+ background: url("chrome://browser/skin/devtools/tool-icons/options.png") left center no-repeat;
 }
 menuitem[observes="blockedPopupDontShowMessage"]
 {
