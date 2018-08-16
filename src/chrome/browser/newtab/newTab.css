@@ -1,14 +1,4 @@
-:root
-{
- -moz-appearance: none;
- font-size: 75%;
- background-color: transparent;
-}
-#newtab-scrollbox[page-disabled="true"]
-{
- background: #000000;
-}
-#newtab-scrollbox:not([page-disabled="true"])
+body
 {
  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(chrome://browser/skin/newtab/static.gif) fixed #000000;
 }
@@ -135,7 +125,7 @@
  transition-property: box-shadow;
  background-color: #801818;
 }
-.newtab-thumbnail
+.newtab-link, .newtab-thumbnail
 {
  background-origin: padding-box;
  background-clip: padding-box;
@@ -188,4 +178,73 @@
 .newtab-control-block:active
 {
  background-position: -192px 0;
+}
+#searchText
+{
+ -moz-box-flex: 1;
+ padding: 6px 8px;
+ background-color: #000000;
+ color: #FFFFFF;
+ border-radius: 5px;
+ border: 1px solid;
+ border-top-color: #601818;
+ border-bottom-color: #801818;
+ border-right-color: #801818;
+ border-left-color: #601818;
+}
+#searchText[keepfocus], #searchText:focus
+{
+ border: 1px solid;
+ border-top-color: #601818;
+ border-bottom-color: #801818;
+ border-right-color: #801818;
+ border-left-color: #601818;
+}
+#searchSubmit
+{
+ margin-left: 4px;
+ padding: 0 9px;
+ color: #FFFFFF;
+ background-color: transparent;
+ border: 1px solid transparent;
+ cursor: pointer;
+ box-shadow: none;
+ transition: none;
+ border-radius: 0;
+}
+#searchSubmit:hover
+{
+ border: 1px solid;
+ background-color: #401010;
+ border-top-color: #C01818 !important;
+ border-left-color: #C01818 !important;
+ border-bottom-color: #601818 !important;
+ border-right-color: #601818 !important;
+ box-shadow: none;
+ border-radius: 0;
+}
+#searchSubmit:hover:active
+{
+ border: 1px solid;
+ background-color: #601818;
+ border-top-color: #601818;
+ border-left-color: #601818;
+ border-bottom-color: #C01818;
+ border-right-color: #C01818;
+}
+#searchText[keepfocus] + #searchSubmit, #searchText:focus + #searchSubmit
+{
+ border: 1px solid transparent;
+ box-shadow: none;
+}
+#searchText[keepfocus] + #searchSubmit:hover, #searchText:focus + #searchSubmit:hover
+{
+ border: 1px solid;
+ background-color: #401010;
+ border-top-color: #601818;
+ border-left-color: #C01818;
+ border-bottom-color: #606060;
+ border-right-color: #601818;
+ box-shadow: none;
+ border-radius: 0;
 }
