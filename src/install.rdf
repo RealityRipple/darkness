@@ -3,13 +3,13 @@
  <Description about="urn:mozilla:install-manifest">
   <em:name>In The Dark</em:name>
   <em:id>{86FA6F53-95FE-7A69-D8C3-E1454281F8B6}</em:id>
-  <em:version>4.3b1</em:version>
+  <em:version>4.3b2</em:version>
   <em:type>4</em:type>
   <em:targetApplication>
    <Description>
     <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
     <em:minVersion>20.0</em:minVersion>
-    <em:maxVersion>27.*</em:maxVersion>
+    <em:maxVersion>28.*</em:maxVersion>
    </Description>
   </em:targetApplication>
   <em:description>A dark, simple, grayscale theme for Pale Moon.</em:description>
