@@ -2807,7 +2807,7 @@ statuspanel
   -moz-appearance: none;
   display: -moz-box;
   background-color: transparent;
-  list-style-image: url("chrome://global/skin/devtools/dropmarker.svg");
+  list-style-image: url("chrome://browser/skin/devtools/dropmarker.svg");
   -moz-box-align: center;
   border-width: 0;
   min-width: 16px;
@@ -2833,7 +2833,7 @@ statuspanel
 .devtools-responsiveui-toolbarbutton[type=menu] > .toolbarbutton-menu-dropmarker,
 .devtools-responsiveui-toolbarbutton[type=menu-button] > .toolbarbutton-menubutton-dropmarker {
   -moz-appearance: none !important;
-  list-style-image: url("chrome://global/skin/devtools/dropmarker.svg");
+  list-style-image: url("chrome://browser/skin/devtools/dropmarker.svg");
   -moz-box-align: center;
   padding: 0 3px;
 }
@@ -2844,25 +2844,15 @@ statuspanel
 }
 
 .devtools-responsiveui-close {
-  list-style-image: url("chrome://global/skin/devtools/close.png");
+  list-style-image: url("chrome://browser/skin/devtools/close.png");
 }
 
 .devtools-responsiveui-rotate {
-  list-style-image: url("chrome://global/skin/devtools/responsiveui-rotate.png");
-}
-
-@media (min-resolution: 2dppx) {
-  .devtools-responsiveui-close {
-    list-style-image: url("chrome://global/skin/devtools/close@2x.png");
-  }
-
-  .devtools-responsiveui-rotate {
-    list-style-image: url("chrome://global/skin/devtools/responsiveui-rotate@2x.png");
-  }
+  list-style-image: url("chrome://browser/skin/devtools/responsiveui-rotate.png");
 }
 
 .devtools-responsiveui-touch {
-  list-style-image: url("chrome://global/skin/devtools/responsiveui-touch.png");
+  list-style-image: url("chrome://browser/skin/devtools/responsiveui-touch.png");
   -moz-image-region: rect(0px,16px,16px,0px);
 }
 
@@ -2870,25 +2860,8 @@ statuspanel
   -moz-image-region: rect(0px,32px,16px,16px);
 }
 
-@media (min-resolution: 2dppx) {
-  .devtools-responsiveui-touch {
-    list-style-image: url("chrome://global/skin/devtools/responsiveui-touch@2x.png");
-    -moz-image-region: rect(0px,32px,32px,0px);
-  }
-
-  .devtools-responsiveui-touch[checked] {
-    -moz-image-region: rect(0px,64px,32px,32px);
-  }
-}
-
 .devtools-responsiveui-screenshot {
-  list-style-image: url("chrome://global/skin/devtools/responsiveui-screenshot.png");
-}
-
-@media (min-resolution: 2dppx) {
-  .devtools-responsiveui-screenshot {
-    list-style-image: url("chrome://global/skin/devtools/responsiveui-screenshot@2x.png");
-  }
+  list-style-image: url("chrome://browser/skin/devtools/responsiveui-screenshot.png");
 }
 
 .devtools-responsiveui-resizebarV {
@@ -2897,7 +2870,7 @@ statuspanel
   cursor: ew-resize;
   transform: translate(12px, -12px);
   background-size: cover;
-  background-image: url("chrome://global/skin/devtools/responsive-vertical-resizer.png");
+  background-image: url("chrome://browser/skin/devtools/responsive-vertical-resizer.png");
 }
 
 .devtools-responsiveui-resizebarH {
@@ -2906,7 +2879,7 @@ statuspanel
   cursor: ns-resize;
   transform: translate(-12px, 12px);
   background-size: cover;
-  background-image: url("chrome://global/skin/devtools/responsive-horizontal-resizer.png");
+  background-image: url("chrome://browser/skin/devtools/responsive-horizontal-resizer.png");
 }
 
 .devtools-responsiveui-resizehandle {
@@ -2915,7 +2888,7 @@ statuspanel
   cursor: se-resize;
   transform: translate(12px, 12px);
   background-size: cover;
-  background-image: url("chrome://global/skin/devtools/responsive-se-resizer.png");
+  background-image: url("chrome://browser/skin/devtools/responsive-se-resizer.png");
 }
 
 /* Hide devtools manual resizer */
@@ -2960,7 +2933,7 @@ statuspanel
 .devtools-responsiveui-home-button {
   width: 40px;
   height: 30px;
-  list-style-image: url("chrome://global/skin/devtools/responsiveui-home.png");
+  list-style-image: url("chrome://browser/skin/devtools/responsiveui-home.png");
 }
 
 .devtools-responsiveui-sleep-button {
@@ -3015,20 +2988,6 @@ statuspanel
   border-bottom-left-radius: 12px;
 }
 
-@media (min-resolution: 2dppx) {
-  .devtools-responsiveui-resizebarV {
-    background-image: url("chrome://global/skin/devtools/responsive-vertical-resizer@2x.png");
-  }
-
-  .devtools-responsiveui-resizebarH {
-    background-image: url("chrome://global/skin/devtools/responsive-horizontal-resizer@2x.png");
-  }
-
-  .devtools-responsiveui-resizehandle {
-    background-image: url("chrome://global/skin/devtools/responsive-se-resizer@2x.png");
-  }
-}
-
 /* Developer toolbar */
 
 #developer-toolbar {
@@ -3060,7 +3019,7 @@ statuspanel
 }
 
 #developer-toolbar-toolbox-button {
-  list-style-image: url("chrome://global/skin/devtools/toggle-tools.png");
+  list-style-image: url("chrome://browser/skin/devtools/toggle-tools.png");
   -moz-image-region: rect(0px, 16px, 16px, 0px);
 }
 
@@ -3080,39 +3039,14 @@ statuspanel
   -moz-image-region: rect(0px, 64px, 16px, 48px);
 }
 
-@media (min-resolution: 2dppx) {
-  #developer-toolbar-toolbox-button {
-    list-style-image: url("chrome://global/skin/devtools/toggle-tools@2x.png");
-    -moz-image-region: rect(0px, 32px, 32px, 0px);
-  }
-
-  #developer-toolbar-toolbox-button:hover {
-    -moz-image-region: rect(0px, 64px, 32px, 32px);
-  }
-
-  #developer-toolbar-toolbox-button:hover:active {
-    -moz-image-region: rect(0px, 96px, 32px, 64px);
-  }
-
-  #developer-toolbar-toolbox-button[checked=true] {
-    -moz-image-region: rect(0px, 128px, 32px, 96px);
-  }
-}
-
 #developer-toolbar-closebutton {
-  list-style-image: url("chrome://global/skin/devtools/close.png");
+  list-style-image: url("chrome://browser/skin/devtools/close.png");
   -moz-appearance: none;
   border: none;
   margin: 0 4px;
   min-width: 16px;
   width: 16px;
   opacity: 0.6;
-}
-
-@media (min-resolution: 2dppx) {
-  #developer-toolbar-closebutton {
-    list-style-image: url("chrome://global/skin/devtools/close@2x.png");
-  }
 }
 
 #developer-toolbar-closebutton > .toolbarbutton-icon {
@@ -3187,19 +3121,13 @@ html|*#gcli-output-frame {
   width: 16px;
   height: 16px;
   margin: 0 2px;
-  background-image: url("chrome://global/skin/devtools/commandline-icon.png");
+  background-image: url("chrome://browser/skin/devtools/commandline-icon.png");
   background-position: 0 center;
   background-size: 32px 16px;
 }
 
 .gclitoolbar-input-node[focused="true"]::before {
   background-position: -16px center;
-}
-
-@media (min-resolution: 2dppx) {
-  .gclitoolbar-input-node::before {
-    background-image: url("chrome://global/skin/devtools/commandline-icon@2x.png");
-  }
 }
 
 .gclitoolbar-input-node > .textbox-input-box > html|*.textbox-input::-moz-selection {
@@ -3973,7 +3901,7 @@ html|*#gcli-output-frame {
 }
 #appmenu_webDeveloper > .splitmenu-menuitem
 {
- background-image: -moz-image-rect(url("chrome://global/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
+ background-image: -moz-image-rect(url("chrome://browser/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -4057,7 +3985,7 @@ html|*#gcli-output-frame {
 }
 #appmenu_customize > .splitmenu-menuitem, #appmenu_preferences
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/options.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/options.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -4301,7 +4229,7 @@ html|*#gcli-output-frame {
  background-repeat: no-repeat;
  background-position: left center;
 }
-#charsetMenu
+#charsetMenu, #appmenu_developer_charsetMenu
 {
  background-image: url("chrome://browser/skin/social/services-16.png");
  background-repeat: no-repeat;
@@ -4383,13 +4311,13 @@ html|*#gcli-output-frame {
 }
 #menu_restoreAllTabs
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/devtools/inspect-button.png"), 0, 16, 16, 0);
+ background-image: url("chrome://browser/skin/devtools/tool-icons/inspector.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menu_restoreAllWindows
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/devtools/inspect-button.png"), 0, 16, 16, 0);
+ background-image: url("chrome://browser/skin/devtools/tool-icons/inspector.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -4463,81 +4391,81 @@ html|*#gcli-output-frame {
  background-repeat: no-repeat;
  background-position: left center;
 }
-#webDeveloperMenu
+#webDeveloperMenu, #appmenu_devToolbar
 {
- background-image: -moz-image-rect(url("chrome://global/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
+ background-image: -moz-image-rect(url("chrome://browser/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_inspector, #appmenuitem_inspector
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/inspector.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/inspector.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_webconsole, #appmenuitem_webconsole
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/webconsole.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/webconsole.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_jsdebugger, #appmenuitem_jsdebugger
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/debugger.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/debugger.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_styleeditor, #appmenuitem_styleeditor
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/styleeditor.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/styleeditor.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
-#menuitem_jsprofiler, #appmenuitem_jsprofiler
+#menuitem_jsprofiler, #menuitem_performance, #appmenuitem_jsprofiler, #appmenuitem_performance
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/profiler.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/profiler.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_netmonitor, #appmenuitem_netmonitor
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/network.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/network.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menuitem_storage, #appmenuitem_storage
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/storage.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/storage.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menu_chromeDebugger, #appmenu_chromeDebugger
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/debugger.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/debugger.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menu_browserConsole, #appmenu_browserConsole
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/webconsole.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/webconsole.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menu_responsiveUI, #appmenu_responsiveUI
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/responsivemode.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/responsivemode.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menu_eyedropper, #appmenu_eyedropper
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/eyedropper.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/eyedropper.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
 #menu_scratchpad, #appmenu_scratchpad
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/scratchpad.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/scratchpad.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -4547,7 +4475,7 @@ html|*#gcli-output-frame {
  background-repeat: no-repeat;
  background-position: left center;
 }
-#javascriptConsole, #appmenu_errorConsole
+#javascriptConsole, #appmenu_javascriptConsole, #appmenu_errorConsole
 {
  background-image: url("chrome://global/skin/icons/warning-16.png");
  background-repeat: no-repeat;
@@ -4559,13 +4487,25 @@ html|*#gcli-output-frame {
  background-repeat: no-repeat;
  background-position: left center;
 }
+#menu_webide, #appmenu_webide
+{
+ background-image: url("chrome://browser/skin/webapps-16.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_devtools_serviceworkers, #appmenu_devtools_serviceworkers
+{
+ background-image: url("chrome://browser/skin/devtools/tool-icons/worker.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
 #menu_devtools_connect, #appmenu_devtools_connect
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
  background-repeat: no-repeat;
  background-position: left center;
 }
-#getMoreDevtools, #appmenu_getMoreDevtools
+#getMoreDevtools, #menu_getMoreDevtools, #appmenu_getMoreDevtools
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16);
  background-repeat: no-repeat;
@@ -4579,7 +4519,7 @@ html|*#gcli-output-frame {
 }
 #menu_preferences
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/options.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/options.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
@@ -4605,7 +4545,7 @@ html|*#gcli-output-frame {
 }
 #healthReport, #appmenu_healthReport
 {
- background-image: url("chrome://global/skin/devtools/tool-icons/profiler.png");
+ background-image: url("chrome://browser/skin/devtools/tool-icons/profiler.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
