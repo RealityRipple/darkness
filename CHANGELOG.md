@@ -1,5 +1,9 @@
 # Changelog
 
+### 4.3b2
+- Update for Pale Moon 28.
+- Fix some missing menu icons.
+
 ### 4.3b1
 - Correct icon paradigm.
 - Better source/target arrow elements and removed dropshadows for popup panels.

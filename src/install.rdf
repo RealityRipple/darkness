@@ -3,13 +3,13 @@
  <Description about="urn:mozilla:install-manifest">
   <em:name>In The Dark (Bloodmoon Edition)</em:name>
   <em:id>{955EF91C-0F9D-557C-9E05-0838E3E67D15}</em:id>
-  <em:version>4.3b1</em:version>
+  <em:version>4.3b2</em:version>
   <em:type>4</em:type>
   <em:targetApplication>
    <Description>
     <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
     <em:minVersion>20.0</em:minVersion>
-    <em:maxVersion>27.*</em:maxVersion>
+    <em:maxVersion>28.*</em:maxVersion>
    </Description>
   </em:targetApplication>
   <em:description>A dark, simple, red-tinted theme for Pale Moon.</em:description>
