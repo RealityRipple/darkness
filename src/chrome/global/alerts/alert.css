@@ -1,12 +1,20 @@
-@import url("chrome://global/skin/");
+@import url("chrome://global/skin/alerts/alert-common.css");
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+#alertNotification
+{
+ -moz-appearance: none;
+ background: transparent;
+ padding: 10px;
+}
 .alertBox
 {
  border-right: 2px solid #801818;
  border-bottom: 2px solid #801818;
  border-top: 2px solid #801818;
  border-left: 2px solid #801818;
- background-color: #000000;
+ background-color: #000000; 
+ color: #C01818;
+ box-shadow: 0 2px 10px rgba(0,0,0,0.59);
 }
 .alertImageBox
 {
@@ -17,29 +25,22 @@
 }
 .alertTextBox
 {
- color: white;
+ color: #FFFFFF;
  padding: 8px;
  -moz-padding-start: 16px;
  width: 255px;
 }
 .alertTextBox, .alertCloseBox
 {
- background: #100000;
+ background: #000000;
 }
 .alertTitle
 {
- font-weight: bold;
  font-size: 110%;
-}
-#alertImage
-{
- max-width: 48px;
- max-height: 48px;
- list-style-image: url(chrome://global/skin/alerts/notification-48.png);
 }
 #alertNotification[clickable="true"]
 {
- cursor: pointer;
+ cursor: normal;
 }
 label
 {
@@ -49,6 +50,7 @@ label
 {
  color: #FFFFFF;
  text-decoration: none;
+ cursor: pointer;
 }
 .alertText[clickable="true"]:hover
 {
@@ -60,32 +62,17 @@ label
  color: #FFFFFF;
  text-decoration: underline;
 }
-@keyframes alert-animation
-{
- from
- {
-  opacity: 0;
- }
- 6.25%
- {
-  opacity: 1;
- }
- 93.75%
- {
-  opacity: 1;
- }
- to
- {
-  opacity: 0;
- }
-}
 .alertCloseButton
 {
  -moz-appearance: none;
  padding: 4px 2px;
  border: none !important;
 }
-.alertCloseButton > .toolbarbutton-text
+.alertCloseBox
 {
- display: none;
+ margin-inline-end: 2px;
+} 
+#alertSettings
+{
+ margin-inline-end: 5px;
 }

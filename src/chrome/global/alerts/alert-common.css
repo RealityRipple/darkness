@@ -1,0 +1,147 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+#alertBox[animate]
+{
+ animation-timing-function: cubic-bezier(.12,1.23,.48,1.09);
+}
+#alertBox[animate][clicked]
+{
+ animation-name: alert-clicked-animation;
+}
+#alertBox[animate][closing]
+{
+ animation-name: alert-closing-animation;
+}
+#alertBox[animate]:not([clicked]):not([closing]):hover
+{
+ opacity: 1 !important;
+}
+@keyframes alert-animation
+{
+ from
+ {
+  opacity: 0;
+ }
+ 5%
+ {
+  opacity: 1;
+ }
+ 95%
+ {
+  opacity: 1;
+ }
+ to
+ {
+  opacity: 0;
+ }
+}
+@keyframes alert-clicked-animation
+{
+ to
+ {
+  opacity: 0;
+ }
+}
+@keyframes alert-closing-animation
+{
+ to
+ {
+  opacity: 0;
+ }
+}
+#alertIcon
+{
+ margin-top: 6px;
+ margin-inline-start: 8px;
+ margin-inline-end: 0;
+ margin-bottom: 0;
+ width: 16px;
+ min-height: 16px;
+ max-height: 16px;
+}
+@media (resolution: 2dppx)
+{
+ #alertIcon
+ {
+  image-rendering: -moz-crisp-edges;
+ }
+}
+#alertImage
+{
+ width: 48px;
+ height: 48px;
+ max-width: 80px;
+ max-height: 80px;
+ object-fit: scale-down;
+ margin: 0 7px 7px;
+}
+.alertTextBox
+{
+ padding-top: 4px;
+ width: 349px;
+}
+#alertBox[hasImage] > box > #alertTextBox
+{
+ width: 255px;
+}
+#alertBox:not([hasImage]) > box > #alertTextBox
+{
+ padding-inline-start: 8px;
+}
+#alertTextLabel
+{
+ padding-inline-end: 8px;
+}
+.alertTitle
+{
+ -moz-box-flex: 1;
+ font-weight: bold;
+ padding: 6px 8px 0;
+ width: 255px;
+}
+#alertFooter
+{
+ -moz-box-align: start;
+}
+#alertBox:not([hasOrigin]) > box > #alertTextBox, #alertFooter
+{
+ padding-bottom: 5px;
+}
+#alertSourceLabel
+{
+ -moz-box-flex: 1;
+ font-size: 83.334%;
+ color: #C01818;
+}
+#alertSettings
+{
+ -moz-appearance: none;
+ background-color: transparent;
+ border-width: 0;
+ border-radius: 20px;
+ min-width: 0;
+ list-style-image: url("chrome://global/skin/alerts/settings.png");
+ -moz-image-region: rect(0px 16px 16px 0px);
+ margin-inline-end: 0;
+ margin-bottom: 0;
+}
+#alertSettings > .button-box
+{
+ padding: 0;
+}
+#alertSettings:hover
+{
+ -moz-image-region: rect(16px 16px 32px 0px);
+}
+#alertSettings:hover:active, #alertSettings[open]
+{
+ -moz-image-region: rect(32px 16px 48px 0px);
+}
+#alertSettings[focusedViaMouse]:-moz-focusring > .button-box
+{
+ border-color: transparent;
+}
+#alertSettings > .button-box > .button-menu-dropmarker, #alertSettings > .button-box > .box-inherit > .button-text
+{
+ display: none;
+}
