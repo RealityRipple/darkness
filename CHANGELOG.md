@@ -1,5 +1,8 @@
 # Changelog
 
+### 4.3b3
+- Notifications
+
 ### 4.3b2
 - Update for Pale Moon 28.
 - Fix some missing menu icons.
