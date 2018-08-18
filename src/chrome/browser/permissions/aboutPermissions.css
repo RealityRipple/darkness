@@ -71,43 +71,43 @@
 }
 .pref-icon[type="password"]
 {
- list-style-image: url(chrome://mozapps/skin/passwordmgr/key-64.png);
+ list-style-image: url(chrome://browser/skin/permissions/password.png);
 }
 .pref-icon[type="cookie"]
 {
- list-style-image: url(chrome://global/skin/icons/question-64.png);
+ list-style-image: url(chrome://browser/skin/permissions/cookie.png);
 }
 .pref-icon[type="geo"]
 {
- list-style-image: url(chrome://browser/skin/Geolocation-64.png);
+ list-style-image: url(chrome://browser/skin/permissions/geo.png);
 }
 .pref-icon[type="indexedDB"]
 {
- list-style-image: url(chrome://global/skin/icons/question-64.png);
+ list-style-image: url(chrome://browser/skin/permissions/generic.png);
 }
 .pref-icon[type="install"]
 {
- list-style-image: url(chrome://mozapps/skin/extensions/extensionGeneric.png);
+ list-style-image: url(chrome://browser/skin/permissions/extension.png);
 }
 .pref-icon[type="popup"]
 {
- list-style-image: url(chrome://global/skin/icons/question-64.png);
+ list-style-image: url(chrome://browser/skin/permissions/popup.png);
 }
 .pref-icon[type="image"]
 {
- list-style-image: url(chrome://global/skin/icons/question-64.png);
+ list-style-image: url(chrome://browser/skin/permissions/image.png);
 }
 .pref-icon[type="plugins"]
 {
- list-style-image: url(chrome://mozapps/skin/plugins/pluginGeneric.png);
+ list-style-image: url(chrome://browser/skin/permissions/plugin.png);
 }
 .pref-icon[type="fullscreen"]
 {
- list-style-image: url(chrome://global/skin/icons/question-64.png);
+ list-style-image: url(chrome://browser/skin/permissions/generic.png);
 }
 .pref-icon[type="desktop-notification"]
 {
- list-style-image: url(chrome://browser/skin/notification-64.png);
+ list-style-image: url(chrome://browser/skin/permissions/notification.png);
 }
 .pref-icon[type="pointerLock"]
 {
