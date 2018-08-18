@@ -4183,7 +4183,7 @@ html|*#gcli-output-frame {
 }
 #viewSidebarMenuMenu
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/devtools/dock-side.png"), 0, 16, 16, 0);
+ background-image: url("chrome://browser/skin/devtools/tool-icons/dock-side.png");
  background-repeat: no-repeat;
  background-position: left center;
 }
