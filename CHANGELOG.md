@@ -1,7 +1,8 @@
 # Changelog
 
 ### 4.3b3
-- Notifications
+- Notifications.
+- Icon improvements.
 
 ### 4.3b2
 - Update for Pale Moon 28.
