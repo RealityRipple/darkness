@@ -7,4 +7,4 @@ A dark, simple, red-tinted theme for Pale Moon.
 Simply download the contents of the "src" folder  and pack the contents into a .zip file. Then, rename the file to .xpi and drag into the browser.
 
 ## Download
-You can grab the latest release either from the Releases section of this repository, or the [Official Web Site](http://realityripple.com/Software/Themes/In-The-Dark/Pale-Moon/Bloodmoon-Edition).
+You can grab the latest release from the [Official Web Site](//realityripple.com/Software/Themes/In-The-Dark/Pale-Moon/Bloodmoon-Edition).
