@@ -1,5 +1,9 @@
 # Changelog
 
+### 4.3b4
+- Full row hover for Trees ad complex lists that use treechildren.
+- Fix for Update History list coloring.
+
 ### 4.3b3
 - Notifications.
 - Icon improvements.
