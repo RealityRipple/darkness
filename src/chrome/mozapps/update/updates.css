@@ -162,7 +162,8 @@ update
 }
 #historyItems
 {
- -moz-appearance: listbox;
+ -moz-appearance: none;
+ background-color: #101010;
  height: 200px;
  margin: 1px 5px 4px 5px;
 }
