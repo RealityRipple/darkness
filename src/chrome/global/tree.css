@@ -30,6 +30,11 @@ treechildren::-moz-tree-cell-text
 {
  color: #FFFFFF !important;
 }
+treechildren::-moz-tree-row(hover)
+{
+ background-color: #080808;
+ border-bottom-color: #202020;
+}
 treechildren::-moz-tree-row(selected)
 {
  background-color: #202020;
