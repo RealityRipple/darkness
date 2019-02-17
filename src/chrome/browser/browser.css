@@ -4335,6 +4335,12 @@ html|*#gcli-output-frame {
  background-repeat: no-repeat;
  background-position: left center;
 }
+#liveclick-bookmarks-menu, #liveclick-app-bookmarks-menu
+{
+ background-image: url("chrome://browser/skin/feeds/feedIcon16.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
 #menu_bookmarkAllTabs
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/places/libraryToolbar.png"), 0, 48, 16, 32);
@@ -4442,6 +4448,12 @@ html|*#gcli-output-frame {
 #menu_chromeDebugger, #appmenu_chromeDebugger
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/debugger.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#menu_browserToolbox, #appmenu_browserToolbox
+{
+ background-image: -moz-image-rect(url("chrome://browser/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
  background-repeat: no-repeat;
  background-position: left center;
 }
