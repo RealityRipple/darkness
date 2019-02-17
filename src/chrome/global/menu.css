@@ -291,6 +291,18 @@ menuitem#context_reloadTab
 {
  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48) left center no-repeat;
 }
+menu#tab_reloadevery_menu
+{
+ background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 112, 16, 96) left center no-repeat;
+}
+menuitem#context_toggleMuteTab[muted="true"]
+{
+ background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 48, 16, 32) left center no-repeat;
+}
+menuitem#context_toggleMuteTab:not([muted="true"])
+{
+ background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 64, 16, 48) left center no-repeat;
+}
 menuitem#context_pinTab
 {
  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 288, 16, 272) left center no-repeat;
