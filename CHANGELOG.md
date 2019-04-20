@@ -6,6 +6,7 @@
 - Inclusion of CSS for about:serviceworkers.
 - Inclusion of CSS for the requestAutocomplete Demo Window, whatever it is.
 - Additional menu icons.
+- Password Manager favicons.
 
 ### 4.3b3
 - Notifications.
