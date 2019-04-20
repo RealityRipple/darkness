@@ -1,4 +1,4 @@
-﻿body
+body
 {
  font: message-box;
  color: #FFFFFF;
@@ -214,7 +214,7 @@ html[dir=rtl] .appTabTrayContainer
 }
 .appTabTrayContainerTruncated:after
 {
- content: "…";
+ content: ".";
  position: absolute;
  bottom: 2px;
  left: 0;
