@@ -1,5 +1,9 @@
 # Changelog
 
+### 4.3b5
+- Add "Check for Updates" menu icons.
+- Add some "color" to the About dialog.
+
 ### 4.3b4
 - Full row hover for Trees ad complex lists that use treechildren.
 - Fix for Update History list coloring.
