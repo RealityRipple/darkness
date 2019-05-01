@@ -4591,6 +4591,18 @@ html|*#gcli-output-frame {
  background-repeat: no-repeat;
  background-position: left center;
 }
+#checkForUpdates:not([loading="true"]), #appmenu_checkForUpdates:not([loading="true"])
+{
+ background-image: url("chrome://browser/skin/downloads/download-norm-small.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
+#checkForUpdates[loading="true"], #appmenu_checkForUpdates[loading="true"]
+{
+ background-image: url("chrome://browser/skin/downloads/download-glow-small.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
 #aboutName, #appmenu_about
 {
  background-image: url("chrome://browser/skin/preferences/application.png");
