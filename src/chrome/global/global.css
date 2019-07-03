@@ -227,33 +227,9 @@ label[disabled="true"]:-moz-system-metric(windows-classic)
  border: 1px solid transparent;
  cursor: pointer;
 }
-#PMaboutDialog #aboutPMDialogContainer
-{
- background-image: url("chrome://global/skin/about/about-background.jpg");
-}
-#PMaboutDialog #aboutHeaderBox
-{
- animation: 7s darken;
- animation-fill-mode: forwards;
-}
-@keyframes darken
-{
- 0%
- {
-  filter: hue-rotate(0deg) brightness(1) saturate(1);
- }
- 55%
- {
-  filter: hue-rotate(0deg) brightness(1) saturate(1);
- }
- 100%
- {
-  filter: hue-rotate(128deg) brightness(0.5) saturate(2);
- }
-}
 #PMaboutDialog .text-link
 {
- color: #C01818;
+ color: #000000;
 }
 .text-link:hover, .text-link:focus
 {
