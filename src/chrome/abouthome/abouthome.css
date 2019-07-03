@@ -38,8 +38,7 @@ a
  height: 192px;
  width: 192px;
  margin: 22px auto 31px;
- background-image: url("chrome://branding/content/about-logo.png");
- filter: hue-rotate(128deg) brightness(0.5) saturate(2);
+ background-image: url("chrome://abouthome/skin/about-logo.png");
  background-size: 192px auto;
  background-position: center center;
  background-repeat: no-repeat;
