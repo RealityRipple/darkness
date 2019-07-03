@@ -4567,6 +4567,12 @@ html|*#gcli-output-frame {
  background-repeat: no-repeat;
  background-position: left center;
 }
+#releaseNotes, #appmenu_releaseNotes
+{
+ background-image: url("chrome://browser/skin/devtools/tool-icons/styleeditor.png");
+ background-repeat: no-repeat;
+ background-position: left center;
+}
 #feedbackPage, #appmenu_feedbackPage
 {
  background-image: url("chrome://browser/skin/social/services-16.png");
