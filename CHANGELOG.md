@@ -2,6 +2,7 @@
 
 ### 4.3b5
 - Add "Check for Updates" and "Release Notes" menu icons.
+- Add "Open in a New Private Window" menu icon for bookmarks.
 - Change about:home styling: Add custom grayscale moon.
 
 ### 4.3b4
