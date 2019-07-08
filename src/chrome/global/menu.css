@@ -631,6 +631,10 @@ menuitem[id="placesContext_openLinks:tabs"]
 menuitem[id="placesContext_open:newwindow"]
 {
  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160) left center no-repeat;
+} 
+menuitem[id="placesContext_open:newprivatewindow"]
+{
+ background: url("chrome://browser/skin/Privacy-16.png") left center no-repeat;
 }
 menuitem[id="placesContext_new:bookmark"], menuitem#placesContext_createBookmark
 {
