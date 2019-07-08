@@ -571,6 +571,7 @@
 .addon-view[pending="disable"] .pending, .addon-view[pending="uninstall"] .pending
 {
  color: #C0C0C0;
+ text-shadow: 0 0 2px #000000;
 }
 .addon .relnotes-container
 {
