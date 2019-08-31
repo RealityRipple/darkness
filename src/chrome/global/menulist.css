@@ -72,6 +72,13 @@ menulist:hover:active > .menulist-dropmarker
  -moz-padding-start: 2px;
  -moz-padding-end: 0px;
 }
+menulist[open="true"]:not(.menulist-compact) > .menulist-dropmarker
+{
+ padding-top: 2px;
+ padding-bottom: 0px;
+ -moz-padding-start: 2px;
+ -moz-padding-end: 0px;
+}
 
 menulist:focus:not([open="true"]):not(.menulist-compact) > .menulist-label-box
 {
