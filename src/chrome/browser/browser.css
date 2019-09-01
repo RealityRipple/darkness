@@ -2845,21 +2845,6 @@ statuspanel
  padding: 1px !important;
 }
 
-.devtools-responsiveui-toolbarbutton[type=menu-button] > .toolbarbutton-menubutton-button
-{
- background: #FFFF00;
- color: #FF0000;
-}
-.devtools-responsiveui-toolbarbutton[type=menu-button]:-moz-locale-dir(rtl) > .toolbarbutton-menubutton-button
-{
- background: #FFFF00;
- color: #FF0000;
-}
-.devtools-responsiveui-toolbarbutton[type=menu-button]
-{
- background: #FFFF00;
- color: #FF0000;
-}
 .devtools-responsiveui-toolbarbutton[type=menu] > .toolbarbutton-menu-dropmarker, .devtools-responsiveui-toolbarbutton[type=menu-button] > .toolbarbutton-menubutton-dropmarker
 {
  -moz-appearance: none !important;
