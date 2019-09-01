@@ -3,7 +3,11 @@
 ### 4.3b5
 - Add "Check for Updates" and "Release Notes" menu icons.
 - Add "Open in a New Private Window" menu icon for bookmarks.
+- Add styling for Responsive Mode.
 - Change about:home styling: Add custom bloodmoon.
+- Change multiple Plugin dropdown.
+- Fix dropdown background colors.
+- Fix styling for theme-styled page dropdown and color picking elements.
 
 ### 4.3b4
 - Full row hover for Trees ad complex lists that use treechildren.
