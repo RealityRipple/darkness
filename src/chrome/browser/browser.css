@@ -3249,6 +3249,10 @@ html|*#gcli-output-frame {
  margin: 10px;
  background-color: #000000;
 }
+.plugin-popupnotification-centeritem
+{
+ min-height: 3em !important;
+}
 .plugin-popupnotification-centeritem:nth-child(odd)
 {
  background-color: #100000;
@@ -3265,15 +3269,18 @@ html|*#gcli-output-frame {
 }
 .center-item-warning-icon
 {
- background-image: url("chrome://mozapps/skin/extensions/alerticon-info-negative.png");
+ background-image: url("chrome://mozapps/skin/extensions/alerticon-warning.png");
  background-repeat: no-repeat;
  width: 16px;
  height: 15px;
  -moz-margin-start: 6px;
 }
+.click-to-play-plugins-notification-center-box hbox button
+{
+ margin: 0.5em 0 0.5em 22em;
+}
 .click-to-play-plugins-notification-button-container
 {
- background: linear-gradient(rgba(0,0,0,0.04) 60%, transparent);
  padding: 10px;
  margin-top: 5px;
 }
@@ -3431,7 +3438,7 @@ html|*#gcli-output-frame {
 }
 .center-item-warning-icon
 {
- background-image: url("chrome://mozapps/skin/extensions/alerticon-info-negative.png");
+ background-image: url("chrome://mozapps/skin/extensions/alerticon-warning.png");
  background-repeat: no-repeat;
  width: 16px;
  height: 15px;
