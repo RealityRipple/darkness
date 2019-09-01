@@ -77,7 +77,7 @@ html|html
   color: #606060 !important;
   background-color: #200808 !important;
  }
- html|button:not([disabled]):active:hover, button:not([disabled="true"]):active:hover, menulist[open="true"]:not([disabled="true"]), colorpicker[type="button"][open="true"]:not([disabled="true"])
+ html|button:not([disabled]):active:hover, button:not([disabled="true"]):active:hover
  {
   -moz-border-top-colors: #601818 #501818;
   -moz-border-right-colors: #C01818 #501818;
@@ -85,7 +85,15 @@ html|html
   -moz-border-left-colors: #601818 #501818;
   background-color: #501818;
  }
- html|button:not([disabled]):hover, button:not([disabled="true"]):hover
+ menulist[open="true"]:not([disabled="true"]), colorpicker[type="button"][open="true"]:not([disabled="true"])
+ {
+  -moz-border-top-colors: #601818 #501818;
+  -moz-border-right-colors: #C01818 #501818;
+  -moz-border-bottom-colors: #C01818 #501818;
+  -moz-border-left-colors: #601818 #501818;
+  background-color: #000000;
+ }
+ html|button:not([disabled]):hover, button:not([disabled="true"]):hover, menulist:not([open="true"]):not([disabled="true"]):hover, colorpicker[type="button"]:not([open="true"]):not([disabled="true"]):hover
  {
   -moz-border-top-colors: transparent #C01818;
   -moz-border-right-colors: transparent #601818;
@@ -93,7 +101,7 @@ html|html
   -moz-border-left-colors: transparent #C01818;
   background-color: #301010;
  }
- html|button:not([disabled]):focus, button:not([disabled="true"]):focus
+ html|button:not([disabled]):focus, button:not([disabled="true"]):focus, menulist:not([open="true"]):not([disabled="true"]):focus, colorpicker[type="button"]:not([open="true"]):not([disabled="true"]):focus
  {
   -moz-border-top-colors: #C01818 #501818;
   -moz-border-right-colors: #601818 #501818;
@@ -101,13 +109,21 @@ html|html
   -moz-border-left-colors: #C01818 #501818;
   background-color: #401010;
  }
- html|button:not([disabled]):hover:focus, button:not([disabled="true"]):hover:focus
+ html|button:not([disabled]):hover:focus
  {
   -moz-border-top-colors: #C01818 #501818;
   -moz-border-right-colors: #601818 #501818;
   -moz-border-bottom-colors: #601818 #501818;
   -moz-border-left-colors: #C01818 #501818;
   background-color: #301010;
+ }
+ button:not([disabled="true"]):hover:focus, menulist:not([open="true"]):not([disabled="true"]):hover:focus, colorpicker[type="button"]:not([open="true"]):not([disabled="true"]):hover:focus
+ {
+  -moz-border-top-colors: #C01818 #501818;
+  -moz-border-right-colors: #601818 #501818;
+  -moz-border-bottom-colors: #601818 #501818;
+  -moz-border-left-colors: #C01818 #501818;
+  background-color: #401010;
  }
  html|button:not([disabled]):hover:active:focus, button:not([disabled="true"]):hover:active:focus
  {
