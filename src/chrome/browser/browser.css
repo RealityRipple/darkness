@@ -140,12 +140,21 @@
 }
 #appmenu-button > .button-box > .button-menu-dropmarker
 {
- list-style-image: url(appmenu-dropmarker.png);
+ list-style-image: url("chrome://browser/skin/dropmarker-small.png");
+ -moz-image-region: rect(0 12px 14px 0);
  width: auto;
  height: auto;
  padding: 0;
  margin: 0;
  -moz-margin-start: .5em;
+}
+#appmenu-button:hover > .button-box > .button-menu-dropmarker
+{
+ -moz-image-region: rect(0 24px 14px 12px);
+}
+#appmenu-button[open="true"] > .button-box > .button-menu-dropmarker, #appmenu-button:hover:active > .button-box > .button-menu-dropmarker
+{
+ -moz-image-region: rect(0 36px 14px 24px);
 }
 .splitmenu-menuitem
 {
@@ -504,7 +513,12 @@ toolbar[iconsize="small"] #fireftp-button
 }
 .toolbarbutton-1 > .toolbarbutton-menu-dropmarker, .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker
 {
- list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow.png");
+ list-style-image: url("chrome://global/skin/arrow/arrow-dn-hov.gif");
+ width: 10px;
+}
+.toolbarbutton-1:hover > .toolbarbutton-menu-dropmarker, .toolbarbutton-1:hover > .toolbarbutton-menubutton-dropmarker
+{
+ list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
 }
 .toolbarbutton-1 > .toolbarbutton-icon, .toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon
 {
@@ -1587,16 +1601,16 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 {
  -moz-appearance: none;
  padding: 0 3px;
- list-style-image: url("chrome://browser/skin/urlbar-history-dropmarker.png");
- -moz-image-region: rect(0px, 11px, 14px, 0px);
+ list-style-image: url("chrome://browser/skin/dropmarker.png");
+ -moz-image-region: rect(0px, 12px, 14px, 0px);
 }
 .urlbar-history-dropmarker:hover
 {
- -moz-image-region: rect(0px, 22px, 14px, 11px);
+ -moz-image-region: rect(0px, 24px, 14px, 12px);
 }
 .urlbar-history-dropmarker:hover:active, .urlbar-history-dropmarker[open="true"]
 {
- -moz-image-region: rect(0px, 33px, 14px, 22px);
+ -moz-image-region: rect(0px, 36px, 14px, 24px);
 }
 
 /* page proxy icon */
@@ -2077,8 +2091,21 @@ toolbar[iconsize="small"] #navigator-throbber, toolbar[iconsize="small"] #wrappe
 }
 #alltabs-button
 {
- list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow.png");
+ list-style-image: url("chrome://browser/skin/dropmarker-small.png");
  margin-right: 4px;
+ -moz-image-region: rect(0 12px 14px 0);
+}
+#alltabs-button
+{
+ -moz-image-region: rect(0 12px 14px 0);
+}
+#alltabs-button:hover
+{
+ -moz-image-region: rect(0 24px 14px 12px);
+}
+#alltabs-button[open="true"], #alltabs-button:hover:active
+{
+ -moz-image-region: rect(0 36px 14px 24px);
 }
 #alltabs-button > .toolbarbutton-icon
 {
