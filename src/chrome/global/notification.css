@@ -67,67 +67,82 @@ notification[type="critical"] .messageImage[type="critical"]
 {
  margin-top: 17px;
 }
-
-/*
-XXX: apply styles to all themes until bug 509642 is fixed
-@media (-moz-windows-default-theme) {
-*/
- .popup-notification-menubutton
- {
-  -moz-appearance: none;
-  border-radius: 3px;
-  padding: 0;
- }
- .popup-notification-menubutton:hover:active
- {
-  border-color: #801818;
- }
- .popup-notification-menubutton:not([type="menu-button"]), .popup-notification-menubutton > .button-menubutton-button, .popup-notification-menubutton > .button-menubutton-dropmarker
- {
-  -moz-appearance: none;
-  margin: 0;
-  border: 1px solid #601818;
-  background: #000000;
- }
- .popup-notification-menubutton > .button-menubutton-button
- {
-  background-color: transparent;
-  padding: 1px;
-  -moz-border-end: none;
- }
- .popup-notification-menubutton:not([type="menu-button"]), .popup-notification-menubutton > .button-menubutton-button > .button-box
- {
-  -moz-padding-start: 8px;
-  -moz-padding-end: 5px;
- }
- .popup-notification-menubutton > .button-menubutton-dropmarker
- {
-  padding: 9px 5px 8px;
-  width: auto;
-  height: auto;
-  list-style-image: url("chrome://global/skin/arrow/arrow-dn-sharp.gif");
- }
- .popup-notification-menubutton:-moz-focusring > .button-menubutton-dropmarker
- {
-  outline: 0px;
- }
- .popup-notification-menubutton > .button-menubutton-button:-moz-locale-dir(ltr), .popup-notification-menubutton > .button-menubutton-dropmarker:-moz-locale-dir(rtl)
- {
-  border-radius: 2px 0 0 2px;
- }
- .popup-notification-menubutton > .button-menubutton-button:-moz-locale-dir(rtl),.popup-notification-menubutton > .button-menubutton-dropmarker:-moz-locale-dir(ltr)
- {
-  border-radius: 0 2px 2px 0;
- }
- .popup-notification-menubutton:not([type="menu-button"]):hover, .popup-notification-menubutton > .button-menubutton-button:hover, .popup-notification-menubutton > .button-menubutton-dropmarker:hover
- {
-  background: #301010;
- }
- .popup-notification-menubutton:not([type="menu-button"]):hover:active, .popup-notification-menubutton > .button-menubutton-button:hover:active, .popup-notification-menubutton > .button-menubutton-dropmarker:hover:active, .popup-notification-menubutton[open="true"] > .button-menubutton-dropmarker
- {
-  background: #501818;
- }
-/*}*/
+.popup-notification-menubutton:not([type="menu-button"]), .popup-notification-menubutton > .button-menubutton-button, .popup-notification-menubutton > .button-menubutton-dropmarker
+{
+ -moz-appearance: none;
+ margin: 0;
+ border: 2px solid;
+ -moz-border-top-colors: #000000 #C01818;
+ -moz-border-left-colors: #000000 #C01818;
+ -moz-border-bottom-colors: #000000 #601818;
+ -moz-border-right-colors: #000000 #601818;
+ background: #000000;
+}
+.popup-notification-menubutton > .button-menubutton-dropmarker
+{
+ padding: 5px 5px 4px;
+ width: auto;
+ height: auto;
+ list-style-image: url("chrome://global/skin/arrow/arrow-dn-sharp.gif");
+}
+.popup-notification-menubutton:-moz-focusring > .button-menubutton-dropmarker
+{
+ outline: 0px;
+}
+.popup-notification-menubutton > .button-menubutton-button:-moz-locale-dir(ltr), .popup-notification-menubutton > .button-menubutton-dropmarker:-moz-locale-dir(rtl)
+{
+ border-right-width: 1px;
+ -moz-border-right-colors: #601818 #601818 !important;
+}
+.popup-notification-menubutton > .button-menubutton-button:-moz-locale-dir(rtl), .popup-notification-menubutton > .button-menubutton-dropmarker:-moz-locale-dir(ltr)
+{
+ border-left-width: 1px;
+ -moz-border-left-colors: #C01818 #C01818 !important;
+}
+.popup-notification-menubutton:not([type="menu-button"]):hover, .popup-notification-menubutton > .button-menubutton-button:hover, .popup-notification-menubutton:hover > .button-menubutton-dropmarker
+{
+ color: #D0D0D0;
+ background-color: #301010;
+}
+.popup-notification-menubutton:not([type="menu-button"]):focus, .popup-notification-menubutton > .button-menubutton-button:focus, .popup-notification-menubutton:focus > .button-menubutton-dropmarker
+{
+ color: #C0C0C0;
+ -moz-border-top-colors: #301010 #C01818;
+ -moz-border-left-colors: #301010 #C01818;
+ -moz-border-bottom-colors: #301010 #601818;
+ -moz-border-right-colors: #301010 #601818;
+}
+.popup-notification-menubutton:not([type="menu-button"]):hover:focus, .popup-notification-menubutton > .button-menubutton-button:hover:focus, .popup-notification-menubutton:hover:focus > .button-menubutton-dropmarker
+{
+ color: #D0D0D0;
+ background-color: #301010;
+ -moz-border-top-colors: #301010 #C01818;
+ -moz-border-left-colors: #301010 #C01818;
+ -moz-border-bottom-colors: #301010 #601818;
+ -moz-border-right-colors: #301010 #601818;
+}
+.popup-notification-menubutton:not([type="menu-button"]):hover:active, .popup-notification-menubutton > .button-menubutton-button:hover:active, .popup-notification-menubutton:hover:active > .button-menubutton-dropmarker,
+.popup-notification-menubutton[open="true"]:not([type="menu-button"]), .popup-notification-menubutton > .button-menubutton-button[open="true"]:not([type="menu-button"]), .popup-notification-menubutton > .button-menubutton-dropmarker[open="true"]:not([type="menu-button"]),
+.popup-notification-menubutton[checked="true"]:not([type="menu-button"]), .popup-notification-menubutton > .button-menubutton-button[checked="true"]:not([type="menu-button"]), .popup-notification-menubutton > .button-menubutton-dropmarker[checked="true"]:not([type="menu-button"])
+{
+ color: #FFFFFF;
+ background-color: #401010;
+ -moz-border-top-colors: #000000 #601818;
+ -moz-border-left-colors: #000000 #601818;
+ -moz-border-bottom-colors: #000000 #C01818;
+ -moz-border-right-colors: #000000 #C01818;
+}
+.popup-notification-menubutton:not([type="menu-button"]):hover:active:focus, .popup-notification-menubutton > .button-menubutton-button:hover:active:focus, .popup-notification-menubutton:hover:active:focus > .button-menubutton-dropmarker,
+.popup-notification-menubutton[open="true"]:not([type="menu-button"]):focus, .popup-notification-menubutton > .button-menubutton-button[open="true"]:not([type="menu-button"]):focus, .popup-notification-menubutton:focus > .button-menubutton-dropmarker[open="true"]:not([type="menu-button"]),
+.popup-notification-menubutton[checked="true"]:not([type="menu-button"]):focus, .popup-notification-menubutton > .button-menubutton-button[checked="true"]:not([type="menu-button"]):focus, .popup-notification-menubutton:focus > .button-menubutton-dropmarker[checked="true"]:not([type="menu-button"])
+{
+ color: #FFFFFF;
+ background-color: #401010;
+ -moz-border-top-colors: #301010 #601818;
+ -moz-border-left-colors: #301010 #601818;
+ -moz-border-bottom-colors: #301010 #C01818;
+ -moz-border-right-colors: #301010 #C01818;
+}
 
 .popup-notification-closebutton
 {
