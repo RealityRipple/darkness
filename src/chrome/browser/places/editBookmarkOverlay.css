@@ -14,7 +14,8 @@
 }
 .expander-up, .expander-down
 {
- min-width: 0;
+ min-width: 25px;
+ width: 25px;
  margin: 0;
  -moz-margin-end: 4px;
 }
