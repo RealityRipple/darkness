@@ -6,7 +6,9 @@
 - Add styling for Responsive Mode.
 - Change about:home styling: Add custom grayscale moon.
 - Change multiple Plugin dropdown.
+- Unify styling of dropdown buttons in the Browser window.
 - Fix dropdown background colors.
+- Fix styling for notification dropdown buttons.
 - Fix styling for theme-styled page dropdown and color picking elements.
 
 ### 4.3b4
