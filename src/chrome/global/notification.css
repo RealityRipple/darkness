@@ -154,3 +154,8 @@ notification[type="critical"] .messageImage[type="critical"]
  list-style-image: url("chrome://global/skin/icons/close.png");
  -moz-image-region: rect(0, 16px, 16px, 0);
 }
+
+.popup-notification-body
+{
+ max-width: 25em;
+}

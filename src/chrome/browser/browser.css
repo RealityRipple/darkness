@@ -3528,10 +3528,6 @@ html|*#gcli-output-frame {
       margin-top: -1px !important;
       margin-bottom: 5px !important;
     }
-		
-    #tabbrowser-tabs {
-      min-height: 29px;
-    }
 
     #titlebar-buttonbox,
     .titlebar-button {
