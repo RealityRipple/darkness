@@ -3826,6 +3826,17 @@ html|*#gcli-output-frame {
     #appmenu-button {
       margin-bottom: -1px; /* compensate white outer border */
     }
+    
+    #ctrlTab-panel
+    {
+     background: transparent;
+     -moz-appearance: -moz-win-glass;
+     border-radius: 0;
+     border: none;
+     font: normal 1.2em "Segoe UI";
+     color: black;
+     text-shadow: white -1px -1px .35em, white -1px 1px .35em, white 1px 1px .35em, white 1px -1px .35em;
+    }
   }
 
  #main-window[sizemode=fullscreen]:not(:-moz-lwtheme)
@@ -3858,90 +3869,72 @@ html|*#gcli-output-frame {
   border-top-left-radius: 2.5px;
   border-top-right-radius: 2.5px;
  }
-  /* Toolbar shadow behind tabs */
-  /* This code is only needed for restored windows (i.e. sizemode=normal)
-     because of the border radius on the toolbar below the tab bar. */
-  #main-window[sizemode=normal] #nav-bar[tabsontop=true]:not(:-moz-lwtheme),
-  #main-window[sizemode=normal] #nav-bar[tabsontop=true][collapsed=true]:not([customizing]) + toolbar:not(:-moz-lwtheme),
-  #main-window[sizemode=normal] #nav-bar[tabsontop=true][collapsed=true]:not([customizing]) + #customToolbars + #PersonalToolbar:not(:-moz-lwtheme),
-  #main-window[sizemode=normal][disablechrome] #navigator-toolbox[tabsontop=true]:not(:-moz-lwtheme)::after
-  {
-   border-top: 1px solid rgba(10%,10%,10%,.4);
-   border-top-left-radius: 2.5px;
-   border-top-right-radius: 2.5px;
-   background-clip: padding-box;
-  }
-  #main-window[sizemode=normal] #TabsToolbar[tabsontop=true]:not(:-moz-lwtheme)
-  {
-   background-image: none !important;
-  }
-  #main-window[sizemode=normal] #tabbrowser-tabs[tabsontop=true] > .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox > .scrollbox-innerbox:not(:-moz-lwtheme)
-  {
-   position: relative;
-  }
+ /* Toolbar shadow behind tabs */
+ /* This code is only needed for restored windows (i.e. sizemode=normal)
+    because of the border radius on the toolbar below the tab bar. */
+ #main-window[sizemode=normal] #nav-bar[tabsontop=true]:not(:-moz-lwtheme),
+ #main-window[sizemode=normal] #nav-bar[tabsontop=true][collapsed=true]:not([customizing]) + toolbar:not(:-moz-lwtheme),
+ #main-window[sizemode=normal] #nav-bar[tabsontop=true][collapsed=true]:not([customizing]) + #customToolbars + #PersonalToolbar:not(:-moz-lwtheme),
+ #main-window[sizemode=normal][disablechrome] #navigator-toolbox[tabsontop=true]:not(:-moz-lwtheme)::after
+ {
+  border-top: 1px solid rgba(10%,10%,10%,.4);
+  border-top-left-radius: 2.5px;
+  border-top-right-radius: 2.5px;
+  background-clip: padding-box;
+ }
+ #main-window[sizemode=normal] #TabsToolbar[tabsontop=true]:not(:-moz-lwtheme)
+ {
+  background-image: none !important;
+ }
+ #main-window[sizemode=normal] #tabbrowser-tabs[tabsontop=true] > .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox > .scrollbox-innerbox:not(:-moz-lwtheme)
+ {
+  position: relative;
+ }
 
-  #main-window[sizemode=normal] #TabsToolbar[tabsontop=true]
-  {
-   padding-left: 4px;
-   padding-right: 4px;
-   padding-top: 1px;
-  }
+ #main-window[sizemode=normal] #TabsToolbar[tabsontop=true]
+ {
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 1px;
+ }
 
-  #main-window[sizemode=normal] #TabsToolbar[tabsontop=false]
-  {
-   padding-left: 2px;
-   padding-right: 2px;
-  }
+ #main-window[sizemode=normal] #TabsToolbar[tabsontop=false]
+ {
+  padding-left: 2px;
+  padding-right: 2px;
+ }
 
-  /* Rounded corners for when chrome is disabled */
-  #main-window[sizemode=normal][disablechrome] #navigator-toolbox[tabsontop=true]:not(:-moz-lwtheme)::after
-  {
-   visibility: visible;
-   background-color: hsl(210,75%,92%);
-   background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5));
-   height: 4px;
-  }
+ /* Rounded corners for when chrome is disabled */
+ #main-window[sizemode=normal][disablechrome] #navigator-toolbox[tabsontop=true]:not(:-moz-lwtheme)::after
+ {
+  visibility: visible;
+  background-color: hsl(210,75%,92%);
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5));
+  height: 4px;
+ }
 
-  /* Make the window draggable by glassed toolbars (bug 555081) */
-  #toolbar-menubar:not([autohide="true"]), #TabsToolbar[tabsontop="true"], #nav-bar[tabsontop=false], #nav-bar + #customToolbars + #PersonalToolbar[collapsed="true"] + #TabsToolbar[tabsontop="false"]:last-child, #navigator-toolbox > toolbar:not(#toolbar-menubar):-moz-lwtheme
-  {
-   -moz-binding: url("chrome://global/content/bindings/toolbar.xml#toolbar-drag");
-  }
+ /* Make the window draggable by glassed toolbars (bug 555081) */
+ #toolbar-menubar:not([autohide="true"]), #TabsToolbar[tabsontop="true"], #nav-bar[tabsontop=false], #nav-bar + #customToolbars + #PersonalToolbar[collapsed="true"] + #TabsToolbar[tabsontop="false"]:last-child, #navigator-toolbox > toolbar:not(#toolbar-menubar):-moz-lwtheme
+ {
+  -moz-binding: url("chrome://global/content/bindings/toolbar.xml#toolbar-drag");
+ }
 
-  #appcontent:not(:-moz-lwtheme)
-  {
-   background-color: #000000;
-  }
+ #appcontent:not(:-moz-lwtheme)
+ {
+  background-color: #000000;
+ }
 
-  #main-menubar:not(:-moz-lwtheme):not(:-moz-window-inactive)
-  {
-   background-color: rgba(255,255,255,.5);
-   border-radius: 4px;
-  }
+ #main-menubar:not(:-moz-lwtheme):not(:-moz-window-inactive)
+ {
+  background-color: rgba(255,255,255,.5);
+  border-radius: 4px;
+ }
 
-  #main-window[sizemode=normal] .statuspanel-inner
-  {
-   /* align with the browser's side borders */
-   padding-left: 1px;
-   padding-right: 1px;
-  }
-
-  #ctrlTab-panel
-  {
-   background: transparent;
-   -moz-appearance: -moz-win-glass;
-   border-radius: 0;
-   border: none;
-   font: normal 1.2em "Segoe UI";
-   color: black;
-   text-shadow: white -1px -1px .35em, white -1px 1px .35em, white 1px 1px .35em, white 1px -1px .35em;
-  }
-
-  #tab-view:-moz-lwtheme
-  {
-  background-image: url("chrome://browser/skin/tabview/grain.png"),
-                      linear-gradient(rgba(255,255,255,0), #CCD9EA 200px, #C7D5E7);
-  background-attachment: fixed;
+ #main-window[sizemode=normal] .statuspanel-inner
+ {
+  /* align with the browser's side borders */
+  padding-left: 1px;
+  padding-right: 1px;
  }
 }
 /*
