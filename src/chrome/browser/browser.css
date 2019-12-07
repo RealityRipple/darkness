@@ -3630,6 +3630,7 @@ html|*#gcli-output-frame {
       border: none;
       margin: 0 !important;
       padding: 8px 17px;
+      transition: 0.1s ease-out background-color;
     }
 
     #main-window[sizemode=maximized] .titlebar-button {
