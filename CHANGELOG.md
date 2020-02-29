@@ -1,5 +1,13 @@
 # Changelog
 
+### 4.3b6
+- Add graphical All Tabs pane styling.
+- Add fallback graphical Ctrl+Tab styling for Windows 10.
+- Add caption button animation for Windows 10.
+- Make Fullscreen (video) warning semitransparent.
+- Limit notification width.
+- Remove extra tab height from Windows 10.
+
 ### 4.3b5
 - Add "Check for Updates" and "Release Notes" menu icons.
 - Add "Open in a New Private Window" menu icon for bookmarks.

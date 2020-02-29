@@ -3,7 +3,7 @@
  <Description about="urn:mozilla:install-manifest">
   <em:name>In The Dark (Bloodmoon Edition)</em:name>
   <em:id>{955EF91C-0F9D-557C-9E05-0838E3E67D15}</em:id>
-  <em:version>4.3b5</em:version>
+  <em:version>4.3b6</em:version>
   <em:type>4</em:type>
   <em:targetApplication>
    <Description>
