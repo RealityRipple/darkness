@@ -495,6 +495,7 @@ menu.bookmark-item, menuitem.bookmark-item
 {
  list-style-image: url("chrome://browser/skin/Toolbar-large.png");
  -moz-appearance: none;
+ -moz-image-region: rect(0px, 32px, 32px, 0px);
  margin: 2px;
  padding: 0px;
  outline: 0px;
@@ -505,11 +506,7 @@ menu.bookmark-item, menuitem.bookmark-item
 toolbar[iconsize="small"] .toolbarbutton-1
 {
  list-style-image: url("chrome://browser/skin/Toolbar-small.png");
-}
-/* FireFTP Fix */
-toolbar[iconsize="small"] #fireftp-button
-{
- list-style-image: url("chrome://fireftp/skin/icons/logo.png");
+ -moz-image-region: rect(0px, 16px, 16px, 0px);
 }
 .toolbarbutton-1 > .toolbarbutton-menu-dropmarker, .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker
 {
