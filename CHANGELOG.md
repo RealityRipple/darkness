@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.0
+- Add new style for Non-Native Extensions.
+- Change image viewer background checkerboard (Efficient SVG).
+- Set unstyled Toolbar Button size.
+- Remove old FireFTP button size fix.
+
 ### 4.3b6
 - Add graphical All Tabs pane styling.
 - Add fallback graphical Ctrl+Tab styling for Windows 10.
