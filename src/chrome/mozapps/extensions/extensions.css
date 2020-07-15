@@ -514,22 +514,6 @@
 {
  -moz-box-align: stretch;
 }
-.addon[native] .nativeAddon
-{
- color: #106090;
-}
-.addon[native] .compatAddon
-{
- color: #FF6000;
-}
-.addon[native]:not([selected]) .nativeAddon
-{
- text-shadow: 1px 1px 6px;
-}
-.addon[native]:not([selected]) .compatAddon
-{
- text-shadow: 1px 1px 6px;
-}
 
 .advancedinfo-container, .update-info-container
 {
@@ -628,7 +612,24 @@
 {
  color: #C0C0C0;
 }
-.addon-view[notification="warning"]
+.addon-view[active="true"][native="false"][notification="warning"] .content-container
+{
+ background-image: radial-gradient(circle at 32px, #501600 0%, transparent 30px, transparent 100%);
+}
+.addon-view[active="true"][native="false"][notification="warning"][selected] .content-container
+{
+ background-image: none;
+}
+.addon-view[active="true"][native="false"][notification="warning"][selected]
+{
+ background-image: linear-gradient(to right, #501600 0%, transparent 128px, transparent 100%);
+}
+.addon-view[active="false"][native="false"][notification="warning"] .warning
+{
+ color: #C0C040;
+}
+.addon-view[active="true"][native="true"][notification="warning"],
+.addon-view[active="false"][native="false"][notification="warning"]
 {
   background-image: url("chrome://mozapps/skin/extensions/stripes-warning.png"),
                     linear-gradient(rgba(255, 255, 0, 0.04),
