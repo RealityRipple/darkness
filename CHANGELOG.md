@@ -1,5 +1,8 @@
 # Changelog
 
+### 5.1
+- Support Pale Moon 29.
+
 ### 5.0
 - Add new style for Non-Native Extensions.
 - Change image viewer background checkerboard (Efficient SVG).
