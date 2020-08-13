@@ -1535,6 +1535,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-bottom-color: #606060;
  border-right-color: #606060;
  font-size: .9em;
+ -moz-margin-end: 4px;
 }
 #identity-box:hover
 {
@@ -1547,6 +1548,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-left-color: #606060;
  border-bottom-color: #A0A0A0;
  border-right-color: #A0A0A0;
+ padding: 2px 0 0 2px;
 }
 #identity-box:-moz-locale-dir(ltr)
 {
@@ -1566,20 +1568,108 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity
 {
  color: #FFFFFF;
- -moz-margin-end: 4px;
- background-color: #004000;
+ border-top-color: #188018;
+ border-left-color: #188018;
+ border-bottom-color: #184018;
+ border-right-color: #184018;
+ background-color: #006000;
+}
+#urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity:hover
+{
+ border-top-color: #18A018;
+ border-left-color: #18A018;
+ border-bottom-color: #186018;
+ border-right-color: #186018;
+ background-color: #008000;
+}
+#urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity:hover:active
+{
+ border-top-color: #186018;
+ border-left-color: #186018;
+ border-bottom-color: #18A018;
+ border-right-color: #18A018;
+ background-color: #008000;
 }
 #urlbar[pageproxystate="valid"] >  #identity-box.verifiedDomain
 {
  color: #FFFFFF;
- -moz-margin-end: 4px;
- background-color: #000040;
+ border-top-color: #181880;
+ border-left-color: #181880;
+ border-bottom-color: #181840;
+ border-right-color: #181840;
+ background-color: #000060;
+}
+#urlbar[pageproxystate="valid"] >  #identity-box.verifiedDomain:hover
+{
+ border-top-color: #1818A0;
+ border-left-color: #1818A0;
+ border-bottom-color: #181860;
+ border-right-color: #181860;
+ background-color: #000080;
+}
+#urlbar[pageproxystate="valid"] >  #identity-box.verifiedDomain:hover:active
+{
+ border-top-color: #181860;
+ border-left-color: #181860;
+ border-bottom-color: #1818A0;
+ border-right-color: #1818A0;
+ background-color: #000080;
+}
+#urlbar[pageproxystate="valid"] >  #identity-box.mixedContent
+{
+ color: #FFFFFF;
+ border-top-color: #808018;
+ border-left-color: #808018;
+ border-bottom-color: #404018;
+ border-right-color: #404018;
+ background-color: #606000;
+}
+#urlbar[pageproxystate="valid"] >  #identity-box.mixedContent:hover
+{
+ border-top-color: #A0A018;
+ border-left-color: #A0A018;
+ border-bottom-color: #606018;
+ border-right-color: #606018;
+ background-color: #808000;
+}
+#urlbar[pageproxystate="valid"] >  #identity-box.mixedContent:hover:active
+{
+ border-top-color: #606018;
+ border-left-color: #606018;
+ border-bottom-color: #A0A018;
+ border-right-color: #A0A018;
+ background-color: #808000;
+}
+#urlbar[pageproxystate="valid"] >  #identity-box.unknownIdentity:not(.mixedContent)
+{
+ border-top-color: #606060;
+ border-left-color: #606060;
+ border-bottom-color: #202020;
+ border-right-color: #202020;
+ background-color: #404040;
+}
+#urlbar[pageproxystate="valid"] >  #identity-box.unknownIdentity:not(.mixedContent):hover
+{
+ border-top-color: #808080;
+ border-left-color: #808080;
+ border-bottom-color: #404040;
+ border-right-color: #404040;
+ background-color: #606060;
+}
+#urlbar[pageproxystate="valid"] >  #identity-box.unknownIdentity:not(.mixedContent):hover:active
+{
+ border-top-color: #404040;
+ border-left-color: #404040;
+ border-bottom-color: #808080;
+ border-right-color: #808080;
+ background-color: #606060;
 }
 #urlbar[pageproxystate="valid"] >  #identity-box.chromeUI
 {
- color: #FFFFFF;
- -moz-margin-end: 4px;
- background-color: #402000;
+ border: 0px;
+ padding: 1px !important;
+ background-color: transparent !important;
+ -moz-margin-end: 2px;
 }
 
 #identity-icon-labels
