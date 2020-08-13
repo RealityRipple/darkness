@@ -1,6 +1,7 @@
 # Changelog
 
 ### 5.1
+- Cleaner page SSL security state coloring.
 - Support Pale Moon 29.
 
 ### 5.0
