@@ -2,6 +2,9 @@
 
 ### 5.1
 - Cleaner page SSL security state coloring.
+- Add Mixed Content padlock.
+- Improve Mixed Content identity panel.
+- Cleanup Padlock CSS.
 - Support Pale Moon 29.
 
 ### 5.0
