@@ -2393,6 +2393,10 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"]
 {
  list-style-image: url("chrome://browser/skin/Secure24.png");
 }
+#identity-popup-content-box.mixedContent > #identity-popup-encryption
+{
+ max-width: 300px;
+}
 #identity-popup-more-info-button
 {
  margin-top: 6px;
