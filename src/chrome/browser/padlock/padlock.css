@@ -28,7 +28,7 @@
 #padlock-sb[padshow="statbar"][level="mixed"],
 #padlock-tab[padshow="tabs-bar"][level="mixed"]
 {
- list-style-image: url("chrome://browser/skin/padlock/padlock_mod_low.png") !important;
+ list-style-image: url("chrome://browser/skin/padlock/padlock_mod_mixed.png") !important;
 }
 #padlock-ib[padshow="ib-trans-bg"][level="broken"],
 #padlock-ib-left[padshow="ib-left"][level="broken"],
