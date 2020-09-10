@@ -2339,6 +2339,10 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"]
 {
  -moz-image-region: rect(128px, 64px, 192px, 0px);
 }
+#identity-popup.mixedContent > #identity-popup-container > #identity-popup-icon
+{
+ -moz-image-region: rect(192px, 64px, 256px, 0px);
+}
 #identity-popup.chromeUI > #identity-popup-container > #identity-popup-icon
 {
  list-style-image: url("chrome://branding/content/icon64.png");
