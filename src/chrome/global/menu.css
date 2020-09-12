@@ -291,8 +291,10 @@ menuitem#context_reloadTab
 {
  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48) left center no-repeat;
 }
-menu#tab_reloadevery_menu
+menu#tab_reloadrepeat_menu,
+menu#reloadrepeat_menu
 {
+ /* https://realityripple.com/Software/Mozilla-Extensions/ReloadRepeat/ */
  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 112, 16, 96) left center no-repeat;
 }
 menuitem#context_toggleMuteTab[muted="true"]
@@ -399,6 +401,13 @@ menuitem#context-copyemail, menuitem#context-copylink
 {
  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192) left center no-repeat;
 }
+menuitem#context-item-link-exif,
+menuitem#context-item-image-exif
+{
+ /* https://addons.palemoon.org/addon/exif-viewer/ */
+ background: url("chrome://browser/skin/permissions/image.png") left center no-repeat;
+ background-size: 16px 16px;
+}
 menuitem#context-media-play
 {
  background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 16, 16, 0) left center no-repeat;
@@ -463,6 +472,75 @@ menuitem#context-copyimage, menuitem#context-copyvideourl, menuitem#context-copy
 {
  background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16) left center no-repeat;
 }
+menuitem#context-zoom-zin,
+menuitem#zoomsub-zin
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 16, 16, 0) left center no-repeat;
+}
+menuitem#context-zoom-zreset,
+menuitem#zoomsub-zreset,
+menu#context-zoomsub
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 48, 16, 32) left center no-repeat;
+}
+menuitem#context-zoom-zout,
+menuitem#zoomsub-zout
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 32, 16, 16) left center no-repeat;
+}
+menuitem#context-zoom-zcustom,
+menuitem#zoomsub-zcustom
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: url("chrome://browser/skin/tabview/edit-light.png") left center no-repeat;
+}
+menuitem#context-zoom-dcustom,
+menuitem#zoomsub-dcustom
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: url("chrome://browser/skin/devtools/tool-icons/styleeditor.png") left center no-repeat;
+}
+menuitem#context-zoom-fit,
+menuitem#zoomsub-fit
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: -moz-image-rect(url("chrome://global/skin/media/fullscreenButton.png"), 0, 16, 16, 0) left center no-repeat;
+}
+menuitem#context-zoom-fitwidth,
+menuitem#zoomsub-fitwidth
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: -moz-image-rect(url("chrome://global/skin/icons/Print-preview.png"), 0, 32, 16, 16) left center no-repeat;
+}
+menuitem#context-zoom-rotate-right,
+menuitem#rotatesub-rotate-right
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: url("chrome://browser/skin/menu-forward.png") left center no-repeat;
+}
+menuitem#context-zoom-rotate-left,
+menuitem#rotatesub-rotate-left
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: url("chrome://browser/skin/menu-back.png") left center no-repeat;
+}
+menuitem#context-zoom-rotate-180,
+menuitem#rotatesub-rotate-180,
+menu#context-rotatesub
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: -moz-image-rect(url("chrome://browser/skin/devtools/responsiveui-rotate.png"), 0, 16, 16, 0) left center no-repeat;
+}
+menuitem#context-zoom-rotate-reset,
+menuitem#rotatesub-rotate-reset
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ background: -moz-image-rect(url("chrome://global/skin/icons/Print-preview.png"), 0, 16, 16, 0) left center no-repeat;
+}
+
 menuitem#context-saveimage, menuitem#context-savevideo, menuitem#context-saveaudio, menuitem#context-video-saveimage
 {
  background: url("chrome://browser/skin/downloads/download-norm-small.png") left center no-repeat;
@@ -609,7 +687,24 @@ menu#spell-dictionaries
 }
 menuitem#context-inspect
 {
+ /* https://addons.palemoon.org/addon/dom-inspector/ */
  background: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0) left center no-repeat;
+}
+menuitem#trackpackage, menuitem#app_trackinghistory, menuitem#tools_trackinghistory, menuitem#task_trackinghistory
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/Track-Package/ */
+ background: url("chrome://browser/skin/devtools/tool-icons/scratchpad.png") left center no-repeat;
+}
+menuitem#trackgmaps
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/Track-Package/ */
+ background: url("chrome://browser/skin/permissions/geo.png") left center no-repeat;
+ background-size: 16px 16px;
+}
+menuitem.abp-contextmenuitem
+{
+ /* https://addons.palemoon.org/addon/adblock-latitude/ */
+ background: -moz-image-rect(url("chrome://browser/skin/urlbar-popup-blocked.png"), 0, 16, 16, 0) left center no-repeat;
 }
 
 menuitem#placesContext_open
