@@ -1565,6 +1565,14 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  -moz-padding-start: 10px;
  border-radius: 0;
 }
+#notification-popup-box:not([hidden]) + #identity-box:-moz-locale-dir(ltr):hover:active
+{
+ padding: 2px 0 0 11px;
+}
+#notification-popup-box:not([hidden]) + #identity-box:-moz-locale-dir(rtl):hover:active
+{
+ padding: 2px 2px 0 9px;
+}
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity
 {
  color: #FFFFFF;
@@ -2158,7 +2166,7 @@ toolbar[iconsize="small"] #navigator-throbber, toolbar[iconsize="small"] #wrappe
 .tabs-newtab-button
 {
  width: 28px;
- margin-right: 4px;
+ -moz-margin-end: 4px;
 }
 #TabsToolbar > #new-tab-button:hover, #TabsToolbar > toolbarpaletteitem > #new-tab-button:hover
 {
@@ -2506,10 +2514,6 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"]
 window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icons] > :-moz-any(#nav-bar[currentset*="unified-back-forward-button,urlbar-container"],#nav-bar:not([currentset])) > #unified-back-forward-button[forwarddisabled] + #urlbar-container > #urlbar > #notification-popup-box
 {
  padding-left: 5px;
-}
-#notification-popup-box:-moz-locale-dir(rtl), .notification-anchor-icon:-moz-locale-dir(rtl)
-{
- transform: scaleX(-1);
 }
 .notification-anchor-icon
 {
