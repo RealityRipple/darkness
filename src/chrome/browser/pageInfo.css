@@ -71,6 +71,11 @@
 {
  -moz-image-region: rect(32px, 160px, 64px, 128px)
 }
+#cookiesTab
+{
+ /* https://realityripple.com/Software/Mozilla-Extensions/CookiePage/ */
+ list-style-image: url("chrome://browser/skin/permissions/cookie.png") !important;
+}
 deck
 {
  padding: 10px 10px 10px 10px;
