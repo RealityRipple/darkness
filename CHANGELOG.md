@@ -6,6 +6,8 @@
 - Improve Mixed Content identity panel.
 - Cleanup Padlock CSS.
 - Support Pale Moon 29.
+- Add icons to elements (mostly menus) from a few more extensions.
+- Fix RTL support.
 
 ### 5.0
 - Add new style for Non-Native Extensions.
