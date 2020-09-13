@@ -1604,7 +1604,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #188018;
  background-color: #006000;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.verifiedDomain
+#urlbar[pageproxystate="valid"]:not([security_level="low"]) > #identity-box.verifiedDomain
 {
  color: #FFFFFF;
  border-top-color: #181860;
@@ -1613,7 +1613,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #181820;
  background-color: #000040;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.verifiedDomain:hover
+#urlbar[pageproxystate="valid"]:not([security_level="low"]) > #identity-box.verifiedDomain:hover
 {
  border-top-color: #181880;
  border-left-color: #181880;
@@ -1621,7 +1621,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #181840;
  background-color: #000060;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.verifiedDomain:hover:active
+#urlbar[pageproxystate="valid"]:not([security_level="low"]) > #identity-box.verifiedDomain:hover:active
 {
  border-top-color: #181840;
  border-left-color: #181840;
@@ -1629,7 +1629,32 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #181880;
  background-color: #000060;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.mixedContent
+#urlbar[pageproxystate="valid"][security_level="low"] > #identity-box.verifiedDomain
+{
+ color: #FFFFFF;
+ border-top-color: #806018;
+ border-left-color: #806018;
+ border-bottom-color: #402018;
+ border-right-color: #402018;
+ background-color: #604000;
+}
+#urlbar[pageproxystate="valid"][security_level="low"] > #identity-box.verifiedDomain:hover
+{
+ border-top-color: #A08018;
+ border-left-color: #A08018;
+ border-bottom-color: #604018;
+ border-right-color: #604018;
+ background-color: #806000;
+}
+#urlbar[pageproxystate="valid"][security_level="low"])> #identity-box.verifiedDomain:hover:active
+{
+ border-top-color: #604018;
+ border-left-color: #604018;
+ border-bottom-color: #A08018;
+ border-right-color: #A08018;
+ background-color: #806000;
+}
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent
 {
  color: #FFFFFF;
  border-top-color: #606018;
@@ -1638,7 +1663,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #202018;
  background-color: #404000;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.mixedContent:hover
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent:hover
 {
  border-top-color: #808018;
  border-left-color: #808018;
@@ -1646,7 +1671,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #404018;
  background-color: #606000;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.mixedContent:hover:active
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent:hover:active
 {
  border-top-color: #404018;
  border-left-color: #404018;
@@ -1654,7 +1679,32 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #808018;
  background-color: #606000;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.unknownIdentity:not(.mixedContent)
+#urlbar[pageproxystate="valid"] > #identity-box.mixedActiveContent
+{
+ color: #FFFFFF;
+ border-top-color: #801818;
+ border-left-color: #801818;
+ border-bottom-color: #401818;
+ border-right-color: #401818;
+ background-color: #600000;
+}
+#urlbar[pageproxystate="valid"] > #identity-box.mixedActiveContent:hover
+{
+ border-top-color: #A01818;
+ border-left-color: #A01818;
+ border-bottom-color: #601818;
+ border-right-color: #601818;
+ background-color: #800000;
+}
+#urlbar[pageproxystate="valid"] > #identity-box.mixedActiveContent:hover:active
+{
+ border-top-color: #601818;
+ border-left-color: #601818;
+ border-bottom-color: #A01818;
+ border-right-color: #A01818;
+ background-color: #800000;
+}
+#urlbar[pageproxystate="valid"] > #identity-box.unknownIdentity:not(.mixedContent)
 {
  border-top-color: #303030;
  border-left-color: #303030;
@@ -1662,7 +1712,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #101010;
  background-color: #202020;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.unknownIdentity:not(.mixedContent):hover
+#urlbar[pageproxystate="valid"] > #identity-box.unknownIdentity:not(.mixedContent):hover
 {
  border-top-color: #606060;
  border-left-color: #606060;
@@ -1670,7 +1720,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #202020;
  background-color: #404040;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.unknownIdentity:not(.mixedContent):hover:active
+#urlbar[pageproxystate="valid"] > #identity-box.unknownIdentity:not(.mixedContent):hover:active
 {
  border-top-color: #202020;
  border-left-color: #202020;
@@ -1678,7 +1728,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
  border-right-color: #606060;
  background-color: #404040;
 }
-#urlbar[pageproxystate="valid"] >  #identity-box.chromeUI
+#urlbar[pageproxystate="valid"] > #identity-box.chromeUI
 {
  border: 0px;
  padding: 1px !important;
