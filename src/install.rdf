@@ -3,7 +3,7 @@
  <Description about="urn:mozilla:install-manifest">
   <em:name>In The Dark</em:name>
   <em:id>{86FA6F53-95FE-7A69-D8C3-E1454281F8B6}</em:id>
-  <em:version>5.1pre</em:version>
+  <em:version>5.1</em:version>
   <em:type>4</em:type>
   <em:targetApplication>
    <Description>
