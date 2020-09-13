@@ -1571,7 +1571,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 }
 #notification-popup-box:not([hidden]) + #identity-box:-moz-locale-dir(rtl):hover:active
 {
- padding: 2px 2px 0 9px;
+ padding: 2px 9px 0 2px;
 }
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity
 {
@@ -2504,12 +2504,18 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"]
  position: relative;
  background-color: #101010;
  background-clip: padding-box;
- padding-left: 3px;
- border-radius: 2.5px 0 0 2.5px;
+ -moz-padding-start: 3px;
+ border-radius: 4px 0 0 4px;
  border-width: 0 8px 0 0;
  border-style: solid;
  border-image: url("chrome://browser/skin/urlbar-arrow.png") 0 8 0 0 fill;
  -moz-margin-end: -8px;
+}
+#notification-popup-box:-moz-locale-dir(rtl)
+{
+ border-radius: 0 4px 4px 0;
+ border-width: 0 0 0 8px;
+ border-image: url("chrome://browser/skin/urlbar-arrow-rtl.png") 0 0 0 8 fill;
 }
 window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icons] > :-moz-any(#nav-bar[currentset*="unified-back-forward-button,urlbar-container"],#nav-bar:not([currentset])) > #unified-back-forward-button[forwarddisabled] + #urlbar-container > #urlbar > #notification-popup-box
 {
