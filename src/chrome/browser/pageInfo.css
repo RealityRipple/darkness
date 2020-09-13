@@ -76,6 +76,11 @@
  /* https://realityripple.com/Software/Mozilla-Extensions/CookiePage/ */
  list-style-image: url("chrome://browser/skin/permissions/cookie.png") !important;
 }
+#cookiesTab > .viewButtonIcon
+{
+ width: 32px;
+ height: 32px;
+}
 deck
 {
  padding: 10px 10px 10px 10px;

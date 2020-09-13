@@ -67,17 +67,11 @@ menulist:hover:active > .menulist-dropmarker
  -moz-border-right-colors: #681818 #C01818;
  -moz-border-bottom-colors: #681818 #C01818;
  -moz-border-left-colors: #301010 #601818;
- padding-top: 2px;
- padding-bottom: 0px;
- -moz-padding-start: 2px;
- -moz-padding-end: 0px;
+ padding: 2px 0 0 2px;
 }
 menulist[open="true"]:not(.menulist-compact) > .menulist-dropmarker
 {
- padding-top: 2px;
- padding-bottom: 0px;
- -moz-padding-start: 2px;
- -moz-padding-end: 0px;
+ padding: 2px 0 0 2px;
 }
 
 menulist:focus:not([open="true"]):not(.menulist-compact) > .menulist-label-box

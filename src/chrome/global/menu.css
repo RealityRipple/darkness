@@ -108,15 +108,15 @@ menubar > menu
  list-style-image: url("chrome://global/skin/menu/Menu-arrow-disabled.png") !important;
  -moz-image-region: auto;
 }
-.menu-right[chromedir="rtl"]
+.menu-right:-moz-locale-dir(rtl)
 {
  list-style-image: url("chrome://global/skin/menu/Menu-arrow-rtl.png");
 }
-.menu-right[chromedir="rtl"][_moz-menuactive="true"]
+.menu-right[_moz-menuactive="true"]:-moz-locale-dir(rtl)
 {
  list-style-image: url("chrome://global/skin/menu/Menu-arrow-hover-rtl.png");
 }
-.menu-right[chromedir="rtl"][disabled="true"]
+.menu-right[disabled="true"]:-moz-locale-dir(rtl)
 {
  list-style-image: url("chrome://global/skin/menu/Menu-arrow-disabled-rtl.png") !important;
 }
@@ -287,103 +287,112 @@ menulist > menupopup > menuseparator, .menulist-menupopup > menuseparator
 }
 
 /* Menu Icons */
+menu, menuitem
+{
+ background-position: left center;
+ background-repeat: no-repeat;
+}
+menu:-moz-locale-dir(rtl), menuitem:-moz-locale-dir(rtl)
+{
+ background-position-x: right;
+}
 menuitem#context_reloadTab
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
 }
 menu#tab_reloadrepeat_menu,
 menu#reloadrepeat_menu
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/ReloadRepeat/ */
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 112, 16, 96) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 112, 16, 96);
 }
 menuitem#context_toggleMuteTab[muted="true"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 48, 16, 32) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 48, 16, 32);
 }
 menuitem#context_toggleMuteTab:not([muted="true"])
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 64, 16, 48) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 64, 16, 48);
 }
 menuitem#context_pinTab
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 288, 16, 272) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 288, 16, 272);
 }
 menuitem#context_unpinTab
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 272, 16, 256) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 272, 16, 256);
 }
 menuitem#context_openTabInWindow
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160);
 }
 menuitem#context_reloadAllTabs
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
 }
 menuitem#context_bookmarkAllTabs
 {
- background: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
 }
 menuitem#context_closeTabsToTheEnd
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16);
 }
 menuitem#context_closeOtherTabs
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
 }
 menuitem#context_undoCloseTab
 {
- background: url("chrome://browser/skin/menu-back.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/menu-back.png");
 }
 menuitem#context_closeTab
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
 }
 
 menuitem[command="cmd_CustomizeToolbars"]
 {
- background: url("chrome://browser/skin/devtools/tool-icons/options.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/devtools/tool-icons/options.png");
 }
 
 menuitem[observes="blockedPopupAllowSite"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 288, 16, 272) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 288, 16, 272);
 }
 menuitem[observes="blockedPopupEditSettings"]
 {
- background: url("chrome://browser/skin/devtools/tool-icons/options.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/devtools/tool-icons/options.png");
 }
 menuitem[observes="blockedPopupDontShowMessage"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 16, 16, 0);
 }
 
 menuitem[oncommand="BrowserFullScreen();"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 256, 16, 240) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 256, 16, 240);
 }
 
 menuitem#context-openlinkincurrent
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16);
 }
 menuitem#context-openlinkintab
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144);
 }
 menuitem#context-openlink
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160);
 }
 menuitem#context-openlinkprivate
 {
- background: url("chrome://browser/skin/Privacy-16.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/Privacy-16.png");
 }
 menuitem#context-bookmarklink
 {
- background: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
 }
 menuitem#context-marklink
 {
@@ -391,353 +400,353 @@ menuitem#context-marklink
 }
 menuitem#context-sharelink
 {
- background: url("chrome://browser/skin/social/services-16.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/social/services-16.png");
 }
 menuitem#context-savelink
 {
- background: url("chrome://browser/skin/downloads/download-norm-small.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/downloads/download-norm-small.png");
 }
 menuitem#context-copyemail, menuitem#context-copylink
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192);
 }
 menuitem#context-item-link-exif,
 menuitem#context-item-image-exif
 {
  /* https://addons.palemoon.org/addon/exif-viewer/ */
- background: url("chrome://browser/skin/permissions/image.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/permissions/image.png");
  background-size: 16px 16px;
 }
 menuitem#context-media-play
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 16, 16, 0);
 }
 menuitem#context-media-pause
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 32, 16, 16);
 }
 menuitem#context-media-mute
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 48, 16, 32) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 48, 16, 32);
 }
 menuitem#context-media-unmute
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 64, 16, 48) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 64, 16, 48);
 }
 menu#context-media-playbackrate
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 80, 16, 64) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 80, 16, 64);
 }
 menuitem#context-media-showcontrols
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 96, 16, 80) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 96, 16, 80);
 }
 menuitem#context-media-hidecontrols
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 112, 16, 96) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 112, 16, 96);
 }
 menuitem#context-video-showstats
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 128, 16, 112) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 128, 16, 112);
 }
 menuitem#context-video-hidestats
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 144, 16, 128) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 144, 16, 128);
 }
 menuitem#context-video-fullscreen
 {
- background: -moz-image-rect(url("chrome://global/skin/media/fullscreenButton.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/media/fullscreenButton.png"), 0, 16, 16, 0);
 }
 menuitem#context-leave-dom-fullscreen
 {
- background: -moz-image-rect(url("chrome://global/skin/media/fullscreenButton.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/media/fullscreenButton.png"), 0, 32, 16, 16);
 }
 menuitem#context-reloadimage
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
 }
 menuitem#context-viewimage
 {
- background: url("chrome://mozapps/skin/extensions/themeGeneric-16.png") left center no-repeat;
+ background-image: url("chrome://mozapps/skin/extensions/themeGeneric-16.png");
 }
 menuitem#context-viewvideo
 {
- background: url("chrome://browser/skin/webRTC-shareDevice-16.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/webRTC-shareDevice-16.png");
 }
 menuitem#context-copyimage-contents
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192);
 }
 menuitem#context-copyimage, menuitem#context-copyvideourl, menuitem#context-copyaudiourl
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16);
 }
 menuitem#context-zoom-zin,
 menuitem#zoomsub-zin
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 16, 16, 0);
 }
 menuitem#context-zoom-zreset,
 menuitem#zoomsub-zreset,
 menu#context-zoomsub
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 48, 16, 32) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 48, 16, 32);
 }
 menuitem#context-zoom-zout,
 menuitem#zoomsub-zout
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 32, 16, 16);
 }
 menuitem#context-zoom-zcustom,
 menuitem#zoomsub-zcustom
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: url("chrome://browser/skin/tabview/edit-light.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/tabview/edit-light.png");
 }
 menuitem#context-zoom-dcustom,
 menuitem#zoomsub-dcustom
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: url("chrome://browser/skin/devtools/tool-icons/styleeditor.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/devtools/tool-icons/styleeditor.png");
 }
 menuitem#context-zoom-fit,
 menuitem#zoomsub-fit
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: -moz-image-rect(url("chrome://global/skin/media/fullscreenButton.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/media/fullscreenButton.png"), 0, 16, 16, 0);
 }
 menuitem#context-zoom-fitwidth,
 menuitem#zoomsub-fitwidth
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: -moz-image-rect(url("chrome://global/skin/icons/Print-preview.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/Print-preview.png"), 0, 32, 16, 16);
 }
 menuitem#context-zoom-rotate-right,
 menuitem#rotatesub-rotate-right
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: url("chrome://browser/skin/menu-forward.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/menu-forward.png");
 }
 menuitem#context-zoom-rotate-left,
 menuitem#rotatesub-rotate-left
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: url("chrome://browser/skin/menu-back.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/menu-back.png");
 }
 menuitem#context-zoom-rotate-180,
 menuitem#rotatesub-rotate-180,
 menu#context-rotatesub
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: -moz-image-rect(url("chrome://browser/skin/devtools/responsiveui-rotate.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/devtools/responsiveui-rotate.png"), 0, 16, 16, 0);
 }
 menuitem#context-zoom-rotate-reset,
 menuitem#rotatesub-rotate-reset
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
- background: -moz-image-rect(url("chrome://global/skin/icons/Print-preview.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/Print-preview.png"), 0, 16, 16, 0);
 }
 
 menuitem#context-saveimage, menuitem#context-savevideo, menuitem#context-saveaudio, menuitem#context-video-saveimage
 {
- background: url("chrome://browser/skin/downloads/download-norm-small.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/downloads/download-norm-small.png");
 }
 menuitem#context-shareimage, menuitem#context-sharevideo, menuitem#context-sharepage
 {
- background: url("chrome://browser/skin/social/services-16.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/social/services-16.png");
 }
 menuitem#context-sendimage, menuitem#context-sendvideo, menuitem#context-sendaudio
 {
- background: url("chrome://browser/skin/preferences/mail.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/preferences/mail.png");
 }
 menuitem#context-setDesktopBackground
 {
- background: url("chrome://browser/skin/sync-desktopIcon.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/sync-desktopIcon.png");
 }
 menuitem#context-viewimageinfo
 {
- background: url("chrome://global/skin/icons/question-16.png") left center no-repeat;
+ background-image: url("chrome://global/skin/icons/question-16.png");
 }
 menuitem#context-viewimagedesc
 {
- background: -moz-image-rect(url("chrome://global/skin/Search-glass.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/Search-glass.png"), 0, 16, 16, 0);
 }
 menuitem#context-ctp-play
 {
- background: url("chrome://mozapps/skin/plugins/notifyPluginGeneric.png") left center no-repeat;
+ background-image: url("chrome://mozapps/skin/plugins/notifyPluginGeneric.png");
 }
 menuitem#context-ctp-hide
 {
- background: url("chrome://mozapps/skin/plugins/notifyPluginBlocked.png") left center no-repeat;
+ background-image: url("chrome://mozapps/skin/plugins/notifyPluginBlocked.png");
 }
 menuitem#context-back
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 16, 16, 0) left center no-repeat; 
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 16, 16, 0); 
 }
 menuitem#context-forward
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16);
 }
 menuitem#context-reload
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
 }
 menuitem#context-stop
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
 }
 menuitem#context-bookmarkpage
 {
- background: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
 }
 menuitem#context-savepage
 {
- background: url("chrome://browser/skin/downloads/download-norm-small.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/downloads/download-norm-small.png");
 }
 menuitem#context-viewbgimage
 {
- background: url("chrome://mozapps/skin/extensions/themeGeneric-16.png") left center no-repeat;
+ background-image: url("chrome://mozapps/skin/extensions/themeGeneric-16.png");
 }
 menuitem#context-undo, menuitem[cmd="cmd_undo"]
 {
- background: url("chrome://browser/skin/menu-back.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/menu-back.png");
 }
 menuitem#context-cut, menuitem[cmd="cmd_cut"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 192, 16, 176) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 192, 16, 176);
 }
 menuitem#context-copy, menuitem[cmd="cmd_copy"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192);
 }
 menuitem#context-paste, menuitem[cmd="cmd_paste"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 224, 16, 208) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 224, 16, 208);
 }
 menuitem#context-delete, menuitem[cmd="cmd_delete"], menuitem[cmd="cmd_clearhistory"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat; 
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32); 
 }
 menuitem#context-selectall, menuitem[cmd="cmd_selectAll"]
 {
- background: url("chrome://global/skin/icons/information-16.png") left center no-repeat; 
+ background-image: url("chrome://global/skin/icons/information-16.png"); 
 }
 menuitem#context-keywordfield
 {
- background: url("chrome://browser/skin/places/query.png") left center no-repeat;  
+ background-image: url("chrome://browser/skin/places/query.png");  
 }
 menuitem#context-searchselect, menuitem[anonid="paste-and-search"]
 {
- background: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
 }
 menuitem#context-shareselect
 {
- background: url("chrome://browser/skin/social/services-16.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/social/services-16.png");
 }
 menu#frame
 {
- background: url("chrome://browser/skin/aboutSessionRestore-window-icon.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/aboutSessionRestore-window-icon.png");
 }
 menuitem#context-showonlythisframe
 {
- background: url("chrome://browser/skin/aboutSessionRestore-window-icon.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/aboutSessionRestore-window-icon.png");
 }
 menuitem#context-openframeintab
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144);
 }
 menuitem#context-openframe
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160);
 }
 menuitem#context-reloadframe
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
 }
 menuitem#context-bookmarkframe
 {
- background: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
 }
 menuitem#context-saveframe
 {
- background: url("chrome://browser/skin/downloads/download-norm-small.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/downloads/download-norm-small.png");
 }
 menuitem#context-printframe
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 144, 16, 128) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 144, 16, 128);
 }
 menuitem#context-viewframesource, menuitem#context-viewpartialsource-selection, menuitem#context-viewpartialsource-mathml, menuitem#context-viewsource
 {
- background: url("chrome://browser/skin/source.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/source.png");
 }
 menuitem#context-viewframeinfo, menuitem#context-viewinfo
 {
- background: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 0, 16, 16, 0);
 }
 menuitem#spell-add-dictionaries-main
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 288, 16, 272) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 288, 16, 272);
 }
 menu#spell-dictionaries
 {
- background: url("chrome://global/skin/icons/question-16.png") left center no-repeat;
+ background-image: url("chrome://global/skin/icons/question-16.png");
 }
 menuitem#context-inspect
 {
  /* https://addons.palemoon.org/addon/dom-inspector/ */
- background: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
 }
 menuitem#trackpackage, menuitem#app_trackinghistory, menuitem#tools_trackinghistory, menuitem#task_trackinghistory
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/Track-Package/ */
- background: url("chrome://browser/skin/devtools/tool-icons/scratchpad.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/devtools/tool-icons/scratchpad.png");
 }
 menuitem#trackgmaps
 {
  /* https://realityripple.com/Software/Mozilla-Extensions/Track-Package/ */
- background: url("chrome://browser/skin/permissions/geo.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/permissions/geo.png");
  background-size: 16px 16px;
 }
 menuitem.abp-contextmenuitem
 {
  /* https://addons.palemoon.org/addon/adblock-latitude/ */
- background: -moz-image-rect(url("chrome://browser/skin/urlbar-popup-blocked.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/urlbar-popup-blocked.png"), 0, 16, 16, 0);
 }
 
 menuitem#placesContext_open
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16);
 }
 menuitem[id="placesContext_open:newtab"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144);
 }
 menuitem[id="placesContext_openContainer:tabs"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144);
 }
 menuitem[id="placesContext_openLinks:tabs"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144);
 }
 menuitem[id="placesContext_open:newwindow"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160);
 } 
 menuitem[id="placesContext_open:newprivatewindow"]
 {
- background: url("chrome://browser/skin/Privacy-16.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/Privacy-16.png");
 }
 menuitem[id="placesContext_new:bookmark"], menuitem#placesContext_createBookmark
 {
- background: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
 }
 menuitem[id="placesContext_new:folder"]
 {
- background: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 0, 32, 16, 16);
 }
 menuitem[id="placesContext_new:separator"]
 {
@@ -745,36 +754,36 @@ menuitem[id="placesContext_new:separator"]
 }
 menuitem#placesContext_cut
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 192, 16, 176) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 192, 16, 176);
 }
 menuitem#placesContext_copy
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192);
 }
 menuitem#placesContext_paste
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 224, 16, 208) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 224, 16, 208);
 }
 menuitem#placesContext_delete, menuitem#placesContext_delete_history, menuitem#placesContext_deleteHost
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat; 
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32); 
 }
 menuitem#placesContext_reload
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
 }
 menuitem[id="placesContext_sortBy:name"]
 {
- background: url("chrome://browser/skin/sync-16.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/sync-16.png");
 }
 menuitem[id="placesContext_show:info"]
 {
- background: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 0, 16, 16, 0);
 }
 
 menuitem[anonid="paste-and-go"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/reload-stop-go.png"), 0, 42, 14, 28) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/reload-stop-go.png"), 0, 42, 14, 28);
 }
 
 button menuitem

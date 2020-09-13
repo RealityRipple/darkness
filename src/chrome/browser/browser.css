@@ -162,6 +162,12 @@
  padding: 0;
  margin-top: 1px;
  margin-bottom: 1px;
+ background-position: left center;
+ background-repeat: no-repeat;
+}
+.splitmenu-menuitem:-moz-locale-dir(rtl)
+{
+ background-position-x: right;
 }
 .splitmenu-menu, #appmenu-editmenu
 {
@@ -1571,7 +1577,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 }
 #notification-popup-box:not([hidden]) + #identity-box:-moz-locale-dir(rtl):hover:active
 {
- padding: 2px 2px 0 9px;
+ padding: 2px 9px 0 2px;
 }
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity
 {
@@ -2504,12 +2510,18 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"]
  position: relative;
  background-color: #100000;
  background-clip: padding-box;
- padding-left: 3px;
- border-radius: 2.5px 0 0 2.5px;
+ -moz-padding-start: 3px;
+ border-radius: 4px 0 0 4px;
  border-width: 0 8px 0 0;
  border-style: solid;
  border-image: url("chrome://browser/skin/urlbar-arrow.png") 0 8 0 0 fill;
  -moz-margin-end: -8px;
+}
+#notification-popup-box:-moz-locale-dir(rtl)
+{
+ border-radius: 0 4px 4px 0;
+ border-width: 0 0 0 8px;
+ border-image: url("chrome://browser/skin/urlbar-arrow-rtl.png") 0 0 0 8 fill;
 }
 window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icons] > :-moz-any(#nav-bar[currentset*="unified-back-forward-button,urlbar-container"],#nav-bar:not([currentset])) > #unified-back-forward-button[forwarddisabled] + #urlbar-container > #urlbar > #notification-popup-box
 {
@@ -4092,286 +4104,192 @@ html|*#gcli-output-frame {
 #appmenu_newTab > .splitmenu-menuitem
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_newTab_popup
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_newNavigator
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_openFile
 {
  background-image: url("chrome://global/skin/dirListing/local.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_offlineModeRecovery
 {
  background-image: url("chrome://global/skin/dirListing/remote.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu-editmenu-undo
 {
  background-image: url("chrome://browser/skin/menu-back.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu-editmenu-redo
 {
  background-image: url("chrome://browser/skin/menu-forward.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu-editmenu-selectAll
 {
  background-image: url("chrome://global/skin/icons/information-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu-editmenu-delete
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_find
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_savePage
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 96, 16, 80);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_sendLink
 {
  background-image: url("chrome://browser/skin/preferences/mail.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_printPreview
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_printSetup
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 32, 16, 48, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_webDeveloper > .splitmenu-menuitem
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_charsetMenu
 {
  background-image: url("chrome://browser/skin/social/services-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_fullScreen
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 240, 16, 224);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_restart, #appmenu_restart
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #sync-setup-appmenu, #sync-syncnowitem-appmenu
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 304, 16, 288);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_showAllBookmarks
 {
  background-image: url("chrome://browser/skin/places/allBookmarks.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_history > .splitmenu-menuitem
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 112, 16, 96);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_showAllHistory
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 112, 16, 96);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_sanitizeHistory
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_sync-tabs
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 304, 16, 288);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_restoreLastSession
 {
  background-image: url("chrome://browser/skin/aboutSessionRestore-window-icon.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_recentlyClosedTabsMenu
 {
  background-image: url("chrome://browser/skin/Info.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_recentlyClosedWindowsMenu
 {
  background-image: url("chrome://browser/skin/Info.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_downloads
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 96, 16, 80);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_customize > .splitmenu-menuitem, #appmenu_preferences
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/options.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #pmcommander-options-app
 {
  background-image: url("chrome://global/skin/icons/warning-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_toolbarLayout
 {
  background-image: url("chrome://browser/skin/places/bookmarksToolbar.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #statusbar-options-app, #statusbar-options-fx
 {
  background-image: url("chrome://browser/skin/statusbar/pms16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_help > .splitmenu-menuitem
 {
  background-image: url("chrome://global/skin/icons/question-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_gettingStarted
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 
 /* File */
 #menu_newNavigatorTab
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_newNavigator
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_newPrivateWindow
 {
  background-image: url("chrome://browser/skin/Privacy-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_openLocation
 {
  background-image: url("chrome://global/skin/icons/information-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_openFile
 {
  background-image: url("chrome://global/skin/dirListing/local.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_close
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/close.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_closeWindow
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/close.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_savePage
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 96, 16, 80);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_sendLink
 {
  background-image: url("chrome://browser/skin/preferences/mail.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_printSetup
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 32, 16, 48, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_printPreview
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_print
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 144, 16, 128);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #goOfflineMenuitem
 {
  background-image: url("chrome://global/skin/dirListing/remote.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #goOfflineMenuitem[checked="true"]
 {
@@ -4390,511 +4308,345 @@ html|*#gcli-output-frame {
 #menu_undo
 {
  background-image: url("chrome://browser/skin/menu-back.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_redo
 {
  background-image: url("chrome://browser/skin/menu-forward.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_cut
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 192, 16, 176);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_copy
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_paste
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 224, 16, 208);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_delete
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_selectAll
 {
  background-image: url("chrome://global/skin/icons/information-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_find
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_findAgain
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 32, 16, 16);
- background-repeat: no-repeat;
- background-position: left center;
 }
 
 /* View */
 #viewToolbarsMenu
 {
  background-image: url("chrome://browser/skin/places/bookmarksToolbar.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_customizeToolbars
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #viewSidebarMenuMenu
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/dock-side.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_stop
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_reload
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #viewFullZoomMenu
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_zoomEnlarge
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_zoomReduce
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 32, 16, 16);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_zoomReset
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 48, 16, 32);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #pageStyleMenu
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 32, 16, 48, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #charsetMenu, #appmenu_developer_charsetMenu
 {
  background-image: url("chrome://browser/skin/social/services-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #charsetMenu menuitem[name="charsetCustomize"]
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #fullScreenItem
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 240, 16, 224);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_showAllTabs
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 160, 16, 144);
- background-repeat: no-repeat;
- background-position: left center;
 }
 
 /* History */
 #historyMenuBack
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #historyMenuForward
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #historyMenuHome
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 80, 16, 64);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_showAllHistory, #menu_showAllHistory, #HMB_showAllHistory
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 112, 16, 96);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #appmenu_sanitizeHistory, #sanitizeItem, #HMB_sanitizeItem
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #sync-tabs-menuitem
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 304, 16, 288);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #historyRestoreLastSession
 {
  background-image: url("chrome://browser/skin/aboutSessionRestore-window-icon.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #historyUndoMenu
 {
  background-image: url("chrome://browser/skin/Info.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #historyUndoWindowMenu
 {
  background-image: url("chrome://browser/skin/Info.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_restoreAllTabs
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/inspector.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_restoreAllWindows
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/inspector.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 
 /* Bookmarks */
 #bookmarksShowAll, #BMB_bookmarksShowAll
 {
  background-image: url("chrome://browser/skin/places/allBookmarks.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_bookmarkThisPage
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #liveclick-bookmarks-menu, #liveclick-app-bookmarks-menu
 {
  /* LiveClick */
  background-image: url("chrome://browser/skin/feeds/feedIcon16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_bookmarkAllTabs
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/places/libraryToolbar.png"), 0, 48, 16, 32);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_unsortedBookmarks
 {
  background-image: url("chrome://browser/skin/places/unsortedBookmarks.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 
 /* Tools */
 #menu_search
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_openDownloads
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 96, 16, 80);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_openAddons
 {
  background-image: url("chrome://mozapps/skin/extensions/extensionGeneric-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_openPermissions, #appmenu_permissions
 {
  background-image: url("chrome://mozapps/skin/passwordmgr/key-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_socialAmbientMenu
 {
  background-image: url("chrome://browser/skin/social/services-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #sync-setup
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 304, 16, 288);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #sync-syncnowitem
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 304, 16, 288);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #webDeveloperMenu, #appmenu_devToolbar
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menuitem_inspector, #appmenuitem_inspector
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/inspector.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menuitem_webconsole, #appmenuitem_webconsole
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/webconsole.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menuitem_jsdebugger, #appmenuitem_jsdebugger
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/debugger.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menuitem_styleeditor, #appmenuitem_styleeditor
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/styleeditor.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menuitem_jsprofiler, #menuitem_performance, #appmenuitem_jsprofiler, #appmenuitem_performance
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/profiler.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menuitem_netmonitor, #appmenuitem_netmonitor
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/network.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menuitem_storage, #appmenuitem_storage
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/storage.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_chromeDebugger, #appmenu_chromeDebugger
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/debugger.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_browserToolbox, #appmenu_browserToolbox
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/devtools/tool-icons/icons-small.png"), 64, 16, 80, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_browserConsole, #appmenu_browserConsole
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/webconsole.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_responsiveUI, #appmenu_responsiveUI
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/responsivemode.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_eyedropper, #appmenu_eyedropper
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/eyedropper.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_scratchpad, #appmenu_scratchpad
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/scratchpad.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_pageSource, #appmenu_pageSource
 {
  background-image: url("chrome://browser/skin/source.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #javascriptConsole, #appmenu_javascriptConsole, #appmenu_errorConsole
 {
  background-image: url("chrome://global/skin/icons/warning-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_domInspector, #appmenu_inspector
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Search-glass.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_webide, #appmenu_webide
 {
  background-image: url("chrome://browser/skin/webapps-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_devtools_serviceworkers, #appmenu_devtools_serviceworkers
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/worker.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_devtools_connect, #appmenu_devtools_connect
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 64, 16, 48);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #getMoreDevtools, #menu_getMoreDevtools, #appmenu_getMoreDevtools
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_pageInfo
 {
  background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 0, 16, 16, 0);
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_preferences
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/options.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #pmcommander-options-fx
 {
  background-image: url("chrome://global/skin/icons/warning-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #exifviewer-exif
 {
  /* https://addons.palemoon.org/addon/exif-viewer/ */
  background-image: url("chrome://browser/skin/permissions/image.png");
  background-size: 16px 16px;
- background-repeat: no-repeat;
- background-position: left center;
 }
 
 /* Help */
 #menu_openHelp, #appmenu_openHelp
 {
  background-image: url("chrome://global/skin/icons/question-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_keyboardShortcuts, #appmenu_keyboardShortcuts
 {
  background-image: url("chrome://global/skin/icons/key.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #healthReport, #appmenu_healthReport
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/profiler.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #troubleShooting, #appmenu_troubleshootingInfo
 {
  background-image: url("chrome://global/skin/icons/error-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #releaseNotes, #appmenu_releaseNotes
 {
  background-image: url("chrome://browser/skin/devtools/tool-icons/styleeditor.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #feedbackPage, #appmenu_feedbackPage
 {
  background-image: url("chrome://browser/skin/social/services-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #helpSafeMode, #appmenu_safeMode
 {
  background-image: url("chrome://global/skin/icons/blacklist_favicon.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_HelpPopup_reportPhishingtoolmenu
 {
  background-image: url("chrome://global/skin/icons/warning-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #menu_HelpPopup_reportPhishingErrortoolmenu
 {
  background-image: url("chrome://global/skin/icons/warning-16.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #checkForUpdates:not([loading="true"]), #appmenu_checkForUpdates:not([loading="true"])
 {
  background-image: url("chrome://browser/skin/downloads/download-norm-small.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #checkForUpdates[loading="true"], #appmenu_checkForUpdates[loading="true"]
 {
  background-image: url("chrome://browser/skin/downloads/download-glow-small.png");
- background-repeat: no-repeat;
- background-position: left center;
 }
 #aboutName, #appmenu_about
 {
  background-image: url("chrome://browser/skin/preferences/application.png");
- background-repeat: no-repeat;
- background-position: left center;
 }

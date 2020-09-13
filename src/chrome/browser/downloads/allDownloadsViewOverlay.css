@@ -92,29 +92,29 @@ richlistitem.download:hover > .downloadButton.downloadRetry:active
 /* Downloads Context Menu */
 menuitem.downloadPauseMenuItem
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 32, 16, 16);
 }
 menuitem.downloadResumeMenuItem
 {
- background: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/media-icons.png"), 0, 16, 16, 0);
 }
 menuitem.downloadCancelMenuItem
 {
- background: -moz-image-rect(url("chrome://browser/skin/downloads/buttons.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/downloads/buttons.png"), 0, 16, 16, 0);
 }
 menuitem.downloadRemoveFromHistoryMenuItem, menuitem[command="downloadsCmd_clearDownloads"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
 }
 menuitem.downloadShowMenuItem
 {
- background: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 32, 32, 48, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 32, 32, 48, 16);
 }
 menuitem[command="downloadsCmd_openReferrer"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 32, 16, 16);
 }
 menuitem[command="cmd_copy"]
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192);
 }

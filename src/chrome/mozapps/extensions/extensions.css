@@ -616,6 +616,10 @@
 {
  background-image: radial-gradient(circle at 32px, #501600 0%, transparent 30px, transparent 100%);
 }
+.addon-view[active="true"][native="false"][notification="warning"]:-moz-locale-dir(rtl) .content-container
+{
+ background-image: radial-gradient(circle at calc(100% - 32px), #501600 0%, transparent 30px, transparent 100%);
+}
 .addon-view[active="true"][native="false"][notification="warning"][selected] .content-container
 {
  background-image: none;
@@ -623,6 +627,10 @@
 .addon-view[active="true"][native="false"][notification="warning"][selected]
 {
  background-image: linear-gradient(to right, #501600 0%, transparent 128px, transparent 100%);
+}
+.addon-view[active="true"][native="false"][notification="warning"][selected]:-moz-locale-dir(rtl)
+{
+ background-image: linear-gradient(to left, #501600 0%, transparent 128px, transparent 100%);
 }
 .addon-view[active="false"][native="false"][notification="warning"] .warning
 {

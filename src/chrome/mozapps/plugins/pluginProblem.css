@@ -121,7 +121,7 @@ html|a
 {
  margin-left: -1px;
 }
-.mainBox[chromedir="rtl"] .submitURLOptIn
+.mainBox:-moz-locale-dir(rtl) .submitURLOptIn
 {
  margin-left: 0;
  margin-right: -1px;
@@ -134,7 +134,7 @@ html|a
 {
  float: right;
 }
-.mainBox[chromedir="rtl"] .submitButton
+.mainBox:-moz-locale-dir(rtl) .submitButton
 {
  float: left;
 }
@@ -147,7 +147,7 @@ html|a
  cursor: pointer;
  float: left;
 }
-.mainBox[chromedir="rtl"] .helpIcon
+.mainBox:-moz-locale-dir(rtl) .helpIcon
 {
  float: right;
 }
@@ -164,7 +164,7 @@ html|a
  background-image: url("chrome://global/skin/icons/close.png");
  background-repeat: no-repeat;
 }
-.mainBox[chromedir="rtl"] .closeIcon
+.mainBox:-moz-locale-dir(rtl) .closeIcon
 {
  right: auto;
  left: 4px;

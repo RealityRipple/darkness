@@ -141,45 +141,45 @@ treechildren::-moz-tree-cell-text(cutting)
 /* Organizer Menu */
 menuitem#newbookmark
 {
- background: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/places/bookmark.png"), 0, 16, 16, 0);
 }
 menuitem#newfolder
 {
- background: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 0, 32, 16, 16) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://global/skin/icons/folder-item.png"), 0, 32, 16, 16);
 }
 menuitem#orgUndo
 {
- background: url("chrome://browser/skin/menu-back.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/menu-back.png");
 }
 menuitem#orgRedo
 {
- background: url("chrome://browser/skin/menu-forward.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/menu-forward.png");
 }
 menuitem#orgCut
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 192, 16, 176) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 192, 16, 176);
 }
 menuitem#orgCopy
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 208, 16, 192);
 }
 menuitem#orgPaste
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 224, 16, 208) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 224, 16, 208);
 }
 menuitem#orgDelete
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat; 
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32); 
 }
 menuitem#orgSelectAll
 {
- background: url("chrome://global/skin/icons/information-16.png") left center no-repeat; 
+ background-image: url("chrome://global/skin/icons/information-16.png"); 
 }
 menuitem#orgMoveBookmarks
 {
- background: url("chrome://browser/skin/sync-16.png") left center no-repeat;
+ background-image: url("chrome://browser/skin/sync-16.png");
 }
 menuitem#orgClose
 {
- background: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32) left center no-repeat;
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
 }
