@@ -108,15 +108,15 @@ menubar > menu
  list-style-image: url("chrome://global/skin/menu/Menu-arrow-disabled.png") !important;
  -moz-image-region: auto;
 }
-.menu-right[chromedir="rtl"]
+.menu-right:-moz-locale-dir(rtl)
 {
  list-style-image: url("chrome://global/skin/menu/Menu-arrow-rtl.png");
 }
-.menu-right[chromedir="rtl"][_moz-menuactive="true"]
+.menu-right[_moz-menuactive="true"]:-moz-locale-dir(rtl)
 {
  list-style-image: url("chrome://global/skin/menu/Menu-arrow-hover-rtl.png");
 }
-.menu-right[chromedir="rtl"][disabled="true"]
+.menu-right[disabled="true"]:-moz-locale-dir(rtl)
 {
  list-style-image: url("chrome://global/skin/menu/Menu-arrow-disabled-rtl.png") !important;
 }
