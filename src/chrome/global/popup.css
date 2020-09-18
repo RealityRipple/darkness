@@ -24,6 +24,8 @@ menupopup > menu > menupopup
 panel[type="arrow"]
 {
  -moz-appearance: none;
+ background: transparent;
+ border: none;
 }
 
 @media (-moz-windows-default-theme)
