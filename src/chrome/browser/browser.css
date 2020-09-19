@@ -1414,6 +1414,11 @@ toolbar[iconsize="small"] #tabview-button[groups="3"][disabled], toolbar[iconsiz
 {
  -moz-image-region: rect(48px, 64px, 64px, 48px);
 }
+#classicpasswordeditor-button
+{
+ /* https://addons.thunderbird.net/addon/classic-password-editor/ */
+ list-style-image: url("chrome://mozapps/skin/passwordmgr/key-16.png") !important;
+}
 
 /* ::::: fullscreen window controls ::::: */
 #window-controls
@@ -4648,6 +4653,12 @@ html|*#gcli-output-frame {
 {
  /* https://addons.palemoon.org/addon/exif-viewer/ */
  background-image: url("chrome://browser/skin/permissions/image.png");
+ background-size: 16px 16px;
+}
+#classicpasswordeditor-toolsmenuitem
+{
+ /* https://addons.thunderbird.net/addon/classic-password-editor/ */
+ background-image: url("chrome://mozapps/skin/passwordmgr/key-16.png");
  background-size: 16px 16px;
 }
 
