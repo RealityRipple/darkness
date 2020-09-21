@@ -54,7 +54,7 @@ listbox:focus > listitem[selected="true"]
  background-color: #501818;
 }
 listheader
-{ 
+{
  -moz-appearance: none;
  -moz-box-align: center;
  border: 1px solid;

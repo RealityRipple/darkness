@@ -103,13 +103,13 @@ treechildren.private-autocomplete-treebody::-moz-tree-cell-text(selected)
 }
 .ac-site-icon
 {
- width: 16px; 
+ width: 16px;
  height: 16px;
  margin: 0 5px -2px;
 }
 .ac-type-icon
 {
- width: 16px; 
+ width: 16px;
  height: 16px;
  -moz-margin-start: 6px;
  -moz-margin-end: 4px;
@@ -130,7 +130,7 @@ treechildren.private-autocomplete-treebody::-moz-tree-cell-text(selected)
 .ac-ellipsis-after
 {
  margin: 0 !important;
- padding: 0; 
+ padding: 0;
  min-width: 1em;
 }
 .ac-normal-text

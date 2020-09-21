@@ -12,7 +12,7 @@
  border-bottom: 2px solid #801818;
  border-top: 2px solid #801818;
  border-left: 2px solid #801818;
- background-color: #000000; 
+ background-color: #000000;
  color: #C01818;
  box-shadow: 0 2px 10px rgba(0,0,0,0.59);
 }
@@ -71,7 +71,7 @@ label
 .alertCloseBox
 {
  margin-inline-end: 2px;
-} 
+}
 #alertSettings
 {
  margin-inline-end: 5px;

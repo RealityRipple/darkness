@@ -584,7 +584,7 @@ menuitem#context-ctp-hide
 }
 menuitem#context-back
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 16, 16, 0); 
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 16, 16, 0);
 }
 menuitem#context-forward
 {
@@ -628,15 +628,15 @@ menuitem#context-paste, menuitem[cmd="cmd_paste"]
 }
 menuitem#context-delete, menuitem[cmd="cmd_delete"], menuitem[cmd="cmd_clearhistory"]
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32); 
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
 }
 menuitem#context-selectall, menuitem[cmd="cmd_selectAll"]
 {
- background-image: url("chrome://global/skin/icons/information-16.png"); 
+ background-image: url("chrome://global/skin/icons/information-16.png");
 }
 menuitem#context-keywordfield
 {
- background-image: url("chrome://browser/skin/places/query.png");  
+ background-image: url("chrome://browser/skin/places/query.png");
 }
 menuitem#context-searchselect, menuitem[anonid="paste-and-search"]
 {
@@ -735,7 +735,7 @@ menuitem[id="placesContext_openLinks:tabs"]
 menuitem[id="placesContext_open:newwindow"]
 {
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 176, 16, 160);
-} 
+}
 menuitem[id="placesContext_open:newprivatewindow"]
 {
  background-image: url("chrome://browser/skin/Privacy-16.png");
@@ -750,7 +750,7 @@ menuitem[id="placesContext_new:folder"]
 }
 menuitem[id="placesContext_new:separator"]
 {
- 
+
 }
 menuitem#placesContext_cut
 {
@@ -766,7 +766,7 @@ menuitem#placesContext_paste
 }
 menuitem#placesContext_delete, menuitem#placesContext_delete_history, menuitem#placesContext_deleteHost
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32); 
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
 }
 menuitem#placesContext_reload
 {

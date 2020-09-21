@@ -19,7 +19,7 @@ toolbarbutton.tabbable
 {
  -moz-user-focus: normal !important;
 }
-toolbarbutton:focus 
+toolbarbutton:focus
 {
  -moz-appearance: none;
 }

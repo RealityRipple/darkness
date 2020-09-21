@@ -52,7 +52,7 @@
     </content>
   </binding>
 
-  <binding id="menulist-compact" display="xul:menu" 
+  <binding id="menulist-compact" display="xul:menu"
            extends="chrome://global/content/bindings/menulist.xml#menulist">
     <content sizetopopup="false">
       <xul:hbox class="menulist-label-box" flex="1">

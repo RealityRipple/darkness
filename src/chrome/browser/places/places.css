@@ -169,11 +169,11 @@ menuitem#orgPaste
 }
 menuitem#orgDelete
 {
- background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32); 
+ background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 48, 16, 32);
 }
 menuitem#orgSelectAll
 {
- background-image: url("chrome://global/skin/icons/information-16.png"); 
+ background-image: url("chrome://global/skin/icons/information-16.png");
 }
 menuitem#orgMoveBookmarks
 {

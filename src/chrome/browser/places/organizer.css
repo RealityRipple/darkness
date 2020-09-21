@@ -7,7 +7,7 @@
 {
  list-style-image: url("chrome://browser/skin/Toolbar-small.png");
 }
-#back-button, #forward-button:-moz-locale-dir(rtl) 
+#back-button, #forward-button:-moz-locale-dir(rtl)
 {
  -moz-image-region: rect(0, 16px, 16px, 0);
 }
@@ -23,7 +23,7 @@
 {
  -moz-image-region: rect(48px, 16px, 64px, 0px);
 }
-#forward-button, #back-button:-moz-locale-dir(rtl) 
+#forward-button, #back-button:-moz-locale-dir(rtl)
 {
  -moz-image-region: rect(0, 32px, 16px, 16px);
 }
@@ -111,7 +111,7 @@
  -moz-border-left-colors: transparent !important;
  padding: 1px !important;
  list-style-image: url("chrome://browser/skin/Toolbar-small.png");
- -moz-image-region: rect(0px, 48px, 16px, 32px); 
+ -moz-image-region: rect(0px, 48px, 16px, 32px);
 }
 #clearDownloadsButton:hover
 {
