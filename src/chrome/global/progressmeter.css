@@ -12,7 +12,7 @@ progressmeter
  min-width: 128px;
  min-height: 15px;
 }
-.progress-bar 
+.progress-bar
 {
  -moz-appearance: none;
  min-width: 0px;

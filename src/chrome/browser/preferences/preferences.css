@@ -1,6 +1,6 @@
 #BrowserPreferences radio[pane]
 {
- list-style-image: url("chrome://browser/skin/preferences/Options.png"); 
+ list-style-image: url("chrome://browser/skin/preferences/Options.png");
 }
 radio[pane=paneMain]
 {

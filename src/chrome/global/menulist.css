@@ -77,7 +77,7 @@ menulist[open="true"]:not(.menulist-compact) > .menulist-dropmarker
 menulist:focus:not([open="true"]):not(.menulist-compact) > .menulist-label-box
 {
  background-color: #404040;
- color: #FFFFFF;  
+ color: #FFFFFF;
 }
 menulist:-moz-focusring:not([open="true"]) > .menulist-label-box
 {
@@ -120,7 +120,7 @@ html|*.menulist-editable-input
 {
  margin: 0 3px !important;
  text-align: end;
-}  
+}
 .menulist-compact > .menulist-label-box > .menulist-icon
 {
  -moz-margin-start: 2px;

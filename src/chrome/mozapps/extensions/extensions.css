@@ -42,7 +42,7 @@
 #detail-view .global-warning
 {
  padding: 4px 12px;
- border-bottom: 1px solid #CAD4E0;  
+ border-bottom: 1px solid #CAD4E0;
 }
 @media (max-width: 600px)
 {
@@ -1016,7 +1016,7 @@ menulist
  width: 16px;
  border-left: 1px solid #FFFFFF;
 }
-.download-progress .progress .progress-bar 
+.download-progress .progress .progress-bar
 {
  -moz-appearance: none;
  min-width: 0px;

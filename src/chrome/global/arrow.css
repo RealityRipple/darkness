@@ -3,7 +3,7 @@
 {
  min-width: 0px;
  list-style-image: url("chrome://global/skin/arrow/arrow-up.gif");
-}               
+}
 .up:hover
 {
  list-style-image: url("chrome://global/skin/arrow/arrow-up-hov.gif");

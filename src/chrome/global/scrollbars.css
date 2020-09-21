@@ -20,7 +20,7 @@ thumb[orient="vertical"] > thumbs
 {
  width: 14px;
  height: 3px;
- background: url("chrome://global/skin/scrollbar/n/vb.png") no-repeat top center !important;	
+ background: url("chrome://global/skin/scrollbar/n/vb.png") no-repeat top center !important;
 }
 thumb[orient="vertical"] > thumbm
 {
@@ -32,11 +32,11 @@ thumb[orient="vertical"] > thumbe
 {
  width: 14px;
  height: 3px;
- background: url("chrome://global/skin/scrollbar/n/ve.png") no-repeat bottom center !important;	
+ background: url("chrome://global/skin/scrollbar/n/ve.png") no-repeat bottom center !important;
 }
 thumb[orient="vertical"]:hover > thumbs
 {
- background: url("chrome://global/skin/scrollbar/h/vb.png") no-repeat top center !important;	
+ background: url("chrome://global/skin/scrollbar/h/vb.png") no-repeat top center !important;
 }
 thumb[orient="vertical"]:hover > thumbm
 {
@@ -44,11 +44,11 @@ thumb[orient="vertical"]:hover > thumbm
 }
 thumb[orient="vertical"]:hover > thumbe
 {
- background: url("chrome://global/skin/scrollbar/h/ve.png") no-repeat bottom center !important;	
+ background: url("chrome://global/skin/scrollbar/h/ve.png") no-repeat bottom center !important;
 }
 thumb[orient="vertical"]:active > thumbs
 {
- background: url("chrome://global/skin/scrollbar/a/vb.png") no-repeat top center !important;	
+ background: url("chrome://global/skin/scrollbar/a/vb.png") no-repeat top center !important;
 }
 thumb[orient="vertical"]:active > thumbm
 {
@@ -56,13 +56,13 @@ thumb[orient="vertical"]:active > thumbm
 }
 thumb[orient="vertical"]:active > thumbe
 {
- background: url("chrome://global/skin/scrollbar/a/ve.png") no-repeat bottom center !important;	
+ background: url("chrome://global/skin/scrollbar/a/ve.png") no-repeat bottom center !important;
 }
 thumb[orient="horizontal"] > thumbs
 {
  width: 3px;
  height: 14px;
- background: url("chrome://global/skin/scrollbar/n/hb.png") no-repeat top center !important;	
+ background: url("chrome://global/skin/scrollbar/n/hb.png") no-repeat top center !important;
 }
 thumb[orient="horizontal"] > thumbm
 {
@@ -74,13 +74,13 @@ thumb[orient="horizontal"] > thumbe
 {
  width: 3px;
  height: 14px;
- background: url("chrome://global/skin/scrollbar/n/he.png") no-repeat bottom center !important;	
+ background: url("chrome://global/skin/scrollbar/n/he.png") no-repeat bottom center !important;
 }
 thumb[orient="horizontal"]:hover > thumbs
 {
  width: 3px;
  height: 14px;
- background: url("chrome://global/skin/scrollbar/h/hb.png") no-repeat top center !important;	
+ background: url("chrome://global/skin/scrollbar/h/hb.png") no-repeat top center !important;
 }
 thumb[orient="horizontal"]:hover > thumbm
 {
@@ -92,13 +92,13 @@ thumb[orient="horizontal"]:hover > thumbe
 {
  width: 3px;
  height: 14px;
- background: url("chrome://global/skin/scrollbar/h/he.png") no-repeat bottom center !important;	
+ background: url("chrome://global/skin/scrollbar/h/he.png") no-repeat bottom center !important;
 }
 thumb[orient="horizontal"]:active > thumbs
 {
  width: 3px;
  height: 14px;
- background: url("chrome://global/skin/scrollbar/a/hb.png") no-repeat top center !important;	
+ background: url("chrome://global/skin/scrollbar/a/hb.png") no-repeat top center !important;
 }
 thumb[orient="horizontal"]:active > thumbm
 {
@@ -110,7 +110,7 @@ thumb[orient="horizontal"]:active > thumbe
 {
  width: 3px;
  height: 14px;
- background: url("chrome://global/skin/scrollbar/a/he.png") no-repeat bottom center !important;	
+ background: url("chrome://global/skin/scrollbar/a/he.png") no-repeat bottom center !important;
 }
 scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"]
 {
@@ -169,7 +169,7 @@ scrollbar[orient="horizontal"] > scrollbarbutton[type="increment"]:hover:active
  background-image: url("chrome://global/skin/scrollbar/a/right.png");
 }
 scrollcorner
-{ 
+{
  background-color: #000000;
 }
 @media print

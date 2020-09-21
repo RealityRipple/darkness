@@ -6,17 +6,17 @@
 {
  background-color: black;
 }
-@media (-moz-os-version: windows-vista),          
-       (-moz-os-version: windows-win7),          
-       (-moz-os-version: windows-win8) {
-  #main-window[sizemode="normal"] #browser-panel {
-	border: 1px solid;
-    border-top-color: #808080;
-    border-bottom-color: #A0A0A0;
-    border-left-color: #808080;
-    border-right-color: #A0A0A0;
-  }
-}  
+@media (-moz-os-version: windows-vista), (-moz-os-version: windows-win7), (-moz-os-version: windows-win8)
+{
+ #main-window[sizemode="normal"] #browser-panel
+ {
+  border: 1px solid;
+  border-top-color: #808080;
+  border-bottom-color: #A0A0A0;
+  border-left-color: #808080;
+  border-right-color: #A0A0A0;
+ }
+}
 #menubar-items
 {
  -moz-box-orient: vertical;
@@ -2369,13 +2369,13 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"]
 #ub-feed-button:hover:active > .button-box {
   padding: 0px;
   margin: 0px;
-  border: 0px; 
+  border: 0px;
   background-color: transparent !important;
 }
 
 #ub-feed-button {
-  -moz-appearance: none; 
-  min-width: 0px; 
+  -moz-appearance: none;
+  min-width: 0px;
   list-style-image: url("chrome://browser/skin/feeds/feed-icons-16.png");
   -moz-image-region: rect(0px 16px 16px 0px);
 }
@@ -3848,7 +3848,7 @@ html|*#gcli-output-frame {
    #titlebar-close:hover:-moz-lwtheme-darktext {
       list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-outline);
    }
-		
+
    /* dark persona */
    #titlebar-min:-moz-lwtheme-brighttext {
       list-style-image: url(chrome://browser/skin/caption-buttons.svg#minimize-outline-inverted);
@@ -3865,7 +3865,7 @@ html|*#gcli-output-frame {
    #titlebar-close:hover:-moz-lwtheme-brighttext {
       list-style-image: url(chrome://browser/skin/caption-buttons.svg#close-outline-inverted);
    }
-        
+
    /* the 12px image renders a 10px icon, and the 10px upscaled gets rounded to 12.5, which
    * rounds up to 13px, which makes the icon one pixel too big on 1.25dppx. Fix: */
    @media (min-resolution: 1.20dppx) and (max-resolution: 1.45dppx) {
@@ -3928,7 +3928,7 @@ html|*#gcli-output-frame {
    #titlebar-close:hover:active {
       background-color: hsl(355, 82%, 69%);
    }
-          
+
    /* light persona */
    .titlebar-button:-moz-lwtheme-darktext:hover {
       background-color: hsla(0, 0%, 0%, .12);
@@ -3951,7 +3951,7 @@ html|*#gcli-output-frame {
       background-color: transparent;
       -moz-appearance: -moz-win-borderless-glass;
     }
-    
+
     /* These should be hidden w/ glass enabled. Windows draws its own buttons. */
     .titlebar-button {
       display: none;
@@ -3971,29 +3971,29 @@ html|*#gcli-output-frame {
     #main-window[chromemargin^="0,"][sizemode=normal] #navigator-toolbox {
       margin-top: 0px;
     }
-	
+
     /* Artificially draw window borders that are covered by lwtheme, see bug 591930. */
     #main-window[sizemode="normal"] > #titlebar > #titlebar-content:-moz-lwtheme {
       border-top: 2px solid;
       -moz-border-top-colors: rgb(37, 44, 51) rgba(255,255,255,.6);
     }
-	
+
     #main-window[sizemode="normal"] > #titlebar > #titlebar-content:-moz-lwtheme:-moz-window-inactive {
       -moz-border-top-colors: rgb(102, 102, 102) rgba(255,255,255,.6);
     }
-	
+
     #main-window[sizemode="normal"] > #titlebar > #titlebar-content > #appmenu-button-container:-moz-lwtheme {
       margin-top: -1px;
     }
-	
+
     #main-window[sizemode="normal"] #titlebar-buttonbox:-moz-lwtheme {
       margin-top: -2px;
     }
-	
+
     #appmenu-button {
       margin-bottom: -1px; /* compensate white outer border */
     }
-    
+
     #ctrlTab-panel
     {
      background: transparent;
@@ -4011,8 +4011,8 @@ html|*#gcli-output-frame {
   -moz-appearance: none;
   background-color: #000000;
  }
- @media (-moz-os-version: windows-vista),          
-       (-moz-os-version: windows-win7),          
+ @media (-moz-os-version: windows-vista),
+       (-moz-os-version: windows-win7),
        (-moz-os-version: windows-win8) {
   #main-window[sizemode=normal] #navigator-toolbox > toolbar:-moz-lwtheme
   {

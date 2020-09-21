@@ -120,7 +120,7 @@ textbox[disabled]
  font-style: italic;
 }
 groupbox.collapsable caption .caption-icon
-{ 
+{
  width: 9px;
  height: 9px;
  background-repeat: no-repeat;
@@ -136,7 +136,7 @@ groupbox.collapsable[closed="true"]
  -moz-appearance: none;
 }
 groupbox.collapsable[closed="true"] caption .caption-icon
-{ 
+{
  background-image: url("chrome://global/skin/tree/twisty-clsd.png");
 }
 groupbox tree
@@ -213,7 +213,7 @@ treechildren::-moz-tree-cell-text(broken)
  border: 0px;
 }
 .feedTitle
-{ 
+{
  font-weight: bold;
 }
 #permList
