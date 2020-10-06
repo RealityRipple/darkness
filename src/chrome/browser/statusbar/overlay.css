@@ -12,6 +12,12 @@
 {
  visibility: visible;
 }
+toolbar[customizing="true"] #wrapper-status4evar-progress-widget progressmeter[value="0"], #palette-box #wrapper-status4evar-progress-widget progressmeter
+{
+ background-image: url("chrome://global/skin/progress/prog.png");
+ background-repeat: repeat-x;
+ background-position-y: center;
+}
 #wrapper-status4evar-status-widget toolbaritem label
 {
  background-color: rgba(0,0,0,0.2);
