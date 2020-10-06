@@ -523,6 +523,12 @@ toolbar[iconsize="small"] .toolbarbutton-1
 {
  list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
 }
+.toolbarbutton-1:hover:active > .toolbarbutton-menu-dropmarker, .toolbarbutton-1:hover:active > .toolbarbutton-menubutton-dropmarker,
+.toolbarbutton-1[open] > .toolbarbutton-menu-dropmarker, .toolbarbutton-1[open] > .toolbarbutton-menubutton-dropmarker
+{
+ list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
+ padding: 3px 1px 1px 3px;
+}
 .toolbarbutton-1 > .toolbarbutton-icon, .toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon
 {
  -moz-margin-end: 0;
@@ -649,10 +655,11 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button])
 {
  -moz-image-region: rect(96px, 224px, 128px, 192px);
 }
-#history-button[checked], #history-menu-button[checked]
+#history-button[checked], #history-menu-button[checked], #history-menu-button[open]
 {
  -moz-image-region: rect(64px, 224px, 96px, 192px);
 }
+#toolbar-menubar:not([autohide="true"]) ~ toolbar > #history-menu-button, #toolbar-menubar:not([autohide="true"]) > #history-menu-button,
 #toolbar-menubar:not([autohide="true"]) ~ toolbar > #bookmarks-menu-button, #toolbar-menubar:not([autohide="true"]) > #bookmarks-menu-button
 {
  display: -moz-box !important;
@@ -661,6 +668,17 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button])
 {
  list-style-image: url("chrome://browser/skin/Toolbar-large.png");
  -moz-image-region: rect(0px, 256px, 32px, 224px);
+}
+#palette-box #bookmarks-menu-button::after, #palette-box #history-menu-button::after
+{
+ content: "";
+ width: 5px;
+ height: 3px;
+ margin-left: 5px;
+ background-image: url("chrome://global/skin/arrow/arrow-dn-hov.gif");
+ background-repeat: no-repeat;
+ vertical-align: middle;
+ display: inline-block;
 }
 #bookmarks-button:hover, #bookmarks-menu-button:hover
 {
@@ -674,7 +692,7 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button])
 {
  -moz-image-region: rect(96px, 256px, 128px, 224px);
 }
-#bookmarks-button[checked], #bookmarks-menu-button[checked]
+#bookmarks-button[checked], #bookmarks-menu-button[checked], #bookmarks-menu-button[open]
 {
  -moz-image-region: rect(64px, 256px, 96px, 224px);
 }
@@ -1094,7 +1112,7 @@ toolbar[iconsize="small"] #history-button[disabled], toolbar[iconsize="small"] #
 {
  -moz-image-region: rect(48px, 112px, 64px, 96px);
 }
-toolbar[iconsize="small"] #history-button[checked], toolbar[iconsize="small"] #history-menu-button[checked]
+toolbar[iconsize="small"] #history-button[checked], toolbar[iconsize="small"] #history-menu-button[checked], toolbar[iconsize="small"] #history-menu-button[open]
 {
  -moz-image-region: rect(32px, 112px, 48px, 96px);
 }
@@ -1115,7 +1133,7 @@ toolbar[iconsize="small"] #bookmarks-button[disabled], toolbar[iconsize="small"]
 {
  -moz-image-region: rect(48px, 128px, 64px, 112px);
 }
-toolbar[iconsize="small"] #bookmarks-button[checked], toolbar[iconsize="small"] #bookmarks-menu-button[checked]
+toolbar[iconsize="small"] #bookmarks-button[checked], toolbar[iconsize="small"] #bookmarks-menu-button[checked], toolbar[iconsize="small"] #bookmarks-menu-button[open]
 {
  -moz-image-region: rect(32px, 128px, 48px, 112px);
 }
