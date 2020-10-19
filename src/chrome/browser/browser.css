@@ -2185,6 +2185,63 @@ toolbar[iconsize="small"] #navigator-throbber, toolbar[iconsize="small"] #wrappe
  -moz-image-region: rect(0, 64px, 16px, 48px);
 }
 
+/* Tab sound indicator */
+.tab-icon-sound
+{
+ margin-inline-start: 4px;
+ width: 16px;
+ height: 16px;
+ padding: 0;
+}
+.tab-icon-overlay
+{
+ width: 16px;
+ height: 16px;
+ margin-top: -8px;
+ margin-inline-start: -15px;
+ margin-inline-end: -1px;
+ position: relative;
+}
+.allTabs-endimage[soundplaying], .tab-icon-sound[soundplaying], .tab-icon-overlay[soundplaying]
+{
+ list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio.png");
+ -moz-image-region: rect(0, 16px, 16px, 0);
+}
+.allTabs-endimage[soundplaying]:hover, .tab-icon-sound[soundplaying]:hover, .tab-icon-overlay[soundplaying]:hover
+{
+ -moz-image-region: rect(16px, 16px, 32px, 0);
+}
+.allTabs-endimage[soundplaying]:hover:active, .tab-icon-sound[soundplaying]:hover:active, .tab-icon-overlay[soundplaying]:hover:active
+{
+ -moz-image-region: rect(32px, 16px, 48px, 0);
+}
+.allTabs-endimage[muted], .tab-icon-sound[muted], .tab-icon-overlay[muted]
+{
+ list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio.png");
+ -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+.allTabs-endimage[muted]:hover, .tab-icon-sound[muted]:hover, .tab-icon-overlay[muted]:hover
+{
+ -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+.allTabs-endimage[muted]:hover:active, .tab-icon-sound[muted]:hover:active, .tab-icon-overlay[muted]:hover:active
+{
+ -moz-image-region: rect(32px, 32px, 48px, 16px);
+}
+.allTabs-endimage[blocked], .tab-icon-sound[blocked], .tab-icon-overlay[blocked],
+.allTabs-endimage[blocked]:hover, .tab-icon-sound[blocked]:hover, .tab-icon-overlay[blocked]:hover,
+.allTabs-endimage[blocked]:hover:active, .tab-icon-sound[blocked]:hover:active, .tab-icon-overlay[blocked]:hover:active
+{
+ list-style-image: url("chrome://browser/skin/tabbrowser/tab-audio.png");
+ -moz-image-region: rect(0, 48px, 16px, 32px);
+}
+.tab-icon-sound[soundplaying-scheduledremoval]:not([muted]),
+.tab-icon-overlay[soundplaying-scheduledremoval]:not([muted])
+{
+ transition: opacity .3s linear var(--soundplaying-removal-delay);
+ opacity: 0;
+}
+
 /* Tab scrollbox arrow, tabstrip new tab and all-tabs buttons */
 .tabbrowser-arrowscrollbox > .scrollbutton-up, .tabbrowser-arrowscrollbox > .scrollbutton-down:-moz-locale-dir(rtl)
 {
