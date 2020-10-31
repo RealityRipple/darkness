@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.2
+- Give generic popups a background and border.
+- Replace icon for an extension that doesn't show up on a black background.
+- Improve customization view of certain elements.
+- Improve toolbar buttons with menus.
+- Add tab audio/mute indicator.
+
 ### 5.1
 - Cleaner page SSL security state coloring.
 - Add Mixed Content padlock.
