@@ -26,6 +26,10 @@ button
  margin: 0px 4px 0px 4px !important;
  text-align: center;
 }
+button:not([label]) .button-text
+{
+ margin: 0px !important;
+}
 button:hover
 {
  color: #D0D0D0;
