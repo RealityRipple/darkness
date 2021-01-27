@@ -5,7 +5,7 @@
  height: 28px;
  background-color: #000000;
 }
-.playButton, .muteButton, .fullscreenButton
+.playButton, .muteButton, .closedCaptionButton, .fullscreenButton
 {
  background-color: transparent;
  background-repeat: no-repeat;
@@ -18,11 +18,11 @@
  border: none;
  opacity: 0.7;
 }
-.playButton:hover, .muteButton:hover, .fullscreenButton:hover
+.playButton:hover, .muteButton:hover, .closedCaptionButton:hover, .fullscreenButton:hover
 {
  opacity: 1;
 }
-.playButton:hover:active, .muteButton:hover:active, .fullscreenButton:hover:active
+.playButton:hover:active, .muteButton:hover:active, .closedCaptionButton:hover:active, .fullscreenButton:hover:active
 {
  opacity: 0.4;
 }
@@ -50,6 +50,19 @@
  background-image: url(chrome://global/skin/media/noAudio.png);
 }
 .muteButton[noAudio] + .volumeStack
+{
+ display: none;
+}
+.closedCaptionButton
+{
+ background-image: url(chrome://global/skin/media/closeCaptionButton.png);
+ margin-left: 4px;
+}
+.closedCaptionButton[enabled]
+{
+ opacity: 1;
+}
+.closedCaptionButton[hidden]
 {
  display: none;
 }
