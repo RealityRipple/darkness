@@ -275,3 +275,57 @@ label[disabled="true"]:-moz-system-metric(windows-classic)
 {
  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
+/* + Icon Replacements */
+#fireftp-main-window #retrieveButton, 
+#fireftp-main-window #storeButton, 
+#fireftp-main-window .upButton,
+#fireftp-main-window .refreshButton,
+.fileTree::-moz-tree-image(isFolder),
+.dirTree::-moz-tree-image(closed),
+.dirTree::-moz-tree-image(open),
+.fileTree::-moz-tree-image(isLink),
+#page-proxy-button
+{
+ list-style-image: url("chrome://mozapps/skin/extensions/overrides/fireftp/fireftp.png") !important;
+}
+#identity-popup-content-box.verifiedIdentity > #identity-popup-encryption > vbox > #identity-popup-encryption-icon ,
+#identity-popup-content-box.verifiedDomain > #identity-popup-encryption > vbox > #identity-popup-encryption-icon
+{
+ list-style-image: url("chrome://browser/skin/Secure24.png") !important;
+}
+#fireftp-main-window #searchStatusIcon[status="notfound"]
+{
+ list-style-image: url("chrome://global/skin/icons/information-16.png");
+}
+#identity-popup-icon
+{
+ list-style-image: url("chrome://browser/skin/identity.png") !important;
+}
+image.isFolder
+{
+ list-style-image: url("chrome://mozapps/skin/extensions/overrides/fireftp/properties.png") !important;
+ -moz-image-region: rect(0 32px 32px 0);
+}
+image.isLink
+{
+ list-style-image: url("chrome://mozapps/skin/extensions/overrides/fireftp/properties.png") !important;
+ -moz-image-region: rect(32px 32px 64px 0);
+}
+image.isMultiple
+{
+ list-style-image: url("chrome://mozapps/skin/extensions/overrides/fireftp/properties.png") !important;
+ -moz-image-region: rect(64px 32px 96px 0);
+}
+#searchClosebutton, #customClosebutton
+{
+ list-style-image: url("chrome://global/skin/icons/close.png") !important;
+ -moz-image-region: rect(0, 16px, 16px, 0);
+}
+#searchClosebutton:hover, #customClosebutton:hover
+{
+ -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+#searchClosebutton:hover:active, #customClosebutton:hover:active
+{
+ -moz-image-region: rect(0, 48px, 16px, 32px);
+}
