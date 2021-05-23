@@ -3,6 +3,9 @@
 
 A dark, simple, grayscale theme for Pale Moon.
 
+#### Supports
+ * Pale Moon [20.0 - 29.*]
+
 ## Building
 Simply download the contents of the "src" folder  and pack the contents into a .zip file. Then, rename the file to .xpi and drag into the browser.
 
