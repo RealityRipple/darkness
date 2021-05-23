@@ -1,5 +1,10 @@
 # Changelog
 
+### 5.3
+- Add Caption button support to video controls.
+- Override FireFTP icons.
+- Hide button label margin if empty (Icon Buttons).
+
 ### 5.2
 - Give generic popups a background and border.
 - Replace icon for an extension that doesn't show up on a black background.
