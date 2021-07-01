@@ -82,7 +82,7 @@ menuitem.spell-suggestion
 menu.menu-iconic > .menu-iconic-left, menuitem.menuitem-iconic > .menu-iconic-left, .splitmenu-menuitem[iconic="true"] > .menu-iconic-left
 {
  -moz-appearance: none;
- padding-top: 2px;
+ padding: 1px 0px;
 }
 .menu-right
 {
